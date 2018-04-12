@@ -101,8 +101,8 @@
 			isa = PBXGroup;
 			children = (
 				1C0208FA206D578100EFC375 /* GameView.swift */,
-				1C0208D1206D575700EFC375 /* Main.storyboard */,
 				1C0208FC206D579800EFC375 /* MyShaders.metal */,
+				1C0208D1206D575700EFC375 /* Main.storyboard */,
 				1C0208F7206D575F00EFC375 /* Other FIles */,
 			);
 			path = "Game Engine";
