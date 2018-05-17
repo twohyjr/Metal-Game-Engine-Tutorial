@@ -8,7 +8,7 @@ class VertexDescriptorLibrary {
     
     private static var vertexDescriptors: [VertexDescriptorTypes: VertexDescriptor] = [:]
     
-    public static func intialize(){
+    public static func Intialize(){
         createDefaultVertexDescriptors()
     }
     
@@ -26,7 +26,6 @@ protocol VertexDescriptor {
     var name: String { get }
     var vertexDescriptor: MTLVertexDescriptor { get }
 }
-
 
 public struct Basic_VertexDescriptor: VertexDescriptor{
     var name: String = "Basic Vertex Descriptor"

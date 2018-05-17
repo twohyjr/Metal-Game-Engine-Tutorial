@@ -8,7 +8,7 @@ class RenderPipelineDescriptorLibrary {
     
     private static var renderPipelineDescriptors: [RenderPipelineDescriptorTypes : RenderPipelineDescriptor] = [:]
     
-    public static func initialize() {
+    public static func Initialize() {
         createDefaultRenderPipelineDescriptors()
     }
     
