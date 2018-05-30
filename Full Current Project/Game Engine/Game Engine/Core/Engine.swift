@@ -19,9 +19,6 @@ class Engine {
         
         MeshLibrary.Initialize()
         
-        
-        SceneManager.Initialize(.Sandbox)
-        
     }
     
 }

@@ -29,10 +29,6 @@
 		1CADF5AC20B4DB800000F54C /* Player.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CADF5AB20B4DB800000F54C /* Player.swift */; };
 		1CADF5AF20B4DBB40000F54C /* Renderable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CADF5AE20B4DBB40000F54C /* Renderable.swift */; };
 		1CDA5B7D209FE2EE00A924A1 /* Renderer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CDA5B7C209FE2EE00A924A1 /* Renderer.swift */; };
-		EBADACCD20BDD0C7006E9BFB /* Camera.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBADACCC20BDD0C7006E9BFB /* Camera.swift */; };
-		EBADACD020BDD1A2006E9BFB /* Scene.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBADACCF20BDD1A2006E9BFB /* Scene.swift */; };
-		EBADACD220BDD2DF006E9BFB /* SandboxScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBADACD120BDD2DF006E9BFB /* SandboxScene.swift */; };
-		EBADACD520BDD33F006E9BFB /* SceneManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBADACD420BDD33F006E9BFB /* SceneManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -82,10 +78,6 @@
 		1CADF5AB20B4DB800000F54C /* Player.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Player.swift; sourceTree = "<group>"; };
 		1CADF5AE20B4DBB40000F54C /* Renderable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Renderable.swift; sourceTree = "<group>"; };
 		1CDA5B7C209FE2EE00A924A1 /* Renderer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Renderer.swift; sourceTree = "<group>"; };
-		EBADACCC20BDD0C7006E9BFB /* Camera.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Camera.swift; sourceTree = "<group>"; };
-		EBADACCF20BDD1A2006E9BFB /* Scene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Scene.swift; sourceTree = "<group>"; };
-		EBADACD120BDD2DF006E9BFB /* SandboxScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SandboxScene.swift; sourceTree = "<group>"; };
-		EBADACD420BDD33F006E9BFB /* SceneManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -138,7 +130,6 @@
 			children = (
 				1C477E8D20B4ECA80028C8FE /* Maths */,
 				1CA84B232092A66C00465F6A /* Core */,
-				EBADACD320BDD324006E9BFB /* Managers */,
 				1CA84B222092A66100465F6A /* Libraries */,
 				1CA84B252092A67500465F6A /* Shaders */,
 				1CADF5A720B4DB430000F54C /* Game Shizz */,
@@ -230,10 +221,8 @@
 			isa = PBXGroup;
 			children = (
 				1C6E769420ACFC75007F1DA5 /* Node.swift */,
-				EBADACCE20BDD196006E9BFB /* Scenes */,
 				1CADF5A820B4DB6D0000F54C /* Game Objects */,
 				1CADF5AD20B4DBA30000F54C /* Protocols */,
-				EBADACCC20BDD0C7006E9BFB /* Camera.swift */,
 			);
 			path = "Game Shizz";
 			sourceTree = "<group>";
@@ -253,23 +242,6 @@
 				1CADF5AE20B4DBB40000F54C /* Renderable.swift */,
 			);
 			path = Protocols;
-			sourceTree = "<group>";
-		};
-		EBADACCE20BDD196006E9BFB /* Scenes */ = {
-			isa = PBXGroup;
-			children = (
-				EBADACCF20BDD1A2006E9BFB /* Scene.swift */,
-				EBADACD120BDD2DF006E9BFB /* SandboxScene.swift */,
-			);
-			path = Scenes;
-			sourceTree = "<group>";
-		};
-		EBADACD320BDD324006E9BFB /* Managers */ = {
-			isa = PBXGroup;
-			children = (
-				EBADACD420BDD33F006E9BFB /* SceneManager.swift */,
-			);
-			path = Managers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -417,15 +389,11 @@
 				1CA84B312092A97500465F6A /* Engine.swift in Sources */,
 				1C0208FB206D578100EFC375 /* GameView.swift in Sources */,
 				1C477E8F20B4ECB90028C8FE /* Math.swift in Sources */,
-				EBADACD020BDD1A2006E9BFB /* Scene.swift in Sources */,
-				EBADACCD20BDD0C7006E9BFB /* Camera.swift in Sources */,
 				1C0208FD206D579800EFC375 /* MyShaders.metal in Sources */,
 				1C6E769520ACFC75007F1DA5 /* Node.swift in Sources */,
-				EBADACD520BDD33F006E9BFB /* SceneManager.swift in Sources */,
 				1C66A279208430880014D1E2 /* Types.swift in Sources */,
 				1C0208CE206D575700EFC375 /* Game_Engine.xcdatamodeld in Sources */,
 				1CADF5AC20B4DB800000F54C /* Player.swift in Sources */,
-				EBADACD220BDD2DF006E9BFB /* SandboxScene.swift in Sources */,
 				1CA84B3B2092B1D000465F6A /* RenderPipelineStateLibrary.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
