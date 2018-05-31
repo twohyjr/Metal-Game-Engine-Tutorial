@@ -1,9 +1,9 @@
 //
 //  AppDelegate.swift
-//  ComputeDots
+//  Par2cles
 //
-//  Created by 2etime on 5/3/18.
-//  Copyright © 2018 TwohysTuts. All rights reserved.
+//  Created by Twohy on 5/31/18.
+//  Copyright © 2018 TwohyTutorials. All rights reserved.
 //
 
 import Cocoa

@@ -11,11 +11,11 @@
                 <application id="hnw-xV-0zn" sceneMemberID="viewController">
                     <menu key="mainMenu" title="Main Menu" systemMenu="main" id="AYu-sK-qS6">
                         <items>
-                            <menuItem title="ComputeDots" id="1Xt-HY-uBw">
+                            <menuItem title="Par2cles" id="1Xt-HY-uBw">
                                 <modifierMask key="keyEquivalentModifierMask"/>
-                                <menu key="submenu" title="ComputeDots" systemMenu="apple" id="uQy-DD-JDr">
+                                <menu key="submenu" title="Par2cles" systemMenu="apple" id="uQy-DD-JDr">
                                     <items>
-                                        <menuItem title="About ComputeDots" id="5kV-Vb-QxS">
+                                        <menuItem title="About Par2cles" id="5kV-Vb-QxS">
                                             <modifierMask key="keyEquivalentModifierMask"/>
                                             <connections>
                                                 <action selector="orderFrontStandardAboutPanel:" target="Ady-hI-5gd" id="Exp-CZ-Vem"/>
@@ -29,7 +29,7 @@
                                             <menu key="submenu" title="Services" systemMenu="services" id="hz9-B4-Xy5"/>
                                         </menuItem>
                                         <menuItem isSeparatorItem="YES" id="4je-JR-u6R"/>
-                                        <menuItem title="Hide ComputeDots" keyEquivalent="h" id="Olw-nP-bQN">
+                                        <menuItem title="Hide Par2cles" keyEquivalent="h" id="Olw-nP-bQN">
                                             <connections>
                                                 <action selector="hide:" target="Ady-hI-5gd" id="PnN-Uc-m68"/>
                                             </connections>
@@ -47,7 +47,7 @@
                                             </connections>
                                         </menuItem>
                                         <menuItem isSeparatorItem="YES" id="kCx-OE-vgT"/>
-                                        <menuItem title="Quit ComputeDots" keyEquivalent="q" id="4sb-4s-VLi">
+                                        <menuItem title="Quit Par2cles" keyEquivalent="q" id="4sb-4s-VLi">
                                             <connections>
                                                 <action selector="terminate:" target="Ady-hI-5gd" id="Te7-pn-YzF"/>
                                             </connections>
@@ -660,7 +660,7 @@
                                 <modifierMask key="keyEquivalentModifierMask"/>
                                 <menu key="submenu" title="Help" systemMenu="help" id="F2S-fz-NVQ">
                                     <items>
-                                        <menuItem title="ComputeDots Help" keyEquivalent="?" id="FKE-Sm-Kum">
+                                        <menuItem title="Par2cles Help" keyEquivalent="?" id="FKE-Sm-Kum">
                                             <connections>
                                                 <action selector="showHelp:" target="Ady-hI-5gd" id="y7X-2Q-9no"/>
                                             </connections>
@@ -674,7 +674,7 @@
                         <outlet property="delegate" destination="Voe-Tx-rLC" id="PrD-fu-P6m"/>
                     </connections>
                 </application>
-                <customObject id="Voe-Tx-rLC" customClass="AppDelegate" customModule="ComputeDots" customModuleProvider="target"/>
+                <customObject id="Voe-Tx-rLC" customClass="AppDelegate" customModule="Par2cles" customModuleProvider="target"/>
                 <customObject id="YLy-65-1bz" customClass="NSFontManager"/>
                 <customObject id="Ady-hI-5gd" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -684,7 +684,7 @@
         <scene sceneID="R2V-B0-nI4">
             <objects>
                 <windowController id="B8D-0N-5wS" sceneMemberID="viewController">
-                    <window key="window" title="Holy Shit It's Dots!" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" restorable="NO" oneShot="NO" releasedWhenClosed="NO" showsToolbarButton="NO" visibleAtLaunch="NO" animationBehavior="default" id="IQv-IB-iLA">
+                    <window key="window" title="Window" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" restorable="NO" oneShot="NO" releasedWhenClosed="NO" showsToolbarButton="NO" visibleAtLaunch="NO" animationBehavior="default" id="IQv-IB-iLA">
                         <windowStyleMask key="styleMask" titled="YES" closable="YES" miniaturizable="YES" resizable="YES"/>
                         <windowPositionMask key="initialPositionMask" leftStrut="YES" rightStrut="YES" topStrut="YES" bottomStrut="YES"/>
                         <rect key="contentRect" x="196" y="240" width="480" height="270"/>
@@ -704,34 +704,34 @@
         <!--View Controller-->
         <scene sceneID="hIz-AP-VOD">
             <objects>
-                <viewController id="XfG-lQ-9wD" sceneMemberID="viewController">
-                    <view key="view" wantsLayer="YES" id="m2S-Jp-Qdl" customClass="MainView" customModule="ComputeDots" customModuleProvider="target">
+                <viewController id="XfG-lQ-9wD" customClass="ViewController" customModule="Par2cles" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" wantsLayer="YES" id="m2S-Jp-Qdl" customClass="MainView" customModule="Par2cles" customModuleProvider="target">
                         <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <subviews>
-                            <slider verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="7Kw-hK-QlD">
-                                <rect key="frame" x="163" y="973" width="490" height="19"/>
-                                <sliderCell key="cell" continuous="YES" state="on" alignment="left" maxValue="1000000" doubleValue="1000" tickMarkPosition="above" sliderType="linear" id="KLc-m7-heB"/>
+                            <slider verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="A3G-j8-YLm">
+                                <rect key="frame" x="163" y="969" width="490" height="19"/>
+                                <sliderCell key="cell" continuous="YES" state="on" alignment="left" maxValue="1000000" doubleValue="1000" tickMarkPosition="above" sliderType="linear" id="d9E-bg-Evh"/>
                                 <connections>
-                                    <action selector="sldParticleCountUpdate:" target="m2S-Jp-Qdl" id="LIl-oS-AEM"/>
+                                    <action selector="sldParticleCountUpdate:" target="m2S-Jp-Qdl" id="e4H-2Q-tGA"/>
                                 </connections>
                             </slider>
-                            <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="WGZ-y4-aIP">
-                                <rect key="frame" x="757" y="966" width="85" height="32"/>
-                                <buttonCell key="cell" type="push" title="Update" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="SsN-aU-3op">
+                            <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="h0V-0U-jf4">
+                                <rect key="frame" x="757" y="962" width="85" height="32"/>
+                                <buttonCell key="cell" type="push" title="Update" bezelStyle="rounded" alignment="center" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="Oyz-WX-w2d">
                                     <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                                     <font key="font" metaFont="system"/>
                                 </buttonCell>
                                 <connections>
-                                    <action selector="btnUpdate:" target="m2S-Jp-Qdl" id="y2e-Ch-Eip"/>
+                                    <action selector="btnUpdate:" target="m2S-Jp-Qdl" id="KxH-JQ-2L0"/>
                                 </connections>
                             </button>
-                            <textField verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="GaZ-y6-BzO">
-                                <rect key="frame" x="659" y="972" width="96" height="22"/>
+                            <textField verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="P0x-cy-YOH">
+                                <rect key="frame" x="659" y="968" width="96" height="22"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="96" id="OK5-gi-6y9"/>
+                                    <constraint firstAttribute="width" constant="96" id="H3j-If-nhq"/>
                                 </constraints>
-                                <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" state="on" borderStyle="bezel" drawsBackground="YES" id="rTS-Vl-561">
+                                <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" state="on" borderStyle="bezel" drawsBackground="YES" id="yM7-PO-Lzy">
                                     <font key="font" metaFont="system"/>
                                     <color key="textColor" name="textColor" catalog="System" colorSpace="catalog"/>
                                     <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
@@ -739,23 +739,25 @@
                             </textField>
                         </subviews>
                         <constraints>
-                            <constraint firstItem="GaZ-y6-BzO" firstAttribute="top" secondItem="m2S-Jp-Qdl" secondAttribute="top" constant="6" id="Dj8-ve-ffA"/>
-                            <constraint firstItem="WGZ-y4-aIP" firstAttribute="leading" secondItem="GaZ-y6-BzO" secondAttribute="trailing" constant="8" id="cFg-iu-xno"/>
-                            <constraint firstItem="7Kw-hK-QlD" firstAttribute="leading" secondItem="m2S-Jp-Qdl" secondAttribute="leading" constant="165" id="fBC-mu-wtv"/>
-                            <constraint firstItem="GaZ-y6-BzO" firstAttribute="leading" secondItem="7Kw-hK-QlD" secondAttribute="trailing" constant="8" id="gLN-TE-aDd"/>
-                            <constraint firstAttribute="trailing" secondItem="7Kw-hK-QlD" secondAttribute="trailing" constant="349" id="rai-Wa-r6s"/>
-                            <constraint firstItem="WGZ-y4-aIP" firstAttribute="top" secondItem="m2S-Jp-Qdl" secondAttribute="top" constant="6" id="shl-US-ugG"/>
-                            <constraint firstItem="7Kw-hK-QlD" firstAttribute="top" secondItem="m2S-Jp-Qdl" secondAttribute="top" constant="10" id="tO7-ZC-ul8"/>
+                            <constraint firstItem="h0V-0U-jf4" firstAttribute="leading" secondItem="P0x-cy-YOH" secondAttribute="trailing" constant="8" id="5SI-pK-YC1"/>
+                            <constraint firstAttribute="trailing" secondItem="A3G-j8-YLm" secondAttribute="trailing" constant="349" id="HVP-2p-nVE"/>
+                            <constraint firstItem="P0x-cy-YOH" firstAttribute="leading" secondItem="A3G-j8-YLm" secondAttribute="trailing" constant="8" id="UrK-og-mCI"/>
+                            <constraint firstAttribute="trailing" secondItem="h0V-0U-jf4" secondAttribute="trailing" constant="164" id="aBy-No-bdD"/>
+                            <constraint firstItem="P0x-cy-YOH" firstAttribute="top" secondItem="m2S-Jp-Qdl" secondAttribute="top" constant="10" id="bhF-u0-K2l"/>
+                            <constraint firstItem="h0V-0U-jf4" firstAttribute="top" secondItem="m2S-Jp-Qdl" secondAttribute="top" constant="10" id="ctU-VF-Bt4"/>
+                            <constraint firstItem="A3G-j8-YLm" firstAttribute="leading" secondItem="m2S-Jp-Qdl" secondAttribute="leading" constant="165" id="kSP-pb-4M4"/>
+                            <constraint firstItem="P0x-cy-YOH" firstAttribute="leading" secondItem="A3G-j8-YLm" secondAttribute="trailing" constant="8" id="oiU-3N-iAH"/>
+                            <constraint firstItem="A3G-j8-YLm" firstAttribute="top" secondItem="m2S-Jp-Qdl" secondAttribute="top" constant="14" id="xSV-BA-hKW"/>
                         </constraints>
                         <connections>
-                            <outlet property="sldParticleCount" destination="7Kw-hK-QlD" id="gTc-RS-saD"/>
-                            <outlet property="txtParticleCount" destination="GaZ-y6-BzO" id="I0e-CV-EHV"/>
+                            <outlet property="sldDotCount" destination="A3G-j8-YLm" id="TVP-gS-WDb"/>
+                            <outlet property="txtDotCount" destination="P0x-cy-YOH" id="ZWC-xD-VgE"/>
                         </connections>
                     </view>
                 </viewController>
                 <customObject id="rPt-NT-nkU" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="75" y="1066"/>
+            <point key="canvasLocation" x="75" y="1022"/>
         </scene>
     </scenes>
 </document>
