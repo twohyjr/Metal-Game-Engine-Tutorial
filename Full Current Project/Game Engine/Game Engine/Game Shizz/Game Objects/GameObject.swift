@@ -10,12 +10,7 @@ class GameObject: Node {
         mesh = MeshLibrary.Mesh(meshType)
     }
     
-    var time: Float = 0
-    func update(deltaTime: Float){
-        time += deltaTime
-
-        self.scale = float3(cos(time))
-
+    override func update(deltaTime: Float){
         updateModelConstants()
     }
     

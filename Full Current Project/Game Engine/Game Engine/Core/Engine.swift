@@ -19,6 +19,9 @@ class Engine {
         
         MeshLibrary.Initialize()
         
+        
+        SceneManager.Initialize(Preferences.StartingSceneType)
+        
     }
     
 }

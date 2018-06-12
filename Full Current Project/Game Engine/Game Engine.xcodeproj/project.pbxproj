@@ -29,6 +29,9 @@
 		1CADF5AC20B4DB800000F54C /* Player.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CADF5AB20B4DB800000F54C /* Player.swift */; };
 		1CADF5AF20B4DBB40000F54C /* Renderable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CADF5AE20B4DBB40000F54C /* Renderable.swift */; };
 		1CDA5B7D209FE2EE00A924A1 /* Renderer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CDA5B7C209FE2EE00A924A1 /* Renderer.swift */; };
+		EBB8610A20CF3309004D5AAD /* Scene.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBB8610920CF3309004D5AAD /* Scene.swift */; };
+		EBB8610C20CF342C004D5AAD /* SandboxScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBB8610B20CF342C004D5AAD /* SandboxScene.swift */; };
+		EBB8610F20CF3524004D5AAD /* SceneManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBB8610E20CF3524004D5AAD /* SceneManager.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -78,6 +81,9 @@
 		1CADF5AB20B4DB800000F54C /* Player.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Player.swift; sourceTree = "<group>"; };
 		1CADF5AE20B4DBB40000F54C /* Renderable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Renderable.swift; sourceTree = "<group>"; };
 		1CDA5B7C209FE2EE00A924A1 /* Renderer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Renderer.swift; sourceTree = "<group>"; };
+		EBB8610920CF3309004D5AAD /* Scene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Scene.swift; sourceTree = "<group>"; };
+		EBB8610B20CF342C004D5AAD /* SandboxScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SandboxScene.swift; sourceTree = "<group>"; };
+		EBB8610E20CF3524004D5AAD /* SceneManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneManager.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -131,6 +137,7 @@
 				1C477E8D20B4ECA80028C8FE /* Maths */,
 				1CA84B232092A66C00465F6A /* Core */,
 				1CA84B222092A66100465F6A /* Libraries */,
+				EBB8610D20CF3511004D5AAD /* Managers */,
 				1CA84B252092A67500465F6A /* Shaders */,
 				1CADF5A720B4DB430000F54C /* Game Shizz */,
 				1CA84B242092A67000465F6A /* Display */,
@@ -221,6 +228,7 @@
 			isa = PBXGroup;
 			children = (
 				1C6E769420ACFC75007F1DA5 /* Node.swift */,
+				EBB8610820CF32F8004D5AAD /* Scenes */,
 				1CADF5A820B4DB6D0000F54C /* Game Objects */,
 				1CADF5AD20B4DBA30000F54C /* Protocols */,
 			);
@@ -242,6 +250,23 @@
 				1CADF5AE20B4DBB40000F54C /* Renderable.swift */,
 			);
 			path = Protocols;
+			sourceTree = "<group>";
+		};
+		EBB8610820CF32F8004D5AAD /* Scenes */ = {
+			isa = PBXGroup;
+			children = (
+				EBB8610920CF3309004D5AAD /* Scene.swift */,
+				EBB8610B20CF342C004D5AAD /* SandboxScene.swift */,
+			);
+			path = Scenes;
+			sourceTree = "<group>";
+		};
+		EBB8610D20CF3511004D5AAD /* Managers */ = {
+			isa = PBXGroup;
+			children = (
+				EBB8610E20CF3524004D5AAD /* SceneManager.swift */,
+			);
+			path = Managers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -312,15 +337,18 @@
 				TargetAttributes = {
 					1C0208C4206D575700EFC375 = {
 						CreatedOnToolsVersion = 9.2;
+						LastSwiftMigration = 1000;
 						ProvisioningStyle = Automatic;
 					};
 					1C0208D9206D575700EFC375 = {
 						CreatedOnToolsVersion = 9.2;
+						LastSwiftMigration = 1000;
 						ProvisioningStyle = Automatic;
 						TestTargetID = 1C0208C4206D575700EFC375;
 					};
 					1C0208E4206D575700EFC375 = {
 						CreatedOnToolsVersion = 9.2;
+						LastSwiftMigration = 1000;
 						ProvisioningStyle = Automatic;
 						TestTargetID = 1C0208C4206D575700EFC375;
 					};
@@ -380,12 +408,14 @@
 				1CA84B392092B01A00465F6A /* RenderPipelineDescriptorLibrary.swift in Sources */,
 				1CADF5AA20B4DB770000F54C /* GameObject.swift in Sources */,
 				1CADF5AF20B4DBB40000F54C /* Renderable.swift in Sources */,
+				EBB8610A20CF3309004D5AAD /* Scene.swift in Sources */,
 				1CA84B372092AE7300465F6A /* VertexDescriptorLibrary.swift in Sources */,
 				1C0208C9206D575700EFC375 /* AppDelegate.swift in Sources */,
 				1C6E769120ACF8C6007F1DA5 /* MeshLibrary.swift in Sources */,
 				1CA84B332092AA2E00465F6A /* Preferences.swift in Sources */,
 				1CA84B352092AB2400465F6A /* ShaderLibrary.swift in Sources */,
 				1CDA5B7D209FE2EE00A924A1 /* Renderer.swift in Sources */,
+				EBB8610F20CF3524004D5AAD /* SceneManager.swift in Sources */,
 				1CA84B312092A97500465F6A /* Engine.swift in Sources */,
 				1C0208FB206D578100EFC375 /* GameView.swift in Sources */,
 				1C477E8F20B4ECB90028C8FE /* Math.swift in Sources */,
@@ -394,6 +424,7 @@
 				1C66A279208430880014D1E2 /* Types.swift in Sources */,
 				1C0208CE206D575700EFC375 /* Game_Engine.xcdatamodeld in Sources */,
 				1CADF5AC20B4DB800000F54C /* Player.swift in Sources */,
+				EBB8610C20CF342C004D5AAD /* SandboxScene.swift in Sources */,
 				1CA84B3B2092B1D000465F6A /* RenderPipelineStateLibrary.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -563,7 +594,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "net.ricktwohy.Game-Engine";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 4.2;
 			};
 			name = Debug;
 		};
@@ -579,7 +610,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "net.ricktwohy.Game-Engine";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 4.2;
 			};
 			name = Release;
 		};
@@ -595,7 +626,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "net.ricktwohy.Game-EngineTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 4.2;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Game Engine.app/Contents/MacOS/Game Engine";
 			};
 			name = Debug;
@@ -612,7 +643,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "net.ricktwohy.Game-EngineTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 4.2;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Game Engine.app/Contents/MacOS/Game Engine";
 			};
 			name = Release;
@@ -628,7 +659,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "net.ricktwohy.Game-EngineUITests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 4.2;
 				TEST_TARGET_NAME = "Game Engine";
 			};
 			name = Debug;
@@ -644,7 +675,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "net.ricktwohy.Game-EngineUITests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 4.2;
 				TEST_TARGET_NAME = "Game Engine";
 			};
 			name = Release;
