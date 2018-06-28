@@ -32,6 +32,7 @@
 		EB3FC4DA20D6E78500CADFD8 /* Keyboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB3FC4D920D6E78500CADFD8 /* Keyboard.swift */; };
 		EB3FC4DC20D6E80A00CADFD8 /* KeyCodes.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB3FC4DB20D6E80A00CADFD8 /* KeyCodes.swift */; };
 		EB3FC4DE20D6E98A00CADFD8 /* Mouse.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB3FC4DD20D6E98A00CADFD8 /* Mouse.swift */; };
+		EB4EA76D20E1C36E002AAD92 /* CameraManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB4EA76C20E1C36E002AAD92 /* CameraManager.swift */; };
 		EBB8610A20CF3309004D5AAD /* Scene.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBB8610920CF3309004D5AAD /* Scene.swift */; };
 		EBB8610C20CF342C004D5AAD /* SandboxScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBB8610B20CF342C004D5AAD /* SandboxScene.swift */; };
 		EBB8610F20CF3524004D5AAD /* SceneManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBB8610E20CF3524004D5AAD /* SceneManager.swift */; };
@@ -87,6 +88,7 @@
 		EB3FC4D920D6E78500CADFD8 /* Keyboard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Keyboard.swift; sourceTree = "<group>"; };
 		EB3FC4DB20D6E80A00CADFD8 /* KeyCodes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyCodes.swift; sourceTree = "<group>"; };
 		EB3FC4DD20D6E98A00CADFD8 /* Mouse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Mouse.swift; sourceTree = "<group>"; };
+		EB4EA76C20E1C36E002AAD92 /* CameraManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraManager.swift; sourceTree = "<group>"; };
 		EBB8610920CF3309004D5AAD /* Scene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Scene.swift; sourceTree = "<group>"; };
 		EBB8610B20CF342C004D5AAD /* SandboxScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SandboxScene.swift; sourceTree = "<group>"; };
 		EBB8610E20CF3524004D5AAD /* SceneManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneManager.swift; sourceTree = "<group>"; };
@@ -282,6 +284,7 @@
 			isa = PBXGroup;
 			children = (
 				EBB8610E20CF3524004D5AAD /* SceneManager.swift */,
+				EB4EA76C20E1C36E002AAD92 /* CameraManager.swift */,
 			);
 			path = Managers;
 			sourceTree = "<group>";
@@ -426,6 +429,7 @@
 				1CADF5AA20B4DB770000F54C /* GameObject.swift in Sources */,
 				1CADF5AF20B4DBB40000F54C /* Renderable.swift in Sources */,
 				EBB8610A20CF3309004D5AAD /* Scene.swift in Sources */,
+				EB4EA76D20E1C36E002AAD92 /* CameraManager.swift in Sources */,
 				1CA84B372092AE7300465F6A /* VertexDescriptorLibrary.swift in Sources */,
 				1C0208C9206D575700EFC375 /* AppDelegate.swift in Sources */,
 				1C6E769120ACF8C6007F1DA5 /* MeshLibrary.swift in Sources */,

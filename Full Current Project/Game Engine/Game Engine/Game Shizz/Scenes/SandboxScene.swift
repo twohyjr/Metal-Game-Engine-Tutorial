@@ -1,6 +1,12 @@
 import MetalKit
 
 class SandboxScene: Scene{
+    
+    override func setupCameras() {
+        cameraManager.registerCamera(cameraType: .Debug, camera: Debug_Camera())
+        cameraManager.setCamera(.Debug)
+    }
+    
     override func buildScene() {
         let count: Int = 5
         for y in -count..<count{
