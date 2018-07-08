@@ -7,9 +7,6 @@ enum SceneTypes{
 class SceneManager{
     
     private static var _currentScene: Scene!
-    public static var CurrentScene: Scene {
-        return _currentScene
-    }
     
     public static func Initialize(_ sceneType: SceneTypes){
         SetScene(sceneType)
@@ -23,8 +20,6 @@ class SceneManager{
     }
     
     public static func TickScene(renderCommandEncoder: MTLRenderCommandEncoder, deltaTime: Float){
-        
-        _currentScene.cameraManager.updateCameras(deltaTime: deltaTime)
         
         _currentScene.update(deltaTime: deltaTime)
         
