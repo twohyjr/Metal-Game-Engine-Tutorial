@@ -29,7 +29,6 @@
 		1CADF5AC20B4DB800000F54C /* Pointer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CADF5AB20B4DB800000F54C /* Pointer.swift */; };
 		1CADF5AF20B4DBB40000F54C /* Renderable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CADF5AE20B4DBB40000F54C /* Renderable.swift */; };
 		1CDA5B7D209FE2EE00A924A1 /* Renderer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CDA5B7C209FE2EE00A924A1 /* Renderer.swift */; };
-		EB07300F2129C61500EE9CE7 /* Triangle.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB07300E2129C61500EE9CE7 /* Triangle.swift */; };
 		EB3FC4DA20D6E78500CADFD8 /* Keyboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB3FC4D920D6E78500CADFD8 /* Keyboard.swift */; };
 		EB3FC4DC20D6E80A00CADFD8 /* KeyCodes.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB3FC4DB20D6E80A00CADFD8 /* KeyCodes.swift */; };
 		EB3FC4DE20D6E98A00CADFD8 /* Mouse.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB3FC4DD20D6E98A00CADFD8 /* Mouse.swift */; };
@@ -88,7 +87,6 @@
 		1CADF5AB20B4DB800000F54C /* Pointer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pointer.swift; sourceTree = "<group>"; };
 		1CADF5AE20B4DBB40000F54C /* Renderable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Renderable.swift; sourceTree = "<group>"; };
 		1CDA5B7C209FE2EE00A924A1 /* Renderer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Renderer.swift; sourceTree = "<group>"; };
-		EB07300E2129C61500EE9CE7 /* Triangle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Triangle.swift; sourceTree = "<group>"; };
 		EB3FC4D920D6E78500CADFD8 /* Keyboard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Keyboard.swift; sourceTree = "<group>"; };
 		EB3FC4DB20D6E80A00CADFD8 /* KeyCodes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyCodes.swift; sourceTree = "<group>"; };
 		EB3FC4DD20D6E98A00CADFD8 /* Mouse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Mouse.swift; sourceTree = "<group>"; };
@@ -256,7 +254,6 @@
 			children = (
 				1CADF5A920B4DB770000F54C /* GameObject.swift */,
 				1CADF5AB20B4DB800000F54C /* Pointer.swift */,
-				EB07300E2129C61500EE9CE7 /* Triangle.swift */,
 			);
 			path = "Game Objects";
 			sourceTree = "<group>";
@@ -461,7 +458,6 @@
 				1C477E8F20B4ECB90028C8FE /* Math.swift in Sources */,
 				EB3FC4DA20D6E78500CADFD8 /* Keyboard.swift in Sources */,
 				1C0208FD206D579800EFC375 /* MyShaders.metal in Sources */,
-				EB07300F2129C61500EE9CE7 /* Triangle.swift in Sources */,
 				1C6E769520ACFC75007F1DA5 /* Node.swift in Sources */,
 				1C66A279208430880014D1E2 /* Types.swift in Sources */,
 				EB3FC4DC20D6E80A00CADFD8 /* KeyCodes.swift in Sources */,
