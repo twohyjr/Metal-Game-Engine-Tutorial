@@ -29,9 +29,6 @@
 		1CADF5AC20B4DB800000F54C /* Pointer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CADF5AB20B4DB800000F54C /* Pointer.swift */; };
 		1CADF5AF20B4DBB40000F54C /* Renderable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CADF5AE20B4DBB40000F54C /* Renderable.swift */; };
 		1CDA5B7D209FE2EE00A924A1 /* Renderer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CDA5B7C209FE2EE00A924A1 /* Renderer.swift */; };
-		EB073015212A1B9300EE9CE7 /* Triangle.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB073014212A1B9300EE9CE7 /* Triangle.swift */; };
-		EB073017212A1D5000EE9CE7 /* Cube.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB073016212A1D5000EE9CE7 /* Cube.swift */; };
-		EB073019212A1DC800EE9CE7 /* DepthStencilStateLibrary.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB073018212A1DC800EE9CE7 /* DepthStencilStateLibrary.swift */; };
 		EB3FC4DA20D6E78500CADFD8 /* Keyboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB3FC4D920D6E78500CADFD8 /* Keyboard.swift */; };
 		EB3FC4DC20D6E80A00CADFD8 /* KeyCodes.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB3FC4DB20D6E80A00CADFD8 /* KeyCodes.swift */; };
 		EB3FC4DE20D6E98A00CADFD8 /* Mouse.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB3FC4DD20D6E98A00CADFD8 /* Mouse.swift */; };
@@ -90,9 +87,6 @@
 		1CADF5AB20B4DB800000F54C /* Pointer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pointer.swift; sourceTree = "<group>"; };
 		1CADF5AE20B4DBB40000F54C /* Renderable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Renderable.swift; sourceTree = "<group>"; };
 		1CDA5B7C209FE2EE00A924A1 /* Renderer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Renderer.swift; sourceTree = "<group>"; };
-		EB073014212A1B9300EE9CE7 /* Triangle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Triangle.swift; sourceTree = "<group>"; };
-		EB073016212A1D5000EE9CE7 /* Cube.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cube.swift; sourceTree = "<group>"; };
-		EB073018212A1DC800EE9CE7 /* DepthStencilStateLibrary.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DepthStencilStateLibrary.swift; sourceTree = "<group>"; };
 		EB3FC4D920D6E78500CADFD8 /* Keyboard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Keyboard.swift; sourceTree = "<group>"; };
 		EB3FC4DB20D6E80A00CADFD8 /* KeyCodes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyCodes.swift; sourceTree = "<group>"; };
 		EB3FC4DD20D6E98A00CADFD8 /* Mouse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Mouse.swift; sourceTree = "<group>"; };
@@ -207,7 +201,6 @@
 			children = (
 				1CA84B342092AB2400465F6A /* ShaderLibrary.swift */,
 				1CA84B362092AE7300465F6A /* VertexDescriptorLibrary.swift */,
-				EB073018212A1DC800EE9CE7 /* DepthStencilStateLibrary.swift */,
 				1CA84B382092B01A00465F6A /* RenderPipelineDescriptorLibrary.swift */,
 				1CA84B3A2092B1D000465F6A /* RenderPipelineStateLibrary.swift */,
 				1C6E769020ACF8C6007F1DA5 /* MeshLibrary.swift */,
@@ -261,8 +254,6 @@
 			children = (
 				1CADF5A920B4DB770000F54C /* GameObject.swift */,
 				1CADF5AB20B4DB800000F54C /* Pointer.swift */,
-				EB073014212A1B9300EE9CE7 /* Triangle.swift */,
-				EB073016212A1D5000EE9CE7 /* Cube.swift */,
 			);
 			path = "Game Objects";
 			sourceTree = "<group>";
@@ -450,9 +441,7 @@
 			files = (
 				1CA84B392092B01A00465F6A /* RenderPipelineDescriptorLibrary.swift in Sources */,
 				1CADF5AA20B4DB770000F54C /* GameObject.swift in Sources */,
-				EB073019212A1DC800EE9CE7 /* DepthStencilStateLibrary.swift in Sources */,
 				1CADF5AF20B4DBB40000F54C /* Renderable.swift in Sources */,
-				EB073017212A1D5000EE9CE7 /* Cube.swift in Sources */,
 				EBB8610A20CF3309004D5AAD /* Scene.swift in Sources */,
 				1CA84B372092AE7300465F6A /* VertexDescriptorLibrary.swift in Sources */,
 				1C0208C9206D575700EFC375 /* AppDelegate.swift in Sources */,
@@ -469,7 +458,6 @@
 				1C477E8F20B4ECB90028C8FE /* Math.swift in Sources */,
 				EB3FC4DA20D6E78500CADFD8 /* Keyboard.swift in Sources */,
 				1C0208FD206D579800EFC375 /* MyShaders.metal in Sources */,
-				EB073015212A1B9300EE9CE7 /* Triangle.swift in Sources */,
 				1C6E769520ACFC75007F1DA5 /* Node.swift in Sources */,
 				1C66A279208430880014D1E2 /* Types.swift in Sources */,
 				EB3FC4DC20D6E80A00CADFD8 /* KeyCodes.swift in Sources */,

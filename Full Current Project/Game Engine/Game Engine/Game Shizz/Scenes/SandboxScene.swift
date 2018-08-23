@@ -4,18 +4,19 @@ import MetalKit
 class SandboxScene: Scene{
     
     var debugCamera = DebugCamera()
-    let object = Cube()
     
     override func buildScene() {
         addCamera(debugCamera)
         
-        object.position.z = -5
-        addChild(object)
-    }
-    
-    override func update(deltaTime: Float) {
-        object.rotation.y += deltaTime
-        object.rotation.x += deltaTime
-        super.update(deltaTime: deltaTime)
+        let count: Int = 5
+        for y in -count..<count{
+            for x in -count..<count{
+                let pointer = Pointer(camera: debugCamera)
+                pointer.position.y = Float(Float(y) + 0.5) / Float(count)
+                pointer.position.x = Float(Float(x) + 0.5) / Float(count)
+                pointer.scale = float3(0.1)
+                addChild(pointer)
+            }
+        }
     }
 }
