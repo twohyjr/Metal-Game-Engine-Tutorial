@@ -35,6 +35,8 @@
 		EB6A608B20F2797F00454ED9 /* Camera.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB6A608A20F2797F00454ED9 /* Camera.swift */; };
 		EB6A608D20F27A5200454ED9 /* DebugCamera.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB6A608C20F27A5200454ED9 /* DebugCamera.swift */; };
 		EB6A608F20F27C8F00454ED9 /* CameraManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB6A608E20F27C8F00454ED9 /* CameraManager.swift */; };
+		EB7AA338212E56DA0076FC19 /* Cube.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB7AA337212E56DA0076FC19 /* Cube.swift */; };
+		EB7AA33A212E57FF0076FC19 /* DepthStencilStateLibrary.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB7AA339212E57FF0076FC19 /* DepthStencilStateLibrary.swift */; };
 		EBB8610A20CF3309004D5AAD /* Scene.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBB8610920CF3309004D5AAD /* Scene.swift */; };
 		EBB8610C20CF342C004D5AAD /* SandboxScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBB8610B20CF342C004D5AAD /* SandboxScene.swift */; };
 		EBB8610F20CF3524004D5AAD /* SceneManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBB8610E20CF3524004D5AAD /* SceneManager.swift */; };
@@ -93,6 +95,8 @@
 		EB6A608A20F2797F00454ED9 /* Camera.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Camera.swift; sourceTree = "<group>"; };
 		EB6A608C20F27A5200454ED9 /* DebugCamera.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DebugCamera.swift; sourceTree = "<group>"; };
 		EB6A608E20F27C8F00454ED9 /* CameraManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraManager.swift; sourceTree = "<group>"; };
+		EB7AA337212E56DA0076FC19 /* Cube.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cube.swift; sourceTree = "<group>"; };
+		EB7AA339212E57FF0076FC19 /* DepthStencilStateLibrary.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DepthStencilStateLibrary.swift; sourceTree = "<group>"; };
 		EBB8610920CF3309004D5AAD /* Scene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Scene.swift; sourceTree = "<group>"; };
 		EBB8610B20CF342C004D5AAD /* SandboxScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SandboxScene.swift; sourceTree = "<group>"; };
 		EBB8610E20CF3524004D5AAD /* SceneManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneManager.swift; sourceTree = "<group>"; };
@@ -204,6 +208,7 @@
 				1CA84B382092B01A00465F6A /* RenderPipelineDescriptorLibrary.swift */,
 				1CA84B3A2092B1D000465F6A /* RenderPipelineStateLibrary.swift */,
 				1C6E769020ACF8C6007F1DA5 /* MeshLibrary.swift */,
+				EB7AA339212E57FF0076FC19 /* DepthStencilStateLibrary.swift */,
 			);
 			path = Libraries;
 			sourceTree = "<group>";
@@ -254,6 +259,7 @@
 			children = (
 				1CADF5A920B4DB770000F54C /* GameObject.swift */,
 				1CADF5AB20B4DB800000F54C /* Pointer.swift */,
+				EB7AA337212E56DA0076FC19 /* Cube.swift */,
 			);
 			path = "Game Objects";
 			sourceTree = "<group>";
@@ -451,7 +457,9 @@
 				EB6A608D20F27A5200454ED9 /* DebugCamera.swift in Sources */,
 				1CA84B332092AA2E00465F6A /* Preferences.swift in Sources */,
 				1CA84B352092AB2400465F6A /* ShaderLibrary.swift in Sources */,
+				EB7AA338212E56DA0076FC19 /* Cube.swift in Sources */,
 				1CDA5B7D209FE2EE00A924A1 /* Renderer.swift in Sources */,
+				EB7AA33A212E57FF0076FC19 /* DepthStencilStateLibrary.swift in Sources */,
 				EBB8610F20CF3524004D5AAD /* SceneManager.swift in Sources */,
 				1CA84B312092A97500465F6A /* Engine.swift in Sources */,
 				1C0208FB206D578100EFC375 /* GameView.swift in Sources */,

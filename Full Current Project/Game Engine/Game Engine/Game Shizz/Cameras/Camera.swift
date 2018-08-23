@@ -8,6 +8,7 @@ enum CameraTypes {
 protocol Camera {
     var cameraType: CameraTypes { get }
     var position: float3 { get set }
+    var projectionMatrix: matrix_float4x4 { get }
     func update(deltaTime: Float) 
 }
 
