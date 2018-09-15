@@ -40,6 +40,7 @@
 		EBB8610A20CF3309004D5AAD /* Scene.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBB8610920CF3309004D5AAD /* Scene.swift */; };
 		EBB8610C20CF342C004D5AAD /* SandboxScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBB8610B20CF342C004D5AAD /* SandboxScene.swift */; };
 		EBB8610F20CF3524004D5AAD /* SceneManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBB8610E20CF3524004D5AAD /* SceneManager.swift */; };
+		EBD9AE33214D7EF40080DE26 /* ColorUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBD9AE32214D7EF40080DE26 /* ColorUtil.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -100,6 +101,7 @@
 		EBB8610920CF3309004D5AAD /* Scene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Scene.swift; sourceTree = "<group>"; };
 		EBB8610B20CF342C004D5AAD /* SandboxScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SandboxScene.swift; sourceTree = "<group>"; };
 		EBB8610E20CF3524004D5AAD /* SceneManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneManager.swift; sourceTree = "<group>"; };
+		EBD9AE32214D7EF40080DE26 /* ColorUtil.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorUtil.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -150,6 +152,7 @@
 		1C0208C7206D575700EFC375 /* Game Engine */ = {
 			isa = PBXGroup;
 			children = (
+				EBD9AE31214D7EE60080DE26 /* Utils */,
 				1C477E8D20B4ECA80028C8FE /* Maths */,
 				1CA84B232092A66C00465F6A /* Core */,
 				1CA84B222092A66100465F6A /* Libraries */,
@@ -309,6 +312,14 @@
 			path = Managers;
 			sourceTree = "<group>";
 		};
+		EBD9AE31214D7EE60080DE26 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				EBD9AE32214D7EF40080DE26 /* ColorUtil.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -448,6 +459,7 @@
 				1CA84B392092B01A00465F6A /* RenderPipelineDescriptorLibrary.swift in Sources */,
 				1CADF5AA20B4DB770000F54C /* GameObject.swift in Sources */,
 				1CADF5AF20B4DBB40000F54C /* Renderable.swift in Sources */,
+				EBD9AE33214D7EF40080DE26 /* ColorUtil.swift in Sources */,
 				EBB8610A20CF3309004D5AAD /* Scene.swift in Sources */,
 				1CA84B372092AE7300465F6A /* VertexDescriptorLibrary.swift in Sources */,
 				1C0208C9206D575700EFC375 /* AppDelegate.swift in Sources */,
