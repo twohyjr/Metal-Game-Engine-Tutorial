@@ -5,9 +5,7 @@ class InstancedGameObject: Node {
     
     var material = Material()
     
-    internal var _nodes: [Node] = []
-    private var _modelConstants: [ModelConstants] = []
-    
+    internal var _nodes: [Node] = []    
     private var _modelConstantBuffer: MTLBuffer!
     
     init(meshType: MeshTypes, instanceCount: Int) {
@@ -21,7 +19,6 @@ class InstancedGameObject: Node {
     func generateInstances(_ instanceCount: Int){
         for _ in 0..<instanceCount {
             _nodes.append(Node())
-            _modelConstants.append(ModelConstants())
         }
     }
     
@@ -30,7 +27,7 @@ class InstancedGameObject: Node {
     }
     
     private func updateModelConstantsBuffer() {
-        var pointer = _modelConstantBuffer.contents().bindMemory(to: ModelConstants.self, capacity: _modelConstants.count)
+        var pointer = _modelConstantBuffer.contents().bindMemory(to: ModelConstants.self, capacity: _nodes.count)
         for node in _nodes {
             pointer.pointee.modelMatrix = matrix_multiply(self.modelMatrix, node.modelMatrix)
             pointer = pointer.advanced(by: 1)
@@ -38,7 +35,6 @@ class InstancedGameObject: Node {
     }
 
     override func update(deltaTime: Float) {
-        
         updateModelConstantsBuffer()
         
         super.update(deltaTime: deltaTime)
