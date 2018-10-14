@@ -40,6 +40,8 @@
 		EBB8610A20CF3309004D5AAD /* Scene.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBB8610920CF3309004D5AAD /* Scene.swift */; };
 		EBB8610C20CF342C004D5AAD /* SandboxScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBB8610B20CF342C004D5AAD /* SandboxScene.swift */; };
 		EBB8610F20CF3524004D5AAD /* SceneManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBB8610E20CF3524004D5AAD /* SceneManager.swift */; };
+		EBB9061E2173BC5A003B8CD0 /* InstancedGameObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBB9061D2173BC5A003B8CD0 /* InstancedGameObject.swift */; };
+		EBB906202173C211003B8CD0 /* CubeCollection.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBB9061F2173C211003B8CD0 /* CubeCollection.swift */; };
 		EBD9AE33214D7EF40080DE26 /* ColorUtil.swift in Sources */ = {isa = PBXBuildFile; fileRef = EBD9AE32214D7EF40080DE26 /* ColorUtil.swift */; };
 /* End PBXBuildFile section */
 
@@ -101,6 +103,8 @@
 		EBB8610920CF3309004D5AAD /* Scene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Scene.swift; sourceTree = "<group>"; };
 		EBB8610B20CF342C004D5AAD /* SandboxScene.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SandboxScene.swift; sourceTree = "<group>"; };
 		EBB8610E20CF3524004D5AAD /* SceneManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneManager.swift; sourceTree = "<group>"; };
+		EBB9061D2173BC5A003B8CD0 /* InstancedGameObject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InstancedGameObject.swift; sourceTree = "<group>"; };
+		EBB9061F2173C211003B8CD0 /* CubeCollection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CubeCollection.swift; sourceTree = "<group>"; };
 		EBD9AE32214D7EF40080DE26 /* ColorUtil.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorUtil.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -261,6 +265,8 @@
 			isa = PBXGroup;
 			children = (
 				1CADF5A920B4DB770000F54C /* GameObject.swift */,
+				EBB9061D2173BC5A003B8CD0 /* InstancedGameObject.swift */,
+				EBB9061F2173C211003B8CD0 /* CubeCollection.swift */,
 				1CADF5AB20B4DB800000F54C /* Pointer.swift */,
 				EB7AA337212E56DA0076FC19 /* Cube.swift */,
 			);
@@ -464,6 +470,7 @@
 				1CA84B372092AE7300465F6A /* VertexDescriptorLibrary.swift in Sources */,
 				1C0208C9206D575700EFC375 /* AppDelegate.swift in Sources */,
 				1C6E769120ACF8C6007F1DA5 /* MeshLibrary.swift in Sources */,
+				EBB9061E2173BC5A003B8CD0 /* InstancedGameObject.swift in Sources */,
 				EB6A608F20F27C8F00454ED9 /* CameraManager.swift in Sources */,
 				EB3FC4DE20D6E98A00CADFD8 /* Mouse.swift in Sources */,
 				EB6A608D20F27A5200454ED9 /* DebugCamera.swift in Sources */,
@@ -481,6 +488,7 @@
 				1C6E769520ACFC75007F1DA5 /* Node.swift in Sources */,
 				1C66A279208430880014D1E2 /* Types.swift in Sources */,
 				EB3FC4DC20D6E80A00CADFD8 /* KeyCodes.swift in Sources */,
+				EBB906202173C211003B8CD0 /* CubeCollection.swift in Sources */,
 				1C0208CE206D575700EFC375 /* Game_Engine.xcdatamodeld in Sources */,
 				EB6A608B20F2797F00454ED9 /* Camera.swift in Sources */,
 				1CADF5AC20B4DB800000F54C /* Pointer.swift in Sources */,
