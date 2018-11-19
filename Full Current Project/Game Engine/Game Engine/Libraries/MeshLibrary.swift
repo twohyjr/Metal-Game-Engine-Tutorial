@@ -49,7 +49,9 @@ class CustomMesh: Mesh {
     func createVertices(){ }
     
     func createBuffers(){
-        vertexBuffer = Engine.Device.makeBuffer(bytes: vertices, length: Vertex.stride(vertices.count), options: [])
+        vertexBuffer = Engine.Device.makeBuffer(bytes: vertices,
+                                                length: Vertex.stride(vertices.count),
+                                                options: [])
     }
     
     func setInstanceCount(_ count: Int) {
@@ -57,7 +59,8 @@ class CustomMesh: Mesh {
     }
     
     func drawPrimitives(_ renderCommandEncoder: MTLRenderCommandEncoder) {
-        renderCommandEncoder.setVertexBuffer(vertexBuffer, offset: 0, index: 0)
+        renderCommandEncoder.setVertexBuffer(vertexBuffer, offset: 0,
+                                             index: 0)
         
         renderCommandEncoder.drawPrimitives(type: .triangle,
                                             vertexStart: 0,

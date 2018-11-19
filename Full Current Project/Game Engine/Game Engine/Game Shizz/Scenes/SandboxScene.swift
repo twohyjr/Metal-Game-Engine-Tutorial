@@ -7,7 +7,7 @@ class SandboxScene: Scene{
     override func buildScene() {
         addCamera(debugCamera)
         
-        debugCamera.position.z = 100
+        debugCamera.position.z = 70
 
         addCubes()
     }
@@ -15,7 +15,7 @@ class SandboxScene: Scene{
     var cubeCollection: CubeCollection!
     func addCubes(){
         
-        cubeCollection = CubeCollection(cubesWide: 20, cubesHigh: 20, cubesBack: 20)
+        cubeCollection = CubeCollection(cubesWide: 10, cubesHigh: 10, cubesBack: 10)
         addChild(cubeCollection)
     }
     

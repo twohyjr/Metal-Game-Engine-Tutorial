@@ -10,9 +10,8 @@ class CubeCollection: InstancedGameObject {
         self.cubesWide = cubesWide
         self.cubesHigh = cubesHigh
         self.cubesBack = cubesBack
-        
-        print("CUBE COUNT: \(cubesWide * cubesHigh * cubesBack)")
-        
+        self.name = "Cube Collection"
+
         setColor(ColorUtil.randomColor)
     }
     
