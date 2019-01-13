@@ -35,11 +35,11 @@ class Node {
     /// Override this function instead of the update function
     func doUpdate() { }
     
-    func update(deltaTime: Float){
+    func update(){
         doUpdate()
         for child in children{
             child.parentModelMatrix = self.modelMatrix
-            child.update(deltaTime: deltaTime)
+            child.update()
         }
     }
     

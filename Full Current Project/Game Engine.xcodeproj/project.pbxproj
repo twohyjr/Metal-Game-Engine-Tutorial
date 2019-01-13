@@ -225,13 +225,13 @@
 		1CA84B232092A66C00465F6A /* Core */ = {
 			isa = PBXGroup;
 			children = (
+				1CA84B302092A97500465F6A /* Engine.swift */,
+				C608C90B21EB11E000B58EC7 /* GameTime.swift */,
+				1CA84B322092AA2E00465F6A /* Preferences.swift */,
 				C608C90D21EB126B00B58EC7 /* types */,
 				EB3FC4D820D6E77500CADFD8 /* Input */,
 				1C477E8D20B4ECA80028C8FE /* maths */,
 				EBD9AE31214D7EE60080DE26 /* utils */,
-				1CA84B302092A97500465F6A /* Engine.swift */,
-				C608C90B21EB11E000B58EC7 /* GameTime.swift */,
-				1CA84B322092AA2E00465F6A /* Preferences.swift */,
 			);
 			path = Core;
 			sourceTree = "<group>";
@@ -259,15 +259,15 @@
 			isa = PBXGroup;
 			children = (
 				1C6E769420ACFC75007F1DA5 /* Node.swift */,
-				EB6A608920F2796800454ED9 /* Cameras */,
-				EBB8610820CF32F8004D5AAD /* Scenes */,
-				1CADF5A820B4DB6D0000F54C /* Game Objects */,
-				1CADF5AD20B4DBA30000F54C /* Protocols */,
+				EB6A608920F2796800454ED9 /* cameras */,
+				EBB8610820CF32F8004D5AAD /* scenes */,
+				1CADF5A820B4DB6D0000F54C /* game objects */,
+				1CADF5AD20B4DBA30000F54C /* protocols */,
 			);
 			path = "Game Shizz";
 			sourceTree = "<group>";
 		};
-		1CADF5A820B4DB6D0000F54C /* Game Objects */ = {
+		1CADF5A820B4DB6D0000F54C /* game objects */ = {
 			isa = PBXGroup;
 			children = (
 				1CADF5A920B4DB770000F54C /* GameObject.swift */,
@@ -277,15 +277,15 @@
 				EB7AA337212E56DA0076FC19 /* Cube.swift */,
 				C608C90921EB113500B58EC7 /* Quad.swift */,
 			);
-			path = "Game Objects";
+			path = "game objects";
 			sourceTree = "<group>";
 		};
-		1CADF5AD20B4DBA30000F54C /* Protocols */ = {
+		1CADF5AD20B4DBA30000F54C /* protocols */ = {
 			isa = PBXGroup;
 			children = (
 				1CADF5AE20B4DBB40000F54C /* Renderable.swift */,
 			);
-			path = Protocols;
+			path = protocols;
 			sourceTree = "<group>";
 		};
 		C608C90D21EB126B00B58EC7 /* types */ = {
@@ -301,8 +301,8 @@
 		C608C90E21EB12A300B58EC7 /* Entities */ = {
 			isa = PBXGroup;
 			children = (
-				C608C91621EB139800B58EC7 /* libraries */,
 				C608C91221EB131C00B58EC7 /* Entities.swift */,
+				C608C91621EB139800B58EC7 /* libraries */,
 			);
 			path = Entities;
 			sourceTree = "<group>";
@@ -310,9 +310,9 @@
 		C608C90F21EB12AC00B58EC7 /* Graphics */ = {
 			isa = PBXGroup;
 			children = (
+				C608C91021EB12BC00B58EC7 /* Graphics.swift */,
 				C608C91721EB13A200B58EC7 /* libraries */,
 				1CA84B252092A67500465F6A /* shaders */,
-				C608C91021EB12BC00B58EC7 /* Graphics.swift */,
 			);
 			path = Graphics;
 			sourceTree = "<group>";
@@ -348,22 +348,22 @@
 			path = Input;
 			sourceTree = "<group>";
 		};
-		EB6A608920F2796800454ED9 /* Cameras */ = {
+		EB6A608920F2796800454ED9 /* cameras */ = {
 			isa = PBXGroup;
 			children = (
 				EB6A608A20F2797F00454ED9 /* Camera.swift */,
 				EB6A608C20F27A5200454ED9 /* DebugCamera.swift */,
 			);
-			path = Cameras;
+			path = cameras;
 			sourceTree = "<group>";
 		};
-		EBB8610820CF32F8004D5AAD /* Scenes */ = {
+		EBB8610820CF32F8004D5AAD /* scenes */ = {
 			isa = PBXGroup;
 			children = (
 				EBB8610920CF3309004D5AAD /* Scene.swift */,
 				EBB8610B20CF342C004D5AAD /* SandboxScene.swift */,
 			);
-			path = Scenes;
+			path = scenes;
 			sourceTree = "<group>";
 		};
 		EBB8610D20CF3511004D5AAD /* Managers */ = {
