@@ -10,7 +10,7 @@ class InstancedGameObject: Node {
     
     init(meshType: MeshTypes, instanceCount: Int) {
         super.init(name: "Instanced Game Object")
-        self._mesh = MeshLibrary.Mesh(meshType)
+        self._mesh = Entities.Meshes[meshType]
         self._mesh.setInstanceCount(instanceCount)
         self.generateInstances(instanceCount)
         self.createBuffers(instanceCount)
@@ -43,8 +43,8 @@ class InstancedGameObject: Node {
 
 extension InstancedGameObject: Renderable {
     func doRender(_ renderCommandEncoder: MTLRenderCommandEncoder) {
-        renderCommandEncoder.setRenderPipelineState(RenderPipelineStateLibrary.PipelineState(.Instanced))
-        renderCommandEncoder.setDepthStencilState(DepthStencilStateLibrary.DepthStencilState(.Less))
+        renderCommandEncoder.setRenderPipelineState(Graphics.RenderPipelineStates[.Instanced])
+        renderCommandEncoder.setDepthStencilState(Graphics.DepthStencilStates[.Less])
         
         //Vertex Shader
         renderCommandEncoder.setVertexBuffer(_modelConstantBuffer, offset: 0, index: 2)

@@ -4,20 +4,16 @@ enum DepthStencilStateTypes {
     case Less
 }
 
-class DepthStencilStateLibrary {
+class DepthStencilStateLibrary: Library<DepthStencilStateTypes, MTLDepthStencilState> {
     
-    private static var _depthStencilStates: [DepthStencilStateTypes: DepthStencilState] = [:]
+    private var _library: [DepthStencilStateTypes: DepthStencilState] = [:]
     
-    public static func Intitialize(){
-        createDefaultDepthStencilStates()
+    override func fillLibrary() {
+        _library.updateValue(Less_DepthStencilState(), forKey: .Less)
     }
     
-    private static func createDefaultDepthStencilStates(){
-        _depthStencilStates.updateValue(Less_DepthStencilState(), forKey: .Less)
-    }
-    
-    public static func DepthStencilState(_ depthStencilStateType: DepthStencilStateTypes)->MTLDepthStencilState{
-        return _depthStencilStates[depthStencilStateType]!.depthStencilState
+    override subscript(_ type: DepthStencilStateTypes)->MTLDepthStencilState{
+        return _library[type]!.depthStencilState
     }
     
 }
