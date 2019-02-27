@@ -4,7 +4,7 @@ enum FragmentShaderTypes {
     case Basic
 }
 
-class FragmenthaderLibrary: Library<FragmentShaderTypes, MTLFunction> {
+class FragmentShaderLibrary: Library<FragmentShaderTypes, MTLFunction> {
     
     private var _library: [FragmentShaderTypes: Shader] = [:]
     
