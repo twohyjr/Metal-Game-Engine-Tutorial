@@ -36,7 +36,7 @@ class CubeCollection: InstancedGameObject {
                     _nodes[index].position.z = posZ
                     _nodes[index].rotation.z -= deltaTime * 2
                     _nodes[index].rotation.y -= deltaTime * 2
-                    _nodes[index].scale = float3(0.3)
+                    _nodes[index].scale = float3(0.3, 0.3, 0.3)
                     index += 1
                 }
             }
