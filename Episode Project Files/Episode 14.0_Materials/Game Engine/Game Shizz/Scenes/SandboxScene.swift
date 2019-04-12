@@ -20,7 +20,7 @@ class SandboxScene: Scene{
                 let cube = Cube()
                 cube.position.y = posY
                 cube.position.x = posX
-                cube.scale = float3(0.3)
+                cube.scale = float3(0.3, 0.3, 0.3)
                 cube.setColor(ColorUtil.randomColor)
                 addChild(cube)
             }
