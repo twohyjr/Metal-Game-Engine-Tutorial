@@ -14,7 +14,7 @@ class GameObject: Node {
     func update(deltaTime: Float){
         time += deltaTime
 
-        self.scale = float3(cos(time))
+        self.scale = float3(repeating: cos(time))
 
         updateModelConstants()
     }
