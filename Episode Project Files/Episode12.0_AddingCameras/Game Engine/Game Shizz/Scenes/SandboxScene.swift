@@ -14,7 +14,7 @@ class SandboxScene: Scene{
                 let pointer = Pointer(camera: debugCamera)
                 pointer.position.y = Float(Float(y) + 0.5) / Float(count)
                 pointer.position.x = Float(Float(x) + 0.5) / Float(count)
-                pointer.scale = float3(0.1)
+                pointer.scale = float3(0.1, 0.1, 0.1)
                 addChild(pointer)
             }
         }

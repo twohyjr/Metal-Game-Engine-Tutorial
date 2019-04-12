@@ -3,7 +3,7 @@ import simd
 class DebugCamera: Camera {
     var cameraType: CameraTypes = CameraTypes.Debug
     
-    var position: float3 = float3(0)
+    var position: float3 = float3(0,0,0)
     
     func update(deltaTime: Float) {
         if(Keyboard.IsKeyPressed(.leftArrow)){
