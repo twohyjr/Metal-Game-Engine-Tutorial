@@ -5,9 +5,9 @@ class Node {
     private var _name: String = "Node"
     private var _id: String!
     
-    private var _position: float3 = float3(0)
-    private var _scale: float3 = float3(1)
-    private var _rotation: float3 = float3(0)
+    private var _position: float3 = float3()
+    private var _scale: float3 = float3(1,1,1)
+    private var _rotation: float3 = float3()
     
     var parentModelMatrix = matrix_identity_float4x4
     
@@ -93,7 +93,7 @@ extension Node {
     
     //Scaling
     func setScale(_ scale: float3){ self._scale = scale }
-    func setScale(_ scale: Float){setScale(float3(scale))}
+    func setScale(_ scale: Float){setScale(float3(scale, scale, scale))}
     func setScaleX(_ scaleX: Float){ self._scale.x = scaleX }
     func setScaleY(_ scaleY: Float){ self._scale.y = scaleY }
     func setScaleZ(_ scaleZ: Float){ self._scale.z = scaleZ }
