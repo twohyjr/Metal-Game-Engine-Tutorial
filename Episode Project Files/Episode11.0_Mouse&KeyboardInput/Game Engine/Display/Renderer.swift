@@ -1,7 +1,7 @@
 import MetalKit
 
 class Renderer: NSObject {
-    public static var ScreenSize = float2(0)
+    public static var ScreenSize = float2(0,0)
     
     init(_ mtkView: MTKView) {
         super.init()
