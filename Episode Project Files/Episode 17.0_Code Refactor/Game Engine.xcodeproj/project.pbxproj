@@ -15,7 +15,6 @@
 		1C0208EA206D575700EFC375 /* Game_EngineUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C0208E9206D575700EFC375 /* Game_EngineUITests.swift */; };
 		1C0208FB206D578100EFC375 /* GameView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C0208FA206D578100EFC375 /* GameView.swift */; };
 		1C0208FD206D579800EFC375 /* BasicShaders.metal in Sources */ = {isa = PBXBuildFile; fileRef = 1C0208FC206D579800EFC375 /* BasicShaders.metal */; };
-		1C477E8F20B4ECB90028C8FE /* Math.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C477E8E20B4ECB90028C8FE /* Math.swift */; };
 		1C66A279208430880014D1E2 /* MetalTypes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C66A278208430880014D1E2 /* MetalTypes.swift */; };
 		1C6E769120ACF8C6007F1DA5 /* MeshLibrary.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C6E769020ACF8C6007F1DA5 /* MeshLibrary.swift */; };
 		1C6E769520ACFC75007F1DA5 /* Node.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1C6E769420ACFC75007F1DA5 /* Node.swift */; };
@@ -38,6 +37,7 @@
 		C608C91D21EB167300B58EC7 /* FragmentShaderLibrary.swift in Sources */ = {isa = PBXBuildFile; fileRef = C608C91C21EB167300B58EC7 /* FragmentShaderLibrary.swift */; };
 		C608C91F21EB1E8200B58EC7 /* Shared.metal in Sources */ = {isa = PBXBuildFile; fileRef = C608C91E21EB1E8200B58EC7 /* Shared.metal */; };
 		C608C92321EBB23500B58EC7 /* InstancedShaders.metal in Sources */ = {isa = PBXBuildFile; fileRef = C608C92221EBB23500B58EC7 /* InstancedShaders.metal */; };
+		C6FBE62E22604856000CD764 /* Math.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6FBE62D22604856000CD764 /* Math.swift */; };
 		EB3FC4DA20D6E78500CADFD8 /* Keyboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB3FC4D920D6E78500CADFD8 /* Keyboard.swift */; };
 		EB3FC4DC20D6E80A00CADFD8 /* KeyCodes.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB3FC4DB20D6E80A00CADFD8 /* KeyCodes.swift */; };
 		EB3FC4DE20D6E98A00CADFD8 /* Mouse.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB3FC4DD20D6E98A00CADFD8 /* Mouse.swift */; };
@@ -87,7 +87,6 @@
 		1C0208EB206D575700EFC375 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1C0208FA206D578100EFC375 /* GameView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameView.swift; sourceTree = "<group>"; };
 		1C0208FC206D579800EFC375 /* BasicShaders.metal */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.metal; path = BasicShaders.metal; sourceTree = "<group>"; };
-		1C477E8E20B4ECB90028C8FE /* Math.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Math.swift; sourceTree = "<group>"; };
 		1C66A278208430880014D1E2 /* MetalTypes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MetalTypes.swift; sourceTree = "<group>"; };
 		1C6E769020ACF8C6007F1DA5 /* MeshLibrary.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeshLibrary.swift; sourceTree = "<group>"; };
 		1C6E769420ACFC75007F1DA5 /* Node.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Node.swift; path = "Game Engine/Game Shizz/Node.swift"; sourceTree = SOURCE_ROOT; };
@@ -110,6 +109,7 @@
 		C608C91C21EB167300B58EC7 /* FragmentShaderLibrary.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FragmentShaderLibrary.swift; sourceTree = "<group>"; };
 		C608C91E21EB1E8200B58EC7 /* Shared.metal */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.metal; path = Shared.metal; sourceTree = "<group>"; };
 		C608C92221EBB23500B58EC7 /* InstancedShaders.metal */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.metal; path = InstancedShaders.metal; sourceTree = "<group>"; };
+		C6FBE62D22604856000CD764 /* Math.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = Math.swift; path = "../../../../../Episode 18.0_TextureCoordinates/Game Engine/Core/maths/Math.swift"; sourceTree = "<group>"; };
 		EB3FC4D920D6E78500CADFD8 /* Keyboard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Keyboard.swift; sourceTree = "<group>"; };
 		EB3FC4DB20D6E80A00CADFD8 /* KeyCodes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyCodes.swift; sourceTree = "<group>"; };
 		EB3FC4DD20D6E98A00CADFD8 /* Mouse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Mouse.swift; sourceTree = "<group>"; };
@@ -218,7 +218,7 @@
 		1C477E8D20B4ECA80028C8FE /* maths */ = {
 			isa = PBXGroup;
 			children = (
-				1C477E8E20B4ECB90028C8FE /* Math.swift */,
+				C6FBE62D22604856000CD764 /* Math.swift */,
 			);
 			name = maths;
 			path = Input/maths;
@@ -454,18 +454,18 @@
 				TargetAttributes = {
 					1C0208C4206D575700EFC375 = {
 						CreatedOnToolsVersion = 9.2;
-						LastSwiftMigration = 1000;
+						LastSwiftMigration = 1020;
 						ProvisioningStyle = Automatic;
 					};
 					1C0208D9206D575700EFC375 = {
 						CreatedOnToolsVersion = 9.2;
-						LastSwiftMigration = 1000;
+						LastSwiftMigration = 1020;
 						ProvisioningStyle = Automatic;
 						TestTargetID = 1C0208C4206D575700EFC375;
 					};
 					1C0208E4206D575700EFC375 = {
 						CreatedOnToolsVersion = 9.2;
-						LastSwiftMigration = 1000;
+						LastSwiftMigration = 1020;
 						ProvisioningStyle = Automatic;
 						TestTargetID = 1C0208C4206D575700EFC375;
 					};
@@ -544,7 +544,6 @@
 				EBB8610F20CF3524004D5AAD /* SceneManager.swift in Sources */,
 				1CA84B312092A97500465F6A /* Engine.swift in Sources */,
 				1C0208FB206D578100EFC375 /* GameView.swift in Sources */,
-				1C477E8F20B4ECB90028C8FE /* Math.swift in Sources */,
 				EB3FC4DA20D6E78500CADFD8 /* Keyboard.swift in Sources */,
 				1C0208FD206D579800EFC375 /* BasicShaders.metal in Sources */,
 				1C6E769520ACFC75007F1DA5 /* Node.swift in Sources */,
@@ -554,6 +553,7 @@
 				EB3FC4DC20D6E80A00CADFD8 /* KeyCodes.swift in Sources */,
 				C608C91D21EB167300B58EC7 /* FragmentShaderLibrary.swift in Sources */,
 				C608C92321EBB23500B58EC7 /* InstancedShaders.metal in Sources */,
+				C6FBE62E22604856000CD764 /* Math.swift in Sources */,
 				EBB906202173C211003B8CD0 /* CubeCollection.swift in Sources */,
 				1C0208CE206D575700EFC375 /* Game_Engine.xcdatamodeld in Sources */,
 				EB6A608B20F2797F00454ED9 /* Camera.swift in Sources */,
@@ -731,7 +731,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "net.ricktwohy.Game-Engine";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 			};
 			name = Debug;
 		};
@@ -747,7 +747,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "net.ricktwohy.Game-Engine";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 			};
 			name = Release;
 		};
@@ -763,7 +763,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "net.ricktwohy.Game-EngineTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Game Engine.app/Contents/MacOS/Game Engine";
 			};
 			name = Debug;
@@ -780,7 +780,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "net.ricktwohy.Game-EngineTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Game Engine.app/Contents/MacOS/Game Engine";
 			};
 			name = Release;
@@ -796,7 +796,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "net.ricktwohy.Game-EngineUITests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TEST_TARGET_NAME = "Game Engine";
 			};
 			name = Debug;
@@ -812,7 +812,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks @loader_path/../Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "net.ricktwohy.Game-EngineUITests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TEST_TARGET_NAME = "Game Engine";
 			};
 			name = Release;
