@@ -46,3 +46,6 @@ struct Material: sizeable{
     var useTexture: Bool = false
 }
 
+struct LightData: sizeable {
+    var position: float3 = float3(0,0,0)
+}
