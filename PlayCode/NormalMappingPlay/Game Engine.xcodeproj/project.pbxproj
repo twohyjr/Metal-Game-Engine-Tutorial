@@ -40,30 +40,15 @@
 		C60ED7CE22358D6100B1B94B /* PartyPirateParot.png in Resources */ = {isa = PBXBuildFile; fileRef = C60ED7CD22358D6100B1B94B /* PartyPirateParot.png */; };
 		C60ED7D022358EAD00B1B94B /* TextureLibrary.swift in Sources */ = {isa = PBXBuildFile; fileRef = C60ED7CF22358EAD00B1B94B /* TextureLibrary.swift */; };
 		C60ED7D22235900C00B1B94B /* SamplerStateLibrary.swift in Sources */ = {isa = PBXBuildFile; fileRef = C60ED7D12235900C00B1B94B /* SamplerStateLibrary.swift */; };
-		C631F2D322B0877000DA3C04 /* sphere.obj in Resources */ = {isa = PBXBuildFile; fileRef = C631F2D222B0877000DA3C04 /* sphere.obj */; };
 		C631F2D522B08AE800DA3C04 /* Sphere.swift in Sources */ = {isa = PBXBuildFile; fileRef = C631F2D422B08AE800DA3C04 /* Sphere.swift */; };
-		C631F2DF22B0A11000DA3C04 /* medieval-brick_ambient_occlusion.png in Resources */ = {isa = PBXBuildFile; fileRef = C631F2D722B0A11000DA3C04 /* medieval-brick_ambient_occlusion.png */; };
-		C631F2E022B0A11000DA3C04 /* medieval-brick_basecolor.png in Resources */ = {isa = PBXBuildFile; fileRef = C631F2D822B0A11000DA3C04 /* medieval-brick_basecolor.png */; };
-		C631F2E122B0A11000DA3C04 /* medieval-brick_normal 2.png in Resources */ = {isa = PBXBuildFile; fileRef = C631F2D922B0A11000DA3C04 /* medieval-brick_normal 2.png */; };
-		C631F2E222B0A11000DA3C04 /* medieval-brick_height.png in Resources */ = {isa = PBXBuildFile; fileRef = C631F2DA22B0A11000DA3C04 /* medieval-brick_height.png */; };
-		C631F2E322B0A11000DA3C04 /* medieval-brick_normal.png in Resources */ = {isa = PBXBuildFile; fileRef = C631F2DB22B0A11000DA3C04 /* medieval-brick_normal.png */; };
-		C631F2E422B0A11000DA3C04 /* medieval-brick_preview.png in Resources */ = {isa = PBXBuildFile; fileRef = C631F2DC22B0A11000DA3C04 /* medieval-brick_preview.png */; };
-		C631F2E522B0A11000DA3C04 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = C631F2DD22B0A11000DA3C04 /* README.md */; };
-		C631F2E622B0A11000DA3C04 /* medieval-brick_roughness.png in Resources */ = {isa = PBXBuildFile; fileRef = C631F2DE22B0A11000DA3C04 /* medieval-brick_roughness.png */; };
-		C631F2EF22B0A34000DA3C04 /* pavement_preview.png in Resources */ = {isa = PBXBuildFile; fileRef = C631F2E822B0A34000DA3C04 /* pavement_preview.png */; };
-		C631F2F022B0A34000DA3C04 /* pavement_glossiness.png in Resources */ = {isa = PBXBuildFile; fileRef = C631F2E922B0A34000DA3C04 /* pavement_glossiness.png */; };
-		C631F2F122B0A34000DA3C04 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = C631F2EA22B0A34000DA3C04 /* README.md */; };
-		C631F2F222B0A34000DA3C04 /* pavement_ambient_occlusion.png in Resources */ = {isa = PBXBuildFile; fileRef = C631F2EB22B0A34000DA3C04 /* pavement_ambient_occlusion.png */; };
-		C631F2F322B0A34000DA3C04 /* pavement_basecolor.png in Resources */ = {isa = PBXBuildFile; fileRef = C631F2EC22B0A34000DA3C04 /* pavement_basecolor.png */; };
-		C631F2F422B0A34000DA3C04 /* pavement_normal.png in Resources */ = {isa = PBXBuildFile; fileRef = C631F2ED22B0A34000DA3C04 /* pavement_normal.png */; };
-		C631F2F522B0A34000DA3C04 /* pavement_height.png in Resources */ = {isa = PBXBuildFile; fileRef = C631F2EE22B0A34000DA3C04 /* pavement_height.png */; };
-		C631F2FE22B0A3FE00DA3C04 /* sand_ambient_occlusion.png in Resources */ = {isa = PBXBuildFile; fileRef = C631F2F722B0A3FE00DA3C04 /* sand_ambient_occlusion.png */; };
-		C631F2FF22B0A3FE00DA3C04 /* sand_glossiness.png in Resources */ = {isa = PBXBuildFile; fileRef = C631F2F822B0A3FE00DA3C04 /* sand_glossiness.png */; };
-		C631F30022B0A3FE00DA3C04 /* sand_height.png in Resources */ = {isa = PBXBuildFile; fileRef = C631F2F922B0A3FE00DA3C04 /* sand_height.png */; };
-		C631F30122B0A3FE00DA3C04 /* sand_normal.png in Resources */ = {isa = PBXBuildFile; fileRef = C631F2FA22B0A3FE00DA3C04 /* sand_normal.png */; };
-		C631F30222B0A3FE00DA3C04 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = C631F2FB22B0A3FE00DA3C04 /* README.md */; };
-		C631F30322B0A3FE00DA3C04 /* sand_basecolor.png in Resources */ = {isa = PBXBuildFile; fileRef = C631F2FC22B0A3FE00DA3C04 /* sand_basecolor.png */; };
-		C631F30422B0A3FE00DA3C04 /* sand_preview.png in Resources */ = {isa = PBXBuildFile; fileRef = C631F2FD22B0A3FE00DA3C04 /* sand_preview.png */; };
+		C631F31722B1BCD400DA3C04 /* sand_ambient_occlusion.png in Resources */ = {isa = PBXBuildFile; fileRef = C631F31022B1BCD400DA3C04 /* sand_ambient_occlusion.png */; };
+		C631F31822B1BCD400DA3C04 /* sand_glossiness.png in Resources */ = {isa = PBXBuildFile; fileRef = C631F31122B1BCD400DA3C04 /* sand_glossiness.png */; };
+		C631F31922B1BCD400DA3C04 /* sand_height.png in Resources */ = {isa = PBXBuildFile; fileRef = C631F31222B1BCD400DA3C04 /* sand_height.png */; };
+		C631F31A22B1BCD400DA3C04 /* sand_normal.png in Resources */ = {isa = PBXBuildFile; fileRef = C631F31322B1BCD400DA3C04 /* sand_normal.png */; };
+		C631F31B22B1BCD400DA3C04 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = C631F31422B1BCD400DA3C04 /* README.md */; };
+		C631F31C22B1BCD400DA3C04 /* sand_basecolor.png in Resources */ = {isa = PBXBuildFile; fileRef = C631F31522B1BCD400DA3C04 /* sand_basecolor.png */; };
+		C631F31D22B1BCD400DA3C04 /* sand_preview.png in Resources */ = {isa = PBXBuildFile; fileRef = C631F31622B1BCD400DA3C04 /* sand_preview.png */; };
+		C631F31F22B1BCFE00DA3C04 /* sphere.obj in Resources */ = {isa = PBXBuildFile; fileRef = C631F31E22B1BCFE00DA3C04 /* sphere.obj */; };
 		C68F50DE221CD09C0091E35F /* Math.swift in Sources */ = {isa = PBXBuildFile; fileRef = C68F50DD221CD09C0091E35F /* Math.swift */; };
 		C6DC12822252F7D3002E5A09 /* cruiser.obj in Resources */ = {isa = PBXBuildFile; fileRef = C6DC127F2252F7D3002E5A09 /* cruiser.obj */; };
 		C6DC12832252F7D3002E5A09 /* cruiser.bmp in Resources */ = {isa = PBXBuildFile; fileRef = C6DC12802252F7D3002E5A09 /* cruiser.bmp */; };
@@ -146,30 +131,15 @@
 		C60ED7CD22358D6100B1B94B /* PartyPirateParot.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = PartyPirateParot.png; sourceTree = "<group>"; };
 		C60ED7CF22358EAD00B1B94B /* TextureLibrary.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextureLibrary.swift; sourceTree = "<group>"; };
 		C60ED7D12235900C00B1B94B /* SamplerStateLibrary.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SamplerStateLibrary.swift; sourceTree = "<group>"; };
-		C631F2D222B0877000DA3C04 /* sphere.obj */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = sphere.obj; path = "../../../../../../../../Downloads/filament-master-1/assets/models/sphere/sphere.obj"; sourceTree = "<group>"; };
 		C631F2D422B08AE800DA3C04 /* Sphere.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sphere.swift; sourceTree = "<group>"; };
-		C631F2D722B0A11000DA3C04 /* medieval-brick_ambient_occlusion.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "medieval-brick_ambient_occlusion.png"; sourceTree = "<group>"; };
-		C631F2D822B0A11000DA3C04 /* medieval-brick_basecolor.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "medieval-brick_basecolor.png"; sourceTree = "<group>"; };
-		C631F2D922B0A11000DA3C04 /* medieval-brick_normal 2.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "medieval-brick_normal 2.png"; sourceTree = "<group>"; };
-		C631F2DA22B0A11000DA3C04 /* medieval-brick_height.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "medieval-brick_height.png"; sourceTree = "<group>"; };
-		C631F2DB22B0A11000DA3C04 /* medieval-brick_normal.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "medieval-brick_normal.png"; sourceTree = "<group>"; };
-		C631F2DC22B0A11000DA3C04 /* medieval-brick_preview.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "medieval-brick_preview.png"; sourceTree = "<group>"; };
-		C631F2DD22B0A11000DA3C04 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
-		C631F2DE22B0A11000DA3C04 /* medieval-brick_roughness.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "medieval-brick_roughness.png"; sourceTree = "<group>"; };
-		C631F2E822B0A34000DA3C04 /* pavement_preview.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = pavement_preview.png; sourceTree = "<group>"; };
-		C631F2E922B0A34000DA3C04 /* pavement_glossiness.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = pavement_glossiness.png; sourceTree = "<group>"; };
-		C631F2EA22B0A34000DA3C04 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
-		C631F2EB22B0A34000DA3C04 /* pavement_ambient_occlusion.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = pavement_ambient_occlusion.png; sourceTree = "<group>"; };
-		C631F2EC22B0A34000DA3C04 /* pavement_basecolor.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = pavement_basecolor.png; sourceTree = "<group>"; };
-		C631F2ED22B0A34000DA3C04 /* pavement_normal.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = pavement_normal.png; sourceTree = "<group>"; };
-		C631F2EE22B0A34000DA3C04 /* pavement_height.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = pavement_height.png; sourceTree = "<group>"; };
-		C631F2F722B0A3FE00DA3C04 /* sand_ambient_occlusion.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = sand_ambient_occlusion.png; sourceTree = "<group>"; };
-		C631F2F822B0A3FE00DA3C04 /* sand_glossiness.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = sand_glossiness.png; sourceTree = "<group>"; };
-		C631F2F922B0A3FE00DA3C04 /* sand_height.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = sand_height.png; sourceTree = "<group>"; };
-		C631F2FA22B0A3FE00DA3C04 /* sand_normal.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = sand_normal.png; sourceTree = "<group>"; };
-		C631F2FB22B0A3FE00DA3C04 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
-		C631F2FC22B0A3FE00DA3C04 /* sand_basecolor.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = sand_basecolor.png; sourceTree = "<group>"; };
-		C631F2FD22B0A3FE00DA3C04 /* sand_preview.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = sand_preview.png; sourceTree = "<group>"; };
+		C631F31022B1BCD400DA3C04 /* sand_ambient_occlusion.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = sand_ambient_occlusion.png; sourceTree = "<group>"; };
+		C631F31122B1BCD400DA3C04 /* sand_glossiness.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = sand_glossiness.png; sourceTree = "<group>"; };
+		C631F31222B1BCD400DA3C04 /* sand_height.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = sand_height.png; sourceTree = "<group>"; };
+		C631F31322B1BCD400DA3C04 /* sand_normal.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = sand_normal.png; sourceTree = "<group>"; };
+		C631F31422B1BCD400DA3C04 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		C631F31522B1BCD400DA3C04 /* sand_basecolor.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = sand_basecolor.png; sourceTree = "<group>"; };
+		C631F31622B1BCD400DA3C04 /* sand_preview.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = sand_preview.png; sourceTree = "<group>"; };
+		C631F31E22B1BCFE00DA3C04 /* sphere.obj */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = sphere.obj; sourceTree = "<group>"; };
 		C68F50DD221CD09C0091E35F /* Math.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Math.swift; sourceTree = "<group>"; };
 		C6DC127F2252F7D3002E5A09 /* cruiser.obj */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = cruiser.obj; sourceTree = "<group>"; };
 		C6DC12802252F7D3002E5A09 /* cruiser.bmp */ = {isa = PBXFileReference; lastKnownFileType = image.bmp; path = cruiser.bmp; sourceTree = "<group>"; };
@@ -410,55 +380,24 @@
 		C60ED7CC22358D4B00B1B94B /* res */ = {
 			isa = PBXGroup;
 			children = (
-				C631F2F622B0A3FE00DA3C04 /* sand textures */,
-				C631F2E722B0A34000DA3C04 /* pavement textures */,
-				C631F2D622B0A11000DA3C04 /* medieval brick textures */,
-				C631F2D222B0877000DA3C04 /* sphere.obj */,
+				C631F31E22B1BCFE00DA3C04 /* sphere.obj */,
+				C631F30F22B1BCD400DA3C04 /* sand textures */,
 				C6DC127E2252F7C6002E5A09 /* cruiser */,
 				C60ED7CD22358D6100B1B94B /* PartyPirateParot.png */,
 			);
 			path = res;
 			sourceTree = "<group>";
 		};
-		C631F2D622B0A11000DA3C04 /* medieval brick textures */ = {
+		C631F30F22B1BCD400DA3C04 /* sand textures */ = {
 			isa = PBXGroup;
 			children = (
-				C631F2D722B0A11000DA3C04 /* medieval-brick_ambient_occlusion.png */,
-				C631F2D822B0A11000DA3C04 /* medieval-brick_basecolor.png */,
-				C631F2D922B0A11000DA3C04 /* medieval-brick_normal 2.png */,
-				C631F2DA22B0A11000DA3C04 /* medieval-brick_height.png */,
-				C631F2DB22B0A11000DA3C04 /* medieval-brick_normal.png */,
-				C631F2DC22B0A11000DA3C04 /* medieval-brick_preview.png */,
-				C631F2DD22B0A11000DA3C04 /* README.md */,
-				C631F2DE22B0A11000DA3C04 /* medieval-brick_roughness.png */,
-			);
-			path = "medieval brick textures";
-			sourceTree = "<group>";
-		};
-		C631F2E722B0A34000DA3C04 /* pavement textures */ = {
-			isa = PBXGroup;
-			children = (
-				C631F2E822B0A34000DA3C04 /* pavement_preview.png */,
-				C631F2E922B0A34000DA3C04 /* pavement_glossiness.png */,
-				C631F2EA22B0A34000DA3C04 /* README.md */,
-				C631F2EB22B0A34000DA3C04 /* pavement_ambient_occlusion.png */,
-				C631F2EC22B0A34000DA3C04 /* pavement_basecolor.png */,
-				C631F2ED22B0A34000DA3C04 /* pavement_normal.png */,
-				C631F2EE22B0A34000DA3C04 /* pavement_height.png */,
-			);
-			path = "pavement textures";
-			sourceTree = "<group>";
-		};
-		C631F2F622B0A3FE00DA3C04 /* sand textures */ = {
-			isa = PBXGroup;
-			children = (
-				C631F2F722B0A3FE00DA3C04 /* sand_ambient_occlusion.png */,
-				C631F2F822B0A3FE00DA3C04 /* sand_glossiness.png */,
-				C631F2F922B0A3FE00DA3C04 /* sand_height.png */,
-				C631F2FA22B0A3FE00DA3C04 /* sand_normal.png */,
-				C631F2FB22B0A3FE00DA3C04 /* README.md */,
-				C631F2FC22B0A3FE00DA3C04 /* sand_basecolor.png */,
-				C631F2FD22B0A3FE00DA3C04 /* sand_preview.png */,
+				C631F31022B1BCD400DA3C04 /* sand_ambient_occlusion.png */,
+				C631F31122B1BCD400DA3C04 /* sand_glossiness.png */,
+				C631F31222B1BCD400DA3C04 /* sand_height.png */,
+				C631F31322B1BCD400DA3C04 /* sand_normal.png */,
+				C631F31422B1BCD400DA3C04 /* README.md */,
+				C631F31522B1BCD400DA3C04 /* sand_basecolor.png */,
+				C631F31622B1BCD400DA3C04 /* sand_preview.png */,
 			);
 			path = "sand textures";
 			sourceTree = "<group>";
@@ -637,35 +576,20 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C631F2E622B0A11000DA3C04 /* medieval-brick_roughness.png in Resources */,
+				C631F31F22B1BCFE00DA3C04 /* sphere.obj in Resources */,
 				1C0208D0206D575700EFC375 /* Assets.xcassets in Resources */,
-				C631F2F322B0A34000DA3C04 /* pavement_basecolor.png in Resources */,
-				C631F2FE22B0A3FE00DA3C04 /* sand_ambient_occlusion.png in Resources */,
-				C631F2F222B0A34000DA3C04 /* pavement_ambient_occlusion.png in Resources */,
-				C631F2D322B0877000DA3C04 /* sphere.obj in Resources */,
 				C6DC12822252F7D3002E5A09 /* cruiser.obj in Resources */,
-				C631F2F522B0A34000DA3C04 /* pavement_height.png in Resources */,
-				C631F30022B0A3FE00DA3C04 /* sand_height.png in Resources */,
-				C631F2F022B0A34000DA3C04 /* pavement_glossiness.png in Resources */,
-				C631F2E322B0A11000DA3C04 /* medieval-brick_normal.png in Resources */,
-				C631F2F122B0A34000DA3C04 /* README.md in Resources */,
-				C631F2DF22B0A11000DA3C04 /* medieval-brick_ambient_occlusion.png in Resources */,
-				C631F2F422B0A34000DA3C04 /* pavement_normal.png in Resources */,
-				C631F30122B0A3FE00DA3C04 /* sand_normal.png in Resources */,
-				C631F30222B0A3FE00DA3C04 /* README.md in Resources */,
-				C631F2E222B0A11000DA3C04 /* medieval-brick_height.png in Resources */,
-				C631F2E022B0A11000DA3C04 /* medieval-brick_basecolor.png in Resources */,
-				C631F2EF22B0A34000DA3C04 /* pavement_preview.png in Resources */,
-				C631F2E122B0A11000DA3C04 /* medieval-brick_normal 2.png in Resources */,
+				C631F31922B1BCD400DA3C04 /* sand_height.png in Resources */,
+				C631F31D22B1BCD400DA3C04 /* sand_preview.png in Resources */,
+				C631F31722B1BCD400DA3C04 /* sand_ambient_occlusion.png in Resources */,
+				C631F31C22B1BCD400DA3C04 /* sand_basecolor.png in Resources */,
 				1C0208D3206D575700EFC375 /* Main.storyboard in Resources */,
-				C631F2E422B0A11000DA3C04 /* medieval-brick_preview.png in Resources */,
-				C631F2E522B0A11000DA3C04 /* README.md in Resources */,
 				C60ED7CE22358D6100B1B94B /* PartyPirateParot.png in Resources */,
-				C631F30322B0A3FE00DA3C04 /* sand_basecolor.png in Resources */,
-				C631F2FF22B0A3FE00DA3C04 /* sand_glossiness.png in Resources */,
+				C631F31A22B1BCD400DA3C04 /* sand_normal.png in Resources */,
+				C631F31822B1BCD400DA3C04 /* sand_glossiness.png in Resources */,
 				C6DC12832252F7D3002E5A09 /* cruiser.bmp in Resources */,
+				C631F31B22B1BCD400DA3C04 /* README.md in Resources */,
 				C6DC12842252F7D4002E5A09 /* cruiser.mtl in Resources */,
-				C631F30422B0A3FE00DA3C04 /* sand_preview.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

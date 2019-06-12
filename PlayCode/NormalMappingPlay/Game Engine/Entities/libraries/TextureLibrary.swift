@@ -20,12 +20,7 @@ class TextureLibrary: Library<TextureTypes, MTLTexture> {
     override func fillLibrary() {
         library.updateValue(Texture("PartyPirateParot"), forKey: .PartyPirateParot)
         library.updateValue(Texture("cruiser", ext: "bmp", origin: .bottomLeft), forKey: .Cruiser)
-        library.updateValue(Texture("medieval-brick_basecolor", ext: "png", origin: .bottomLeft), forKey: .BrickBase)
-        library.updateValue(Texture("medieval-brick_normal", ext: "png", origin: .bottomLeft), forKey: .BrickNormal)
-        
-        library.updateValue(Texture("pavement_basecolor", ext: "png", origin: .bottomLeft), forKey: .PavementBase)
-        library.updateValue(Texture("pavement_normal", ext: "png", origin: .bottomLeft), forKey: .PavementNormal)
-        
+
         library.updateValue(Texture("sand_basecolor", ext: "png", origin: .bottomLeft), forKey: .SandBase)
         library.updateValue(Texture("sand_normal", ext: "png", origin: .bottomLeft), forKey: .SandNormal)
         library.updateValue(Texture("sand_glossiness", ext: "png", origin: .bottomLeft), forKey: .SandSpecular)
