@@ -60,7 +60,7 @@ fragment half4 basic_fragment_shader(RasterizerData rd [[ stage_in ]],
     
     float3 specularMapIntensity = 1.0;
     if(material.useSpecularMap){
-        specularMapIntensity = specularTexture.sample(sampler2d, texCoord).r * 3;
+        specularMapIntensity = specularTexture.sample(sampler2d, texCoord).r * 100;
     }
     
     if(material.isLightable){

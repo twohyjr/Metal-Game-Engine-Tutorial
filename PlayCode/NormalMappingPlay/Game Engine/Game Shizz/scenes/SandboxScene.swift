@@ -26,7 +26,7 @@ class SandboxScene: Scene{
         sunLeft.setLightDiffuseIntensity(1.0)
         sunLeft.setLightSpecularIntensity(1.0)
         sunLeft.setMaterialIsLightable(false)
-        addLight(sunLeft)
+//        addLight(sunLeft)
         
         sunRight.setPosition(float3(2, 2, 2))
         sunRight.setMaterialColor(float4(0,0,1,1))
@@ -35,7 +35,7 @@ class SandboxScene: Scene{
         sunRight.setLightDiffuseIntensity(1.0)
         sunRight.setLightSpecularIntensity(2.0)
         sunRight.setMaterialIsLightable(false)
-        addLight(sunRight)
+//        addLight(sunRight)
         
         sphere.setTexture(.SandBase)
         sphere.setNormalTexture(.SandNormal)
@@ -44,7 +44,7 @@ class SandboxScene: Scene{
         sphere.setMaterialAmbient(0.6)
         sphere.setMaterialDiffuse(0.5)
         sphere.setMaterialSpecular(1)
-        sphere.setMaterialShininess(0.5 * 128)
+        sphere.setMaterialShininess(2 * 128)
         addChild(sphere)
     }
     
