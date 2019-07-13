@@ -40,6 +40,7 @@
 		C60ED7CE22358D6100B1B94B /* PartyPirateParot.png in Resources */ = {isa = PBXBuildFile; fileRef = C60ED7CD22358D6100B1B94B /* PartyPirateParot.png */; };
 		C60ED7D022358EAD00B1B94B /* TextureLibrary.swift in Sources */ = {isa = PBXBuildFile; fileRef = C60ED7CF22358EAD00B1B94B /* TextureLibrary.swift */; };
 		C60ED7D22235900C00B1B94B /* SamplerStateLibrary.swift in Sources */ = {isa = PBXBuildFile; fileRef = C60ED7D12235900C00B1B94B /* SamplerStateLibrary.swift */; };
+		C63ED1A622D9BA5F00BEB811 /* sphere.obj in Resources */ = {isa = PBXBuildFile; fileRef = C63ED1A522D9BA5F00BEB811 /* sphere.obj */; };
 		C68F50DE221CD09C0091E35F /* Math.swift in Sources */ = {isa = PBXBuildFile; fileRef = C68F50DD221CD09C0091E35F /* Math.swift */; };
 		C6DC12822252F7D3002E5A09 /* cruiser.obj in Resources */ = {isa = PBXBuildFile; fileRef = C6DC127F2252F7D3002E5A09 /* cruiser.obj */; };
 		C6DC12832252F7D3002E5A09 /* cruiser.bmp in Resources */ = {isa = PBXBuildFile; fileRef = C6DC12802252F7D3002E5A09 /* cruiser.bmp */; };
@@ -48,7 +49,6 @@
 		C6F0A39D229390B9001E5878 /* LightObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6F0A39C229390B9001E5878 /* LightObject.swift */; };
 		C6F0A39F229391AF001E5878 /* LightManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6F0A39E229391AF001E5878 /* LightManager.swift */; };
 		C6F0A3A1229393C9001E5878 /* Sun.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6F0A3A0229393C9001E5878 /* Sun.swift */; };
-		C6F0A3A322939423001E5878 /* sphere.obj in Resources */ = {isa = PBXBuildFile; fileRef = C6F0A3A222939423001E5878 /* sphere.obj */; };
 		EB3FC4DA20D6E78500CADFD8 /* Keyboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB3FC4D920D6E78500CADFD8 /* Keyboard.swift */; };
 		EB3FC4DC20D6E80A00CADFD8 /* KeyCodes.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB3FC4DB20D6E80A00CADFD8 /* KeyCodes.swift */; };
 		EB3FC4DE20D6E98A00CADFD8 /* Mouse.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB3FC4DD20D6E98A00CADFD8 /* Mouse.swift */; };
@@ -123,6 +123,7 @@
 		C60ED7CD22358D6100B1B94B /* PartyPirateParot.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = PartyPirateParot.png; sourceTree = "<group>"; };
 		C60ED7CF22358EAD00B1B94B /* TextureLibrary.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextureLibrary.swift; sourceTree = "<group>"; };
 		C60ED7D12235900C00B1B94B /* SamplerStateLibrary.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SamplerStateLibrary.swift; sourceTree = "<group>"; };
+		C63ED1A522D9BA5F00BEB811 /* sphere.obj */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = sphere.obj; sourceTree = "<group>"; };
 		C68F50DD221CD09C0091E35F /* Math.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Math.swift; sourceTree = "<group>"; };
 		C6DC127F2252F7D3002E5A09 /* cruiser.obj */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = cruiser.obj; sourceTree = "<group>"; };
 		C6DC12802252F7D3002E5A09 /* cruiser.bmp */ = {isa = PBXFileReference; lastKnownFileType = image.bmp; path = cruiser.bmp; sourceTree = "<group>"; };
@@ -131,7 +132,6 @@
 		C6F0A39C229390B9001E5878 /* LightObject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LightObject.swift; sourceTree = "<group>"; };
 		C6F0A39E229391AF001E5878 /* LightManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LightManager.swift; sourceTree = "<group>"; };
 		C6F0A3A0229393C9001E5878 /* Sun.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sun.swift; sourceTree = "<group>"; };
-		C6F0A3A222939423001E5878 /* sphere.obj */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = sphere.obj; sourceTree = "<group>"; };
 		EB3FC4D920D6E78500CADFD8 /* Keyboard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Keyboard.swift; sourceTree = "<group>"; };
 		EB3FC4DB20D6E80A00CADFD8 /* KeyCodes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyCodes.swift; sourceTree = "<group>"; };
 		EB3FC4DD20D6E98A00CADFD8 /* Mouse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Mouse.swift; sourceTree = "<group>"; };
@@ -363,7 +363,7 @@
 		C60ED7CC22358D4B00B1B94B /* res */ = {
 			isa = PBXGroup;
 			children = (
-				C6F0A3A222939423001E5878 /* sphere.obj */,
+				C63ED1A522D9BA5F00BEB811 /* sphere.obj */,
 				C6DC127E2252F7C6002E5A09 /* cruiser */,
 				C60ED7CD22358D6100B1B94B /* PartyPirateParot.png */,
 			);
@@ -544,7 +544,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C6F0A3A322939423001E5878 /* sphere.obj in Resources */,
+				C63ED1A622D9BA5F00BEB811 /* sphere.obj in Resources */,
 				1C0208D0206D575700EFC375 /* Assets.xcassets in Resources */,
 				C6DC12822252F7D3002E5A09 /* cruiser.obj in Resources */,
 				1C0208D3206D575700EFC375 /* Main.storyboard in Resources */,
