@@ -59,7 +59,6 @@ class ModelMesh: Mesh {
         (descriptor.attributes[0] as! MDLVertexAttribute).name = MDLVertexAttributePosition
         (descriptor.attributes[1] as! MDLVertexAttribute).name = MDLVertexAttributeColor
         (descriptor.attributes[2] as! MDLVertexAttribute).name = MDLVertexAttributeTextureCoordinate
-        (descriptor.attributes[3] as! MDLVertexAttribute).name = MDLVertexAttributeNormal
 
         let bufferAllocator = MTKMeshBufferAllocator(device: Engine.Device)
         let asset: MDLAsset = MDLAsset(url: assetURL,
@@ -118,12 +117,8 @@ class CustomMesh: Mesh {
     
     func addVertex(position: float3,
                    color: float4 = float4(1,0,1,1),
-                   textureCoordinate: float2 = float2(0,0),
-                   normal: float3 = float3(0,1,0)) {
-        _vertices.append(Vertex(position: position,
-                                color: color,
-                                textureCoordinate: textureCoordinate,
-                                normal: normal))
+                   textureCoordinate: float2 = float2(0,0)) {
+        _vertices.append(Vertex(position: position, color: color, textureCoordinate: textureCoordinate))
     }
     
     func setInstanceCount(_ count: Int) {

@@ -6,13 +6,12 @@ class SandboxScene: Scene{
     var cruiser = Cruiser()
     var sun = Sun()
     override func buildScene() {
-        debugCamera.setPosition(float3(0,2,5))
-        debugCamera.rotateX(0.3)
         addCamera(debugCamera)
         
         sun.setPosition(float3(0, 2, 2))
         addLight(sun)
         
+        debugCamera.setPositionZ(5)
 
         addChild(cruiser)
     }
