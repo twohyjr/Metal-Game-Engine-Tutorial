@@ -4,15 +4,32 @@ class SandboxScene: Scene{
     
     var debugCamera = DebugCamera()
     var cruiser = Cruiser()
-    var sun = Sun()
+    var leftSun = Sun()
+    var middleSun = Sun()
+    var rightSun = Sun()
     override func buildScene() {
+        debugCamera.setPosition(float3(0,0,6))
         addCamera(debugCamera)
         
-        sun.setPosition(float3(0, 2, 2))
-        addLight(sun)
+        leftSun.setPosition(float3(-1, 1, 0))
+        leftSun.setMaterialIsLit(false)
+        leftSun.setMaterialColor(float4(1,0,0,1))
+        leftSun.setLightColor(float3(1,0,0))
+        addLight(leftSun)
         
-        debugCamera.setPositionZ(5)
-
+        middleSun.setPosition(float3(0, 1, 0))
+        middleSun.setMaterialIsLit(false)
+        middleSun.setMaterialColor(float4(1,1,1,1))
+        middleSun.setLightColor(float3(1,1,1))
+        addLight(middleSun)
+        
+        rightSun.setPosition(float3( 1, 1, 0))
+        rightSun.setMaterialIsLit(false)
+        rightSun.setMaterialColor(float4(0,0,1,1))
+        rightSun.setLightColor(float3(0,0,1))
+        addLight(rightSun)
+        
+        cruiser.setRotationX(0.3)
         addChild(cruiser)
     }
     

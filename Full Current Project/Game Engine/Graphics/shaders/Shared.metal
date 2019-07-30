@@ -28,8 +28,15 @@ struct Material {
     float4 color;
     bool useMaterialColor;
     bool useTexture;
+    bool isLit;
+    
+    float3 ambient;
 };
 
 struct LightData {
     float3 position;
+    float3 color;
+    float brightness;
+    
+    float ambientIntensity;
 };
