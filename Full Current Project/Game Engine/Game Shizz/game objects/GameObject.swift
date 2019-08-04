@@ -65,4 +65,10 @@ extension GameObject {
     public func setMaterialAmbient(_ ambient: Float) { self.material.ambient = float3(ambient, ambient, ambient) }
     public func addMaterialAmbient(_ value: Float) { self.material.ambient += value }
     public func getMaterialAmbient()->float3 { return self.material.ambient }
+    
+    // Diffuse
+    public func setMaterialDiffuse(_ diffuse: float3) { self.material.diffuse = diffuse }
+    public func setMaterialDiffuse(_ diffuse: Float) { self.material.diffuse = float3(diffuse, diffuse, diffuse) }
+    public func addMaterialDiffuse(_ value: Float) { self.material.diffuse += value }
+    public func getMaterialDiffuse()->float3 { return self.material.diffuse }
 }
