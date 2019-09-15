@@ -71,4 +71,14 @@ extension GameObject {
     public func setMaterialDiffuse(_ diffuse: Float) { self.material.diffuse = float3(diffuse, diffuse, diffuse) }
     public func addMaterialDiffuse(_ value: Float) { self.material.diffuse += value }
     public func getMaterialDiffuse()->float3 { return self.material.diffuse }
+    
+    // Specular
+    public func setMaterialSpecular(_ specular: float3) { self.material.specular = specular }
+    public func setMaterialSpecular(_ specular: Float) { self.material.specular = float3(specular, specular, specular) }
+    public func addMaterialSpecular(_ value: Float) { self.material.specular += value }
+    public func getMaterialSpecular()->float3 { return self.material.specular }
+    
+    // Shininess
+    public func setMaterialShininess(_ shininess: Float) { self.material.shininess = shininess }
+    public func getShininess()->Float { return self.material.shininess }
 }

@@ -44,5 +44,7 @@ class SandboxScene: Scene{
         leftSun.setPositionX(cos(GameTime.TotalGameTime) - 1)
         middleSun.setPositionX(cos(GameTime.TotalGameTime))
         rightSun.setPositionX(cos(GameTime.TotalGameTime) + 1)
+        
+        cruiser.setMaterialShininess(cruiser.getShininess() + Mouse.GetDWheel())
     }
 }
