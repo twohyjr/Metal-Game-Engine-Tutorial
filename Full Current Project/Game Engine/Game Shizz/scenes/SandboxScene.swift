@@ -8,7 +8,7 @@ class SandboxScene: Scene{
     var middleSun = Sun()
     var rightSun = Sun()
     override func buildScene() {
-        debugCamera.setPosition(float3(0,0,6))
+        debugCamera.setPosition(float3(0,0,4))
         addCamera(debugCamera)
         
         leftSun.setPosition(float3(-1, 1, 0))
@@ -31,7 +31,7 @@ class SandboxScene: Scene{
         addLight(rightSun)
         
         cruiser.setMaterialAmbient(0.01)
-        cruiser.setRotationX(0.3)
+        cruiser.setRotationX(0.5)
         cruiser.setMaterialShininess(50)
         addChild(cruiser)
     }
@@ -41,11 +41,11 @@ class SandboxScene: Scene{
             cruiser.rotateX(Mouse.GetDY() * GameTime.DeltaTime)
             cruiser.rotateY(Mouse.GetDX() * GameTime.DeltaTime)
         }
-        
-        leftSun.setPositionX(cos(GameTime.TotalGameTime) - 1)
-        middleSun.setPositionX(cos(GameTime.TotalGameTime))
-        rightSun.setPositionX(cos(GameTime.TotalGameTime) + 1)
-        
+//
+//        leftSun.setPositionX(cos(GameTime.TotalGameTime) - 1)
+//        middleSun.setPositionX(cos(GameTime.TotalGameTime))
+//        rightSun.setPositionX(cos(GameTime.TotalGameTime) + 1)
+//
         cruiser.setMaterialShininess(cruiser.getShininess() + Mouse.GetDWheel())
     }
 }
