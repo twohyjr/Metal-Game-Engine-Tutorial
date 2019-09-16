@@ -32,7 +32,8 @@ class SandboxScene: Scene{
         
         cruiser.setMaterialAmbient(0.01)
         cruiser.setRotationX(0.5)
-        cruiser.setMaterialShininess(50)
+        cruiser.setMaterialShininess(10)
+        cruiser.setMaterialSpecular(5)
         addChild(cruiser)
     }
     
