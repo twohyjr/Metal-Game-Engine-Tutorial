@@ -1,5 +1,9 @@
 import MetalKit
 
+public typealias float2 = SIMD2<Float>
+public typealias float3 = SIMD3<Float>
+public typealias float4 = SIMD4<Float>
+
 public var X_AXIS: float3{
     return float3(1,0,0)
 }

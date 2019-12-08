@@ -63,4 +63,15 @@ struct LightData: sizeable {
     var ambientIntensity: Float = 1.0
     var diffuseIntensity: Float = 1.0
     var specularIntensity: Float = 1.0
+    
+    public private(set) var endMarker: Bool = false
+    internal static let endMarker = LightData(
+        position: float3(0,0,0),
+        color: float3(0,0,0),
+        brightness: 0,
+        ambientIntensity: 0,
+        diffuseIntensity: 0,
+        specularIntensity: 0,
+        endMarker: true
+    )
 }

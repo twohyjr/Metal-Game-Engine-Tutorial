@@ -22,8 +22,7 @@ vertex RasterizerData basic_vertex_shader(const VertexIn vIn [[ stage_in ]],
 
 fragment half4 basic_fragment_shader(RasterizerData rd [[ stage_in ]],
                                      constant Material &material [[ buffer(1) ]],
-                                     constant int &lightCount [[ buffer(2) ]],
-                                     constant LightData *lightDatas [[ buffer(3) ]],
+                                     constant LightData *lightDatas [[ buffer(2) ]],
                                      sampler sampler2d [[ sampler(0) ]],
                                      texture2d<float> texture [[ texture(0) ]] ){
     float2 texCoord = rd.textureCoordinate;
@@ -44,7 +43,7 @@ fragment half4 basic_fragment_shader(RasterizerData rd [[ stage_in ]],
         float3 totalAmbient = float3(0,0,0);
         float3 totalDiffuse = float3(0,0,0);
         float3 totalSpecular = float3(0,0,0);
-        for(int i = 0; i < lightCount; i++){
+        for(int i = 0; !(lightDatas[i].endMarker); i++){
             LightData lightData = lightDatas[i]; // m light
             
             float3 unitToLightVector = normalize(lightData.position - rd.worldPosition); // world_pos -----> light_pos

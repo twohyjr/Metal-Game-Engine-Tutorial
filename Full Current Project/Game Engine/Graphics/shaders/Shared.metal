@@ -50,4 +50,6 @@ struct LightData {
     float ambientIntensity;
     float diffuseIntensity;
     float specularIntensity;
+    
+    bool endMarker;
 };
