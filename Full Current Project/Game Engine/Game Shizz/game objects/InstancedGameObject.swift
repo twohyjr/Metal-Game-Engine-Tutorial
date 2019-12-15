@@ -1,9 +1,8 @@
 import MetalKit
 
-class InstancedGameObject: Node {
+class InstancedGameObject: Node {    
+    private var _material = Material()
     private var _mesh: Mesh!
-    
-    var material = Material()
     
     internal var _nodes: [Node] = []    
     private var _modelConstantBuffer: MTLBuffer!
@@ -18,7 +17,7 @@ class InstancedGameObject: Node {
     
     func generateInstances(_ instanceCount: Int){
         for _ in 0..<instanceCount {
-            _nodes.append(Node())
+            _nodes.append(Node(name: "\(getName())_InstancedNode"))
         }
     }
     
@@ -26,16 +25,13 @@ class InstancedGameObject: Node {
         _modelConstantBuffer = Engine.Device.makeBuffer(length: ModelConstants.stride(instanceCount), options: [])
     }
     
-    private func updateModelConstantsBuffer() {
+    override func update() {
         var pointer = _modelConstantBuffer.contents().bindMemory(to: ModelConstants.self, capacity: _nodes.count)
         for node in _nodes {
             pointer.pointee.modelMatrix = matrix_multiply(self.modelMatrix, node.modelMatrix)
             pointer = pointer.advanced(by: 1)
         }
-    }
-
-    override func update() {
-        updateModelConstantsBuffer()
+        
         super.update()
     }
 }
@@ -49,7 +45,7 @@ extension InstancedGameObject: Renderable {
         renderCommandEncoder.setVertexBuffer(_modelConstantBuffer, offset: 0, index: 2)
         
         //Fragment Shader
-        renderCommandEncoder.setFragmentBytes(&material, length: Material.stride, index: 1)
+        renderCommandEncoder.setFragmentBytes(&_material, length: Material.stride, index: 1)
         
         _mesh.drawPrimitives(renderCommandEncoder)
     }
@@ -58,8 +54,12 @@ extension InstancedGameObject: Renderable {
 //Material Properties
 extension InstancedGameObject {
     public func setColor(_ color: float4){
-        self.material.color = color
-        self.material.useMaterialColor = true
+        self._material.color = color
+        self._material.useMaterialColor = true
+    }
+    
+    public func setColor(_ r: Float,_ g: Float,_ b: Float,_ a: Float) {
+        setColor(float4(r,g,b,a))
     }
 }
 

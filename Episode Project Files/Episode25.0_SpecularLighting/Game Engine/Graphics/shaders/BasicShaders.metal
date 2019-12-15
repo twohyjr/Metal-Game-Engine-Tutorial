@@ -14,7 +14,7 @@ vertex RasterizerData basic_vertex_shader(const VertexIn vIn [[ stage_in ]],
     rd.textureCoordinate = vIn.textureCoordinate;
     rd.totalGameTime = sceneConstants.totalGameTime;
     rd.worldPosition = worldPosition.xyz;
-    rd.surfaceNormal = (modelConstants.modelMatrix * float4(vIn.normal, 1.0)).xyz;
+    rd.surfaceNormal = (modelConstants.modelMatrix * float4(vIn.normal, 0.0)).xyz;
     rd.toCameraVector = sceneConstants.cameraPosition - worldPosition.xyz;
     
     return rd;

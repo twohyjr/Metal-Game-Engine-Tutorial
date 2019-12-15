@@ -1,6 +1,5 @@
 
 class Entities {
-    
     private static var _meshLibrary: MeshLibrary!
     public static var Meshes: MeshLibrary { return _meshLibrary }
     
@@ -11,5 +10,4 @@ class Entities {
         self._meshLibrary = MeshLibrary()
         self._textureLibrary = TextureLibrary()
     }
-    
 }

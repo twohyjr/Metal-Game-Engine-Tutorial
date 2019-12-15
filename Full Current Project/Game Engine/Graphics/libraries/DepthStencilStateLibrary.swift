@@ -5,7 +5,6 @@ enum DepthStencilStateTypes {
 }
 
 class DepthStencilStateLibrary: Library<DepthStencilStateTypes, MTLDepthStencilState> {
-    
     private var _library: [DepthStencilStateTypes: DepthStencilState] = [:]
     
     override func fillLibrary() {
@@ -15,7 +14,6 @@ class DepthStencilStateLibrary: Library<DepthStencilStateTypes, MTLDepthStencilS
     override subscript(_ type: DepthStencilStateTypes)->MTLDepthStencilState{
         return _library[type]!.depthStencilState
     }
-    
 }
 
 protocol DepthStencilState {

@@ -5,7 +5,6 @@ enum VertexDescriptorTypes {
 }
 
 class VertexDescriptorLibrary: Library<VertexDescriptorTypes, MTLVertexDescriptor> {
-    
     private var _library: [VertexDescriptorTypes: VertexDescriptor] = [:]
     
     override func fillLibrary() {
@@ -15,7 +14,6 @@ class VertexDescriptorLibrary: Library<VertexDescriptorTypes, MTLVertexDescripto
     override subscript(_ type: VertexDescriptorTypes)->MTLVertexDescriptor {
         return _library[type]!.vertexDescriptor
     }
-
 }
 
 protocol VertexDescriptor {

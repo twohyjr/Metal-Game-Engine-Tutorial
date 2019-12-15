@@ -1,7 +1,6 @@
 import MetalKit
 
 class Engine {
-    
     public static var Device: MTLDevice!
     public static var CommandQueue: MTLCommandQueue!
     public static var DefaultLibrary: MTLLibrary!
@@ -16,7 +15,5 @@ class Engine {
         Entities.Initialize()
         
         SceneManager.Initialize(Preferences.StartingSceneType)
-        
     }
-    
 }

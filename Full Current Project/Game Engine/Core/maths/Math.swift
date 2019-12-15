@@ -13,7 +13,6 @@ public var Z_AXIS: float3{
 }
 
 extension Float {
-    
     var toRadians: Float{
         return (self / 180.0) * Float.pi
     }
@@ -25,11 +24,9 @@ extension Float {
     static var randomZeroToOne: Float{
         return Float(arc4random()) / Float(UINT32_MAX)
     }
-    
 }
 
 extension matrix_float4x4 {
-    
     mutating func translate(direction: float3){
         var result = matrix_identity_float4x4
         
@@ -127,5 +124,4 @@ extension matrix_float4x4 {
         )
         return result
     }
-
 }

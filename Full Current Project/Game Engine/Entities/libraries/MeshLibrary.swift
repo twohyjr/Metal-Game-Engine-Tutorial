@@ -12,7 +12,6 @@ enum MeshTypes {
 }
 
 class MeshLibrary: Library<MeshTypes, Mesh> {
-    
     private var _library: [MeshTypes:Mesh] = [:]
     
     override func fillLibrary() {
@@ -29,7 +28,6 @@ class MeshLibrary: Library<MeshTypes, Mesh> {
     override subscript(_ type: MeshTypes)->Mesh {
         return _library[type]!
     }
-    
 }
 
 protocol Mesh {
@@ -211,5 +209,4 @@ class Cube_CustomMesh: CustomMesh {
         addVertex(position: float3(-1.0, 1.0, 1.0), color: float4(0.0, 1.0, 1.0, 1.0))
         addVertex(position: float3( 1.0,-1.0, 1.0), color: float4(1.0, 0.0, 1.0, 1.0))
     }
-
 }

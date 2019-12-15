@@ -1,6 +1,4 @@
-
 class Library<T,K> {
-    
     init() {
         fillLibrary()
     }
@@ -12,5 +10,4 @@ class Library<T,K> {
     subscript(_ type: T)->K? {
         return nil
     }
-    
 }

@@ -4,9 +4,8 @@ class Pointer: GameObject {
     
     private var camera: Camera!
     init(camera: Camera) {
-        super.init(meshType: .Triangle_Custom)
+        super.init(name: "Pointer", meshType: .Triangle_Custom)
         self.camera = camera
-        self.setName("Pointer")
     }
     
     override func doUpdate() {
