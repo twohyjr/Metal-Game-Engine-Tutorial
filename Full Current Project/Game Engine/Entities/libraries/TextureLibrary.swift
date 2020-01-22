@@ -49,7 +49,10 @@ class TextureLoader {
         if let url = Bundle.main.url(forResource: _textureName, withExtension: self._textureExtension) {
             let textureLoader = MTKTextureLoader(device: Engine.Device)
             
-            let options: [MTKTextureLoader.Option : MTKTextureLoader.Origin] = [MTKTextureLoader.Option.origin : _origin]
+            let options: [MTKTextureLoader.Option : Any] = [
+                MTKTextureLoader.Option.origin : _origin as Any,
+                MTKTextureLoader.Option.generateMipmaps : true
+            ]
             
             do{
                 result = try textureLoader.newTexture(URL: url, options: options)
