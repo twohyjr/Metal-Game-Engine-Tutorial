@@ -95,11 +95,11 @@ class ModelMesh: Mesh {
 
 class CustomMesh: Mesh {
     private var _vertices: [Vertex] = []
-    private var _indices: [UInt32] = [] // <-------
+    private var _indices: [UInt32] = []
     private var _vertexBuffer: MTLBuffer!
-    private var _indexBuffer: MTLBuffer! // <-------
+    private var _indexBuffer: MTLBuffer!
     var vertexCount: Int { return _vertices.count }
-    var indexCount: Int { return _indices.count } // <-------
+    var indexCount: Int { return _indices.count }
     private var _instanceCount: Int = 1
     
     init() {
