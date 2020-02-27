@@ -305,6 +305,13 @@
 			path = protocols;
 			sourceTree = "<group>";
 		};
+		BD34B8BC24082F6F0017F714 /* New Group */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "New Group";
+			sourceTree = "<group>";
+		};
 		C608C90D21EB126B00B58EC7 /* types */ = {
 			isa = PBXGroup;
 			children = (
@@ -357,6 +364,7 @@
 		C60ED7CC22358D4B00B1B94B /* res */ = {
 			isa = PBXGroup;
 			children = (
+				BD34B8BC24082F6F0017F714 /* New Group */,
 				C6DC127E2252F7C6002E5A09 /* cruiser */,
 				C63ED1A522D9BA5F00BEB811 /* sphere.obj */,
 				C60ED7CD22358D6100B1B94B /* PartyPirateParot.png */,
