@@ -44,6 +44,7 @@
 		C63ED1A622D9BA5F00BEB811 /* sphere.obj in Resources */ = {isa = PBXBuildFile; fileRef = C63ED1A522D9BA5F00BEB811 /* sphere.obj */; };
 		C68F50DE221CD09C0091E35F /* Math.swift in Sources */ = {isa = PBXBuildFile; fileRef = C68F50DD221CD09C0091E35F /* Math.swift */; };
 		C6A215342385B0AC003A003C /* Lighting.metal in Sources */ = {isa = PBXBuildFile; fileRef = C6A215332385B0AC003A003C /* Lighting.metal */; };
+		C6BD05A72440D10400314E81 /* chest.obj in Resources */ = {isa = PBXBuildFile; fileRef = C6BD05A62440D10400314E81 /* chest.obj */; };
 		C6DC12822252F7D3002E5A09 /* cruiser.obj in Resources */ = {isa = PBXBuildFile; fileRef = C6DC127F2252F7D3002E5A09 /* cruiser.obj */; };
 		C6DC12832252F7D3002E5A09 /* cruiser.bmp in Resources */ = {isa = PBXBuildFile; fileRef = C6DC12802252F7D3002E5A09 /* cruiser.bmp */; };
 		C6DC12842252F7D4002E5A09 /* cruiser.mtl in Resources */ = {isa = PBXBuildFile; fileRef = C6DC12812252F7D3002E5A09 /* cruiser.mtl */; };
@@ -129,6 +130,7 @@
 		C63ED1A522D9BA5F00BEB811 /* sphere.obj */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = sphere.obj; sourceTree = "<group>"; };
 		C68F50DD221CD09C0091E35F /* Math.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Math.swift; sourceTree = "<group>"; };
 		C6A215332385B0AC003A003C /* Lighting.metal */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.metal; path = Lighting.metal; sourceTree = "<group>"; };
+		C6BD05A62440D10400314E81 /* chest.obj */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = chest.obj; sourceTree = "<group>"; };
 		C6DC127F2252F7D3002E5A09 /* cruiser.obj */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = cruiser.obj; sourceTree = "<group>"; };
 		C6DC12802252F7D3002E5A09 /* cruiser.bmp */ = {isa = PBXFileReference; lastKnownFileType = image.bmp; path = cruiser.bmp; sourceTree = "<group>"; };
 		C6DC12812252F7D3002E5A09 /* cruiser.mtl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = cruiser.mtl; sourceTree = "<group>"; };
@@ -388,6 +390,7 @@
 		C635AB422427E7D800642FE6 /* chest */ = {
 			isa = PBXGroup;
 			children = (
+				C6BD05A62440D10400314E81 /* chest.obj */,
 			);
 			path = chest;
 			sourceTree = "<group>";
@@ -569,6 +572,7 @@
 				C63ED1A622D9BA5F00BEB811 /* sphere.obj in Resources */,
 				1C0208D0206D575700EFC375 /* Assets.xcassets in Resources */,
 				BD60C151240C32D00056C925 /* TheSuzannes.mtl in Resources */,
+				C6BD05A72440D10400314E81 /* chest.obj in Resources */,
 				C6DC12822252F7D3002E5A09 /* cruiser.obj in Resources */,
 				1C0208D3206D575700EFC375 /* Main.storyboard in Resources */,
 				C60ED7CE22358D6100B1B94B /* PartyPirateParot.png in Resources */,
