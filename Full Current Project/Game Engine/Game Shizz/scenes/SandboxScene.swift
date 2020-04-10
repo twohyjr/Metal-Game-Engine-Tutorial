@@ -10,7 +10,6 @@ class SandboxScene: Scene{
         addLight(sun)
         
         chest.moveY(-0.5)
-        chest.setTexture(.PartyPirateParot)
         addChild(chest)
     }
     

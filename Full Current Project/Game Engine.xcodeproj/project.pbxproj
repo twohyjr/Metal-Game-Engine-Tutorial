@@ -40,7 +40,6 @@
 		C60ED7CE22358D6100B1B94B /* PartyPirateParot.png in Resources */ = {isa = PBXBuildFile; fileRef = C60ED7CD22358D6100B1B94B /* PartyPirateParot.png */; };
 		C60ED7D022358EAD00B1B94B /* TextureLibrary.swift in Sources */ = {isa = PBXBuildFile; fileRef = C60ED7CF22358EAD00B1B94B /* TextureLibrary.swift */; };
 		C60ED7D22235900C00B1B94B /* SamplerStateLibrary.swift in Sources */ = {isa = PBXBuildFile; fileRef = C60ED7D12235900C00B1B94B /* SamplerStateLibrary.swift */; };
-		C635AB442427E7D800642FE6 /* chest.obj in Resources */ = {isa = PBXBuildFile; fileRef = C635AB432427E7D800642FE6 /* chest.obj */; };
 		C635AB462427E81600642FE6 /* Chest.swift in Sources */ = {isa = PBXBuildFile; fileRef = C635AB452427E81600642FE6 /* Chest.swift */; };
 		C63ED1A622D9BA5F00BEB811 /* sphere.obj in Resources */ = {isa = PBXBuildFile; fileRef = C63ED1A522D9BA5F00BEB811 /* sphere.obj */; };
 		C68F50DE221CD09C0091E35F /* Math.swift in Sources */ = {isa = PBXBuildFile; fileRef = C68F50DD221CD09C0091E35F /* Math.swift */; };
@@ -126,7 +125,6 @@
 		C60ED7CD22358D6100B1B94B /* PartyPirateParot.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = PartyPirateParot.png; sourceTree = "<group>"; };
 		C60ED7CF22358EAD00B1B94B /* TextureLibrary.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextureLibrary.swift; sourceTree = "<group>"; };
 		C60ED7D12235900C00B1B94B /* SamplerStateLibrary.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SamplerStateLibrary.swift; sourceTree = "<group>"; };
-		C635AB432427E7D800642FE6 /* chest.obj */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = chest.obj; sourceTree = "<group>"; };
 		C635AB452427E81600642FE6 /* Chest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Chest.swift; sourceTree = "<group>"; };
 		C63ED1A522D9BA5F00BEB811 /* sphere.obj */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = sphere.obj; sourceTree = "<group>"; };
 		C68F50DD221CD09C0091E35F /* Math.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Math.swift; sourceTree = "<group>"; };
@@ -390,7 +388,6 @@
 		C635AB422427E7D800642FE6 /* chest */ = {
 			isa = PBXGroup;
 			children = (
-				C635AB432427E7D800642FE6 /* chest.obj */,
 			);
 			path = chest;
 			sourceTree = "<group>";
@@ -572,7 +569,6 @@
 				C63ED1A622D9BA5F00BEB811 /* sphere.obj in Resources */,
 				1C0208D0206D575700EFC375 /* Assets.xcassets in Resources */,
 				BD60C151240C32D00056C925 /* TheSuzannes.mtl in Resources */,
-				C635AB442427E7D800642FE6 /* chest.obj in Resources */,
 				C6DC12822252F7D3002E5A09 /* cruiser.obj in Resources */,
 				1C0208D3206D575700EFC375 /* Main.storyboard in Resources */,
 				C60ED7CE22358D6100B1B94B /* PartyPirateParot.png in Resources */,

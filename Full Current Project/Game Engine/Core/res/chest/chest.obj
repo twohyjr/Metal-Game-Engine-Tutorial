@@ -3,6 +3,10 @@
 
 mtllib chest.mtl
 
+#
+# object Chest_Metal
+#
+
 v  51.7350 63.5298 -31.8826
 v  54.1861 63.5298 -31.8826
 v  54.1861 63.6859 -31.9238
@@ -78244,9 +78248,9 @@ vt 0.9846 0.4204 0.0000
 vt 0.9836 0.4228 0.0000
 # 33543 texture coords
 
-o chest_01
-g chest_01
-usemtl chest_01
+o Metal_Material
+g Metal_Material
+usemtl Metal_Material
 s 16
 f 1/1/1 2/2/1 3/3/2 4/4/2 
 f 5/5/3 2/2/1 1/1/1 6/6/3 
@@ -105509,7 +105513,7 @@ f 28573/33358/15996 28696/33543/15995 28661/33526/15970 28571/33356/15969
 # 25039 polygons - 1830 triangles
 
 #
-# object chest_02
+# object Chest_Wood
 #
 
 v  52.0560 117.7819 -9.1653
@@ -110330,9 +110334,11 @@ vt 0.8588 0.7027 0.0000
 vt 0.8555 0.7045 0.0000
 # 1940 texture coords
 
-o chest_02
-g chest_02
-usemtl chest_02
+
+
+o Wood_Material
+g Wood_Material
+usemtl Wood_Material
 s 1
 f 28697/33544/15997 28698/33545/15997 28699/33546/15998 28700/33547/15998 
 f 28701/33548/15999 28702/33549/16000 28703/33550/16001 28704/33551/16002 
