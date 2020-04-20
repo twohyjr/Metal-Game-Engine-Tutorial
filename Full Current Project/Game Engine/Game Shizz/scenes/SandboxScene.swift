@@ -7,6 +7,7 @@ class SandboxScene: Scene{
         addCamera(debugCamera)
         
         sun.setPosition(float3(0, 5, 5))
+        sun.setLightAmbientIntensity(0.04)
         addLight(sun)
         
         chest.moveY(-0.5)
