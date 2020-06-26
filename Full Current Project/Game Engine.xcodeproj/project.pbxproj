@@ -26,9 +26,6 @@
 		1CADF5AC20B4DB800000F54C /* Pointer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CADF5AB20B4DB800000F54C /* Pointer.swift */; };
 		1CADF5AF20B4DBB40000F54C /* Renderable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CADF5AE20B4DBB40000F54C /* Renderable.swift */; };
 		1CDA5B7D209FE2EE00A924A1 /* Renderer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1CDA5B7C209FE2EE00A924A1 /* Renderer.swift */; };
-		BD60C151240C32D00056C925 /* TheSuzannes.mtl in Resources */ = {isa = PBXBuildFile; fileRef = BD60C14F240C32D00056C925 /* TheSuzannes.mtl */; };
-		BD60C152240C32D00056C925 /* TheSuzannes.obj in Resources */ = {isa = PBXBuildFile; fileRef = BD60C150240C32D00056C925 /* TheSuzannes.obj */; };
-		BD60C155240C32EB0056C925 /* TheSuzannes.swift in Sources */ = {isa = PBXBuildFile; fileRef = BD60C154240C32EB0056C925 /* TheSuzannes.swift */; };
 		C608C90A21EB113500B58EC7 /* Quad.swift in Sources */ = {isa = PBXBuildFile; fileRef = C608C90921EB113500B58EC7 /* Quad.swift */; };
 		C608C90C21EB11E000B58EC7 /* GameTime.swift in Sources */ = {isa = PBXBuildFile; fileRef = C608C90B21EB11E000B58EC7 /* GameTime.swift */; };
 		C608C91121EB12BC00B58EC7 /* Graphics.swift in Sources */ = {isa = PBXBuildFile; fileRef = C608C91021EB12BC00B58EC7 /* Graphics.swift */; };
@@ -44,7 +41,6 @@
 		C619552B244CF15D00BAC9AD /* Chest_Metal_Base_Color.png in Resources */ = {isa = PBXBuildFile; fileRef = C6195528244CF15D00BAC9AD /* Chest_Metal_Base_Color.png */; };
 		C619552C244CF15E00BAC9AD /* chest.mtl in Resources */ = {isa = PBXBuildFile; fileRef = C6195529244CF15D00BAC9AD /* chest.mtl */; };
 		C635AB462427E81600642FE6 /* Chest.swift in Sources */ = {isa = PBXBuildFile; fileRef = C635AB452427E81600642FE6 /* Chest.swift */; };
-		C63ED1A622D9BA5F00BEB811 /* sphere.obj in Resources */ = {isa = PBXBuildFile; fileRef = C63ED1A522D9BA5F00BEB811 /* sphere.obj */; };
 		C68F50DE221CD09C0091E35F /* Math.swift in Sources */ = {isa = PBXBuildFile; fileRef = C68F50DD221CD09C0091E35F /* Math.swift */; };
 		C6A215342385B0AC003A003C /* Lighting.metal in Sources */ = {isa = PBXBuildFile; fileRef = C6A215332385B0AC003A003C /* Lighting.metal */; };
 		C6BD05A72440D10400314E81 /* chest.obj in Resources */ = {isa = PBXBuildFile; fileRef = C6BD05A62440D10400314E81 /* chest.obj */; };
@@ -52,6 +48,10 @@
 		C6DC12832252F7D3002E5A09 /* cruiser.bmp in Resources */ = {isa = PBXBuildFile; fileRef = C6DC12802252F7D3002E5A09 /* cruiser.bmp */; };
 		C6DC12842252F7D4002E5A09 /* cruiser.mtl in Resources */ = {isa = PBXBuildFile; fileRef = C6DC12812252F7D3002E5A09 /* cruiser.mtl */; };
 		C6DC12862252FA92002E5A09 /* Cruiser.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6DC12852252FA92002E5A09 /* Cruiser.swift */; };
+		C6E3EF5D24A5709100515CD3 /* quad.obj in Resources */ = {isa = PBXBuildFile; fileRef = C6E3EF5A24A5709100515CD3 /* quad.obj */; };
+		C6E3EF5F24A5709100515CD3 /* quad.mtl in Resources */ = {isa = PBXBuildFile; fileRef = C6E3EF5C24A5709100515CD3 /* quad.mtl */; };
+		C6E3EF6324A5710200515CD3 /* sphere.mtl in Resources */ = {isa = PBXBuildFile; fileRef = C6E3EF6124A5710200515CD3 /* sphere.mtl */; };
+		C6E3EF6424A5710200515CD3 /* sphere.obj in Resources */ = {isa = PBXBuildFile; fileRef = C6E3EF6224A5710200515CD3 /* sphere.obj */; };
 		C6F0A39D229390B9001E5878 /* LightObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6F0A39C229390B9001E5878 /* LightObject.swift */; };
 		C6F0A39F229391AF001E5878 /* LightManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6F0A39E229391AF001E5878 /* LightManager.swift */; };
 		C6F0A3A1229393C9001E5878 /* Sun.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6F0A3A0229393C9001E5878 /* Sun.swift */; };
@@ -115,9 +115,6 @@
 		1CADF5AB20B4DB800000F54C /* Pointer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pointer.swift; sourceTree = "<group>"; };
 		1CADF5AE20B4DBB40000F54C /* Renderable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Renderable.swift; sourceTree = "<group>"; };
 		1CDA5B7C209FE2EE00A924A1 /* Renderer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Renderer.swift; sourceTree = "<group>"; };
-		BD60C14F240C32D00056C925 /* TheSuzannes.mtl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = TheSuzannes.mtl; sourceTree = "<group>"; };
-		BD60C150240C32D00056C925 /* TheSuzannes.obj */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = TheSuzannes.obj; sourceTree = "<group>"; };
-		BD60C154240C32EB0056C925 /* TheSuzannes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TheSuzannes.swift; sourceTree = "<group>"; };
 		C608C90921EB113500B58EC7 /* Quad.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Quad.swift; path = "Game Engine/Game Shizz/game objects/Quad.swift"; sourceTree = SOURCE_ROOT; };
 		C608C90B21EB11E000B58EC7 /* GameTime.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameTime.swift; sourceTree = "<group>"; };
 		C608C91021EB12BC00B58EC7 /* Graphics.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Graphics.swift; sourceTree = "<group>"; };
@@ -133,7 +130,6 @@
 		C6195528244CF15D00BAC9AD /* Chest_Metal_Base_Color.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Chest_Metal_Base_Color.png; sourceTree = "<group>"; };
 		C6195529244CF15D00BAC9AD /* chest.mtl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = chest.mtl; sourceTree = "<group>"; };
 		C635AB452427E81600642FE6 /* Chest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Chest.swift; sourceTree = "<group>"; };
-		C63ED1A522D9BA5F00BEB811 /* sphere.obj */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = sphere.obj; sourceTree = "<group>"; };
 		C68F50DD221CD09C0091E35F /* Math.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Math.swift; sourceTree = "<group>"; };
 		C6A215332385B0AC003A003C /* Lighting.metal */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.metal; path = Lighting.metal; sourceTree = "<group>"; };
 		C6BD05A62440D10400314E81 /* chest.obj */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = chest.obj; sourceTree = "<group>"; };
@@ -141,6 +137,10 @@
 		C6DC12802252F7D3002E5A09 /* cruiser.bmp */ = {isa = PBXFileReference; lastKnownFileType = image.bmp; path = cruiser.bmp; sourceTree = "<group>"; };
 		C6DC12812252F7D3002E5A09 /* cruiser.mtl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = cruiser.mtl; sourceTree = "<group>"; };
 		C6DC12852252FA92002E5A09 /* Cruiser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cruiser.swift; sourceTree = "<group>"; };
+		C6E3EF5A24A5709100515CD3 /* quad.obj */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = quad.obj; sourceTree = "<group>"; };
+		C6E3EF5C24A5709100515CD3 /* quad.mtl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = quad.mtl; sourceTree = "<group>"; };
+		C6E3EF6124A5710200515CD3 /* sphere.mtl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = sphere.mtl; sourceTree = "<group>"; };
+		C6E3EF6224A5710200515CD3 /* sphere.obj */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = sphere.obj; sourceTree = "<group>"; };
 		C6F0A39C229390B9001E5878 /* LightObject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LightObject.swift; sourceTree = "<group>"; };
 		C6F0A39E229391AF001E5878 /* LightManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LightManager.swift; sourceTree = "<group>"; };
 		C6F0A3A0229393C9001E5878 /* Sun.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sun.swift; sourceTree = "<group>"; };
@@ -309,7 +309,6 @@
 				1CADF5AB20B4DB800000F54C /* Pointer.swift */,
 				EB7AA337212E56DA0076FC19 /* Cube.swift */,
 				C608C90921EB113500B58EC7 /* Quad.swift */,
-				BD60C154240C32EB0056C925 /* TheSuzannes.swift */,
 				C635AB452427E81600642FE6 /* Chest.swift */,
 			);
 			path = "game objects";
@@ -321,15 +320,6 @@
 				1CADF5AE20B4DBB40000F54C /* Renderable.swift */,
 			);
 			path = protocols;
-			sourceTree = "<group>";
-		};
-		BD60C153240C32D30056C925 /* suzannes */ = {
-			isa = PBXGroup;
-			children = (
-				BD60C14F240C32D00056C925 /* TheSuzannes.mtl */,
-				BD60C150240C32D00056C925 /* TheSuzannes.obj */,
-			);
-			path = suzannes;
 			sourceTree = "<group>";
 		};
 		C608C90D21EB126B00B58EC7 /* types */ = {
@@ -384,10 +374,10 @@
 		C60ED7CC22358D4B00B1B94B /* res */ = {
 			isa = PBXGroup;
 			children = (
+				C6E3EF6024A570F500515CD3 /* sphere */,
+				C6E3EF5924A5708000515CD3 /* quad */,
 				C635AB422427E7D800642FE6 /* chest */,
-				BD60C153240C32D30056C925 /* suzannes */,
 				C6DC127E2252F7C6002E5A09 /* cruiser */,
-				C63ED1A522D9BA5F00BEB811 /* sphere.obj */,
 				C60ED7CD22358D6100B1B94B /* PartyPirateParot.png */,
 			);
 			path = res;
@@ -420,6 +410,24 @@
 				C6DC127F2252F7D3002E5A09 /* cruiser.obj */,
 			);
 			path = cruiser;
+			sourceTree = "<group>";
+		};
+		C6E3EF5924A5708000515CD3 /* quad */ = {
+			isa = PBXGroup;
+			children = (
+				C6E3EF5C24A5709100515CD3 /* quad.mtl */,
+				C6E3EF5A24A5709100515CD3 /* quad.obj */,
+			);
+			path = quad;
+			sourceTree = "<group>";
+		};
+		C6E3EF6024A570F500515CD3 /* sphere */ = {
+			isa = PBXGroup;
+			children = (
+				C6E3EF6124A5710200515CD3 /* sphere.mtl */,
+				C6E3EF6224A5710200515CD3 /* sphere.obj */,
+			);
+			path = sphere;
 			sourceTree = "<group>";
 		};
 		EB3FC4D820D6E77500CADFD8 /* Input */ = {
@@ -579,17 +587,18 @@
 			buildActionMask = 2147483647;
 			files = (
 				C619552C244CF15E00BAC9AD /* chest.mtl in Resources */,
-				C63ED1A622D9BA5F00BEB811 /* sphere.obj in Resources */,
 				1C0208D0206D575700EFC375 /* Assets.xcassets in Resources */,
-				BD60C151240C32D00056C925 /* TheSuzannes.mtl in Resources */,
 				C6BD05A72440D10400314E81 /* chest.obj in Resources */,
+				C6E3EF6324A5710200515CD3 /* sphere.mtl in Resources */,
 				C619552A244CF15D00BAC9AD /* Chest_Wood_Base_Color.png in Resources */,
 				C6DC12822252F7D3002E5A09 /* cruiser.obj in Resources */,
 				1C0208D3206D575700EFC375 /* Main.storyboard in Resources */,
 				C60ED7CE22358D6100B1B94B /* PartyPirateParot.png in Resources */,
 				C6DC12832252F7D3002E5A09 /* cruiser.bmp in Resources */,
-				BD60C152240C32D00056C925 /* TheSuzannes.obj in Resources */,
+				C6E3EF6424A5710200515CD3 /* sphere.obj in Resources */,
+				C6E3EF5D24A5709100515CD3 /* quad.obj in Resources */,
 				C619552B244CF15D00BAC9AD /* Chest_Metal_Base_Color.png in Resources */,
+				C6E3EF5F24A5709100515CD3 /* quad.mtl in Resources */,
 				C6DC12842252F7D4002E5A09 /* cruiser.mtl in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -625,7 +634,6 @@
 				1CA84B372092AE7300465F6A /* VertexDescriptorLibrary.swift in Sources */,
 				C6DC12862252FA92002E5A09 /* Cruiser.swift in Sources */,
 				1C0208C9206D575700EFC375 /* AppDelegate.swift in Sources */,
-				BD60C155240C32EB0056C925 /* TheSuzannes.swift in Sources */,
 				1C6E769120ACF8C6007F1DA5 /* MeshLibrary.swift in Sources */,
 				EBB9061E2173BC5A003B8CD0 /* InstancedGameObject.swift in Sources */,
 				EB6A608F20F27C8F00454ED9 /* CameraManager.swift in Sources */,

@@ -4,13 +4,12 @@ enum MeshTypes {
     case None
     
     case Triangle_Custom
-    case Quad_Custom
     case Cube_Custom
     
     case Cruiser
     case Sphere
     case Chest
-    case TheSuzannes
+    case Quad
 }
 
 class MeshLibrary: Library<MeshTypes, Mesh> {
@@ -20,13 +19,12 @@ class MeshLibrary: Library<MeshTypes, Mesh> {
         _library.updateValue(NoMesh(), forKey: .None)
         
         _library.updateValue(TriangleMesh(), forKey: .Triangle_Custom)
-        _library.updateValue(QuadMesh(), forKey: .Quad_Custom)
         _library.updateValue(CubeMesh(), forKey: .Cube_Custom)
 
         _library.updateValue(Mesh(modelName: "cruiser"), forKey: .Cruiser)
         _library.updateValue(Mesh(modelName: "sphere"), forKey: .Sphere)
         _library.updateValue(Mesh(modelName: "chest"), forKey: .Chest)
-        _library.updateValue(Mesh(modelName: "TheSuzannes"), forKey: .TheSuzannes)
+        _library.updateValue(Mesh(modelName: "quad"), forKey: .Quad)
     }
     
     override subscript(_ type: MeshTypes)->Mesh {
@@ -249,19 +247,6 @@ class TriangleMesh: Mesh {
         addVertex(position: float3( 0, 1,0), color: float4(1,0,0,1), textureCoordinate: float2(0.5,0.0))
         addVertex(position: float3(-1,-1,0), color: float4(0,1,0,1), textureCoordinate: float2(0.0,1.0))
         addVertex(position: float3( 1,-1,0), color: float4(0,0,1,1), textureCoordinate: float2(1.0,1.0))
-    }
-}
-
-class QuadMesh: Mesh {
-    override func createMesh() {
-        addVertex(position: float3( 1, 1,0), color: float4(1,0,0,1), textureCoordinate: float2(1,0), normal: float3(0,0,1)) //Top Right
-        addVertex(position: float3(-1, 1,0), color: float4(0,1,0,1), textureCoordinate: float2(0,0), normal: float3(0,0,1)) //Top Left
-        addVertex(position: float3(-1,-1,0), color: float4(0,0,1,1), textureCoordinate: float2(0,1), normal: float3(0,0,1)) //Bottom Left
-        addVertex(position: float3( 1,-1,0), color: float4(1,0,1,1), textureCoordinate: float2(1,1), normal: float3(0,0,1)) //Bottom Right
-        
-        addSubmesh(Submesh(indices: [
-            0,1,2,    0,2,3
-        ]))
     }
 }
 

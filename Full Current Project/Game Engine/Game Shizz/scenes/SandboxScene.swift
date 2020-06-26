@@ -1,6 +1,6 @@
 class SandboxScene: Scene{
     var debugCamera = DebugCamera()
-    var chest = Chest()
+    var chest = Quad()
     var sun = Sun()
     override func buildScene() {
         debugCamera.setPosition(0,0,3)
@@ -10,7 +10,6 @@ class SandboxScene: Scene{
         sun.setLightAmbientIntensity(0.04)
         addLight(sun)
         
-        chest.moveY(-0.5)
         addChild(chest)
     }
     
