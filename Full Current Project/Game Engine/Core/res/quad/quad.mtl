@@ -2,7 +2,7 @@
 # Material Count: 1
 
 newmtl None
-Ns 10
+Ns 200
 Ka 1.000000 1.000000 1.000000
 Kd 1.000000 1.000000 1.000000
 Ks 1.000000 1.000000 1.000000
@@ -11,4 +11,4 @@ Ni 1.450000
 d 1.000000
 illum 2
 
-map_objectSpaceNormal normal_example.png
+map_tangentSpaceNormal normal_example.png
