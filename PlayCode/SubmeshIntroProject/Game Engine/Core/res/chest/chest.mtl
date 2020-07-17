@@ -1,0 +1,38 @@
+# 3ds Max Wavefront OBJ Exporter v0.97b - (c)2007 guruware
+# File Created: 05.02.2020 19:16:02
+
+newmtl chest_01
+	Ns 80.0000
+	Ni 1.5000
+	d 1.0000
+	Tr 0.0000
+	Tf 1.0000 1.0000 1.0000 
+	illum 2
+	Ka 0.5880 0.5880 0.5880
+	Kd 0.5880 0.5880 0.5880
+	Ks 4.0000 4.0000 4.0000
+	Ke 0.0000 0.0000 0.0000
+    map_ao chest_01_Roughness.png
+    map_Kd chest_01_Base_Color.png
+    map_metallic chest_01_Metallic.png
+    map_roughness chest_01_Roughness.png
+    map_objectSpaceNormal chest_01_Normal.png
+    disp chest_01_Height.png
+
+newmtl chest_02
+	Ns 10.0000
+	Ni 1.5000
+	d 1.0000
+	Tr 0.0000
+	Tf 1.0000 1.0000 1.0000 
+	illum 2
+	Ka 0.5880 0.5880 0.5880
+	Kd 0.5880 0.5880 0.5880
+	Ks 0.0000 0.0000 0.0000
+	Ke 0.0000 0.0000 0.0000
+    map_ao chest_02_Roughness.png
+    map_Kd chest_02_Base_Color.png
+    map_metallic chest_02_Metallic.png
+    map_roughness chest_02_Roughness.png
+    map_objectSpaceNormal chest_02_Normal.png
+    disp chest_02_Height.png
