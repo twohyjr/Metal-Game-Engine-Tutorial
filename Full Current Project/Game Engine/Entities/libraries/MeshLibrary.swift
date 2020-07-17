@@ -151,7 +151,7 @@ class Mesh {
                 for submesh in _submeshes {
                     submesh.applyTextures(renderCommandEncoder: renderCommandEncoder,
                                           customBaseColorTextureType: baseColorTextureType,
-                                          normalMapTextureType: normalMapTextureType)
+                                          customNormalMapTextureType: normalMapTextureType)
                     submesh.applyMaterials(renderCommandEncoder: renderCommandEncoder,
                                            customMaterial: material)
                     renderCommandEncoder.drawIndexedPrimitives(type: submesh.primitiveType,
@@ -253,13 +253,18 @@ class Submesh {
     
     func applyTextures(renderCommandEncoder: MTLRenderCommandEncoder,
                       customBaseColorTextureType: TextureTypes,
-                      normalMapTextureType: TextureTypes) {
-        renderCommandEncoder.setFragmentSamplerState(Graphics.SamplerStates[.Linear], index: 0)
+                      customNormalMapTextureType: TextureTypes) {
+        _material.useBaseTexture = customBaseColorTextureType != .None || _baseColorTexture != nil
+        _material.useNormalMapTexture = customNormalMapTextureType != .None || _normalMapTexture != nil
+        
+        if(_material.useBaseTexture || _material.useNormalMapTexture ) {
+            renderCommandEncoder.setFragmentSamplerState(Graphics.SamplerStates[.Linear], index: 0)
+        }
         
         let baseColorTex = customBaseColorTextureType == .None ? _baseColorTexture : Entities.Textures[customBaseColorTextureType]
         renderCommandEncoder.setFragmentTexture(baseColorTex, index: 0)
         
-        let normalMapTex = normalMapTextureType == .None ? _normalMapTexture : Entities.Textures[normalMapTextureType]
+        let normalMapTex = customNormalMapTextureType == .None ? _normalMapTexture : Entities.Textures[customNormalMapTextureType]
         renderCommandEncoder.setFragmentTexture(normalMapTex, index: 1)
     }
     

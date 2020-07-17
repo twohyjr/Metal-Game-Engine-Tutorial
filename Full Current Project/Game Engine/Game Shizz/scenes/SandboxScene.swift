@@ -11,8 +11,15 @@ class SandboxScene: Scene{
         addLight(sun)
         
         well.moveY(-1.5)
+        well.moveX(-2)
         well.rotateY(1)
         addChild(well)
+        
+        let quad = Quad()
+        quad.useBaseColorTexture(.PartyPirateParot)
+        quad.setScale(2)
+        quad.moveX(2)
+        addChild(quad)
     }
     
     override func doUpdate() {

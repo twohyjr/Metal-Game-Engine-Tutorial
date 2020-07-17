@@ -13,7 +13,7 @@ class TextureLibrary: Library<TextureTypes, MTLTexture> {
     private var library: [TextureTypes : Texture] = [:]
     
     override func fillLibrary() {
-        library.updateValue(Texture("PartyPirateParot"), forKey: .PartyPirateParot)
+        library.updateValue(Texture("PartyPirateParot", origin: .bottomLeft), forKey: .PartyPirateParot)
         library.updateValue(Texture("cruiser", ext: "bmp", origin: .bottomLeft), forKey: .Cruiser)
         
         // Metal Plate

@@ -34,13 +34,13 @@ fragment half4 basic_fragment_shader(RasterizerData rd [[ stage_in ]],
     float2 texCoord = rd.textureCoordinate;
     
     float4 color = material.color;
-    if(!is_null_texture(baseColorMap)) {
+    if(material.useBaseTexture) {
         color = baseColorMap.sample(sampler2d, texCoord);
     }
 
     if(material.isLit) {
         float3 unitNormal = normalize(rd.surfaceNormal);
-        if(!is_null_texture(normalMap)) {
+        if(material.useNormalMapTexture) {
             float3 sampleNormal = normalMap.sample(sampler2d, texCoord).rgb * 2 - 1;
             float3x3 TBN = { rd.surfaceTangent, rd.surfaceBitangent, rd.surfaceNormal };
             unitNormal = TBN * sampleNormal;
