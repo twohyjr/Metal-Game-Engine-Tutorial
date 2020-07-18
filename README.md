@@ -17,9 +17,6 @@ I have listed all of the project files from each episode of the tutorial at the 
  * [Community](https://github.com/twohyjr/Metal-Game-Engine-Tutorial/tree/master/Community):
     * For you to add cool projects to and share with others.
 
- * [Episode Project Files](https://github.com/twohyjr/Metal-Game-Engine-Tutorial/tree/master/Episode%20Project%20Files):
-    * All of the current episode project files
-
  * [Full Current Project](https://github.com/twohyjr/Metal-Game-Engine-Tutorial/tree/master/Full%Current%Project):
     * The latest episodes code.  Should be up to date with the last episode I did on the series.
 
@@ -53,59 +50,65 @@ None.  Feel free to use it anywhere.  I do not care.  If you want to put my name
 
 ---
 
-### All Project File Locations
-* [Episode 2: Metal Render Pipeline](https://github.com/twohyjr/Metal-Game-Engine-Tutorial/tree/master/Episode%20Project%20Files/Episode2.0_Metal%20Render%20Pipeline)
+### All Project File Locations (Each in an individual branch for easier downloading of the code)
+* [Episode 2: Metal Render Pipeline](https://github.com/twohyjr/Metal-Game-Engine-Tutorial/tree/Episode2.0_MetalRenderPipeline)
 
-* [Episode 3: Rendering Using The GPU](https://github.com/twohyjr/Metal-Game-Engine-Tutorial/tree/master/Episode%20Project%20Files/Episode3.0_Rendering%20using%20the%20GPU)
+* [Episode 3: Rendering Using The GPU](https://github.com/twohyjr/Metal-Game-Engine-Tutorial/tree/Episode3.0_RenderingUsingTheGPU)
 
-* [Episode 4: Vertex/Fragment Shaders](https://github.com/twohyjr/Metal-Game-Engine-Tutorial/tree/master/Episode%20Project%20Files/Episode4.0_Vertex_FragmentShaders)
+* [Episode 4: Vertex/Fragment Shaders](https://github.com/twohyjr/Metal-Game-Engine-Tutorial/tree/Episode4.0_Vertex_FragmentShaders)
 
-* [Episode 5: Vertex Descriptor](https://github.com/twohyjr/Metal-Game-Engine-Tutorial/tree/master/Episode%20Project%20Files/Episode5.0_Vertex%20Descriptor)
+* [Episode 5: Vertex Descriptor](https://github.com/twohyjr/Metal-Game-Engine-Tutorial/tree/Episode5.0_VertexDescriptor)
 
-* [Episode 6: Libraries](https://github.com/twohyjr/Metal-Game-Engine-Tutorial/tree/master/Episode%20Project%20Files/Episode6.0_Libraries)
+* [Episode 6: Libraries](https://github.com/twohyjr/Metal-Game-Engine-Tutorial/tree/Episode6.0_Libraries)
 
-* [Episode 7: Game Objects](https://github.com/twohyjr/Metal-Game-Engine-Tutorial/tree/master/Episode%20Project%20Files/Episode7.0_GameObject)
+* [Episode 7: Game Objects](https://github.com/twohyjr/Metal-Game-Engine-Tutorial/tree/Episode7.0_GameObject)
 
-* [Episode 8: Meshes & The Player Object](https://github.com/twohyjr/Metal-Game-Engine-Tutorial/tree/master/Episode%20Project%20Files/Episode8.0_Meshes%26PlayerObject)
+* [Episode 8: Meshes & The Player Object](https://github.com/twohyjr/Metal-Game-Engine-Tutorial/tree/Episode8.0_Meshes_PlayerObject)
 
-* [Episode 9: Moving The Game Object](https://github.com/twohyjr/Metal-Game-Engine-Tutorial/tree/master/Episode%20Project%20Files/Episode9.0_Moving%20The%20Game%20Object%20Around)
+* [Episode 9: Moving The Game Object](https://github.com/twohyjr/Metal-Game-Engine-Tutorial/tree/Episode9.0_MovingTheGameObjectAround)
 
-* [Episode 10: Scene Graphs](https://github.com/twohyjr/Metal-Game-Engine-Tutorial/tree/master/Episode%20Project%20Files/Episode10.0_SceneGraphs)
+* [Episode 10: Scene Graphs](https://github.com/twohyjr/Metal-Game-Engine-Tutorial/tree/Episode10.0_SceneGraphs)
 
-* [Episode 11: Mouse And Keyboard Input](https://github.com/twohyjr/Metal-Game-Engine-Tutorial/tree/master/Episode%20Project%20Files/Episode11.0_Mouse%26KeyboardInput)
+* [Episode 11: Mouse And Keyboard Input](https://github.com/twohyjr/Metal-Game-Engine-Tutorial/tree/Episode11.0_Mouse)
 
-* [Episode 12: Cameras](https://github.com/twohyjr/Metal-Game-Engine-Tutorial/tree/master/Episode%20Project%20Files/Episode12.0_AddingCameras)
+* [Episode 12: Cameras](https://github.com/twohyjr/Metal-Game-Engine-Tutorial/tree/Episode12.0_AddingCameras)
 
-* [Episode 13: Going 3D](https://github.com/twohyjr/Metal-Game-Engine-Tutorial/tree/master/Episode%20Project%20Files/Episode13.0_Going3D)
+* [Episode 13: Going 3D](https://github.com/twohyjr/Metal-Game-Engine-Tutorial/tree/Episode13.0_Going3D)
 
-* [Episode 14: Textures](https://github.com/twohyjr/Metal-Game-Engine-Tutorial/tree/master/Episode%20Project%20Files/Episode19.0_Textures)
+* [Episode 14: Textures](https://github.com/twohyjr/Metal-Game-Engine-Tutorial/tree/Episode14.0_Materials)
 
-* [Episode 15: Instanced Models](https://github.com/twohyjr/Metal-Game-Engine-Tutorial/tree/master/Episode%20Project%20Files/Episode%2015.0_Instanced-Model-Rendering)
+* [Episode 15: Instanced Models](https://github.com/twohyjr/Metal-Game-Engine-Tutorial/tree/Episode15.0_Instanced-Model-Rendering)
 
-* [Episode 16: Metal Debugging](https://github.com/twohyjr/Metal-Game-Engine-Tutorial/tree/master/Episode%20Project%20Files/Episode%2016.0_Metal-Debugging)
+* [Episode 16: Metal Debugging](https://github.com/twohyjr/Metal-Game-Engine-Tutorial/tree/Episode16.0_Metal-Debugging)
 
-* [Episode 17: Code Refactor](https://github.com/twohyjr/Metal-Game-Engine-Tutorial/tree/master/Episode%20Project%20Files/Episode%2017.0_Code%20Refactor)
+* [Episode 17: Code Refactor](https://github.com/twohyjr/Metal-Game-Engine-Tutorial/tree/Episode17.0_CodeRefactor)
 
-* [Episode 18: Texture Coordinates](https://github.com/twohyjr/Metal-Game-Engine-Tutorial/tree/master/Episode%20Project%20Files/Episode%2018.0_TextureCoordinates)
+* [Episode 18: Texture Coordinates](https://github.com/twohyjr/Metal-Game-Engine-Tutorial/tree/Episode18.0_TextureCoordinates)
 
-* [Episode 19: Textures](https://github.com/twohyjr/Metal-Game-Engine-Tutorial/tree/master/Episode%20Project%20Files/Episode19.0_Textures)
+* [Episode 19: Textures](https://github.com/twohyjr/Metal-Game-Engine-Tutorial/tree/Episode19.0_Textures)
 
-* [Episode 20: Loading 3D Meshes](https://github.com/twohyjr/Metal-Game-Engine-Tutorial/tree/master/Episode%20Project%20Files/Episode20.0_Loading3DMeshes)
+* [Episode 20: Loading 3D Meshes](https://github.com/twohyjr/Metal-Game-Engine-Tutorial/tree/Episode20.0_Loading3DMeshes)
 
-* [Episode 21: Lighting Architecture](https://github.com/twohyjr/Metal-Game-Engine-Tutorial/tree/master/Episode%20Project%20Files/Episode21.0_LightingArchitecture)
+* [Episode 21: Lighting Architecture](https://github.com/twohyjr/Metal-Game-Engine-Tutorial/tree/Episode21.0_LightingArchitecture)
 
-* [Episode 23: Ambient Lighting](https://github.com/twohyjr/Metal-Game-Engine-Tutorial/tree/master/Episode%20Project%20Files/Episode23.0_AmbientLighting)
+* [Episode 23: Ambient Lighting](https://github.com/twohyjr/Metal-Game-Engine-Tutorial/tree/Episode23.0_AmbientLighting)
 
-* [Episode 24: Diffuse Lighting](https://github.com/twohyjr/Metal-Game-Engine-Tutorial/tree/master/Episode%20Project%20Files/Episode24.0_DiffuseLighting)
+* [Episode 24: Diffuse Lighting](https://github.com/twohyjr/Metal-Game-Engine-Tutorial/tree/Episode24.0_DiffuseLighting)
 
-* [Episode 25: Specular Lighting](https://github.com/twohyjr/Metal-Game-Engine-Tutorial/tree/master/Episode%20Project%20Files/Episode25.0_SpecularLighting)
+* [Episode 25: Specular Lighting](https://github.com/twohyjr/Metal-Game-Engine-Tutorial/tree/Episode25.0_SpecularLighting)
 
-* [Episode 26: Code Refactor](https://github.com/twohyjr/Metal-Game-Engine-Tutorial/tree/master/Episode%20Project%20Files/Episode26.1_RefactoringAgain)
+* [Episode 26: Code Refactor](https://github.com/twohyjr/Metal-Game-Engine-Tutorial/tree/Episode26.1_RefactoringAgain)
 
-* [Episode 27: Mip Mapping](https://github.com/twohyjr/Metal-Game-Engine-Tutorial/tree/master/Episode%20Project%20Files/Episode27.0_MipMapping)
+* [Episode 27: Mip Mapping](https://github.com/twohyjr/Metal-Game-Engine-Tutorial/tree/Episode27.0_MipMapping)
 
-* [Episode 28: Indexed Vertices](https://github.com/twohyjr/Metal-Game-Engine-Tutorial/tree/master/Episode%20Project%20Files/Episode28.0_IndexingVertices)
+* [Episode 28: Indexed Vertices](https://github.com/twohyjr/Metal-Game-Engine-Tutorial/tree/Episode28.0_IndexingVertices)
 
-* [Episode 29: Importing Blender Meshes](https://github.com/twohyjr/Metal-Game-Engine-Tutorial/tree/master/Episode%20Project%20Files/Episode29.0_ImportingBlenderMeshes)
+* [Episode 29: Importing Blender Meshes](https://github.com/twohyjr/Metal-Game-Engine-Tutorial/tree/Episode29.0_ImportingBlenderMeshes)
 
-* [Episode 30: Submeshes](https://github.com/twohyjr/Metal-Game-Engine-Tutorial/tree/master/Episode%20Project%20Files/Episode30.0_Submeshes)
+* [Episode 30: Submeshes](https://github.com/twohyjr/Metal-Game-Engine-Tutorial/tree/Episode30.0_Submeshes)
+
+* [Episode 32: .MTL Files](https://github.com/twohyjr/Metal-Game-Engine-Tutorial/tree/Episode32.0_MTLFiles)
+
+* [Episode 33.1: Normal Maps](https://github.com/twohyjr/Metal-Game-Engine-Tutorial/tree/Episode33.1_NormalMaps)
+
+* [Episode 33.2: Texture Bug Fix](https://github.com/twohyjr/Metal-Game-Engine-Tutorial/tree/Episode33.2_TextureBugFix)
