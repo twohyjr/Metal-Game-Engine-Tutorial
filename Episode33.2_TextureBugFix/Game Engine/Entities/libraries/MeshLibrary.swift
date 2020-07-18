@@ -257,9 +257,7 @@ class Submesh {
         _material.useBaseTexture = customBaseColorTextureType != .None || _baseColorTexture != nil
         _material.useNormalMapTexture = customNormalMapTextureType != .None || _normalMapTexture != nil
         
-        if(_material.useBaseTexture || _material.useNormalMapTexture ) {
-            renderCommandEncoder.setFragmentSamplerState(Graphics.SamplerStates[.Linear], index: 0)
-        }
+        renderCommandEncoder.setFragmentSamplerState(Graphics.SamplerStates[.Linear], index: 0)
         
         let baseColorTex = customBaseColorTextureType == .None ? _baseColorTexture : Entities.Textures[customBaseColorTextureType]
         renderCommandEncoder.setFragmentTexture(baseColorTex, index: 0)
