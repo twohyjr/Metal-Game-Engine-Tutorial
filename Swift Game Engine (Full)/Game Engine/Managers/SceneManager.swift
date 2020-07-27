@@ -2,10 +2,10 @@ import MetalKit
 
 enum SceneTypes{
     case Sandbox
+    case Forest
 }
 
 class SceneManager{
-    
     private static var _currentScene: Scene!
     
     public static func Initialize(_ sceneType: SceneTypes){
@@ -16,6 +16,8 @@ class SceneManager{
         switch sceneType {
         case .Sandbox:
             _currentScene = SandboxScene(name: "Sandbox")
+        case .Forest:
+            _currentScene = ForestScene(name: "Forest")
         }
     }
     
