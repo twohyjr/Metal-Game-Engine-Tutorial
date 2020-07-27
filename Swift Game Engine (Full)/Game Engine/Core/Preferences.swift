@@ -7,14 +7,15 @@ public enum ClearColors{
     static let DarkGrey = MTLClearColor(red: 0.01, green: 0.01, blue: 0.01, alpha: 1.0)
     static let Black = MTLClearColor(red: 0, green: 0, blue: 0, alpha: 1)
     static let LimeGreen = MTLClearColor(red: 0.3, green: 0.7, blue: 0.3, alpha: 1)
+    static let SkyBlue = MTLClearColor(red: 0.3, green: 0.4, blue: 0.8, alpha: 1)
 }
 
 class Preferences {
-    public static var ClearColor: MTLClearColor = ClearColors.DarkGrey
+    public static var ClearColor: MTLClearColor = ClearColors.SkyBlue
     
     public static var MainPixelFormat: MTLPixelFormat = MTLPixelFormat.bgra8Unorm_srgb
     
     public static var MainDepthPixelFormat: MTLPixelFormat = MTLPixelFormat.depth32Float
     
-    public static var StartingSceneType: SceneTypes = SceneTypes.Sandbox
+    public static var StartingSceneType: SceneTypes = SceneTypes.Forest
 }

@@ -11,6 +11,19 @@ enum MeshTypes {
     case Chest
     case Quad
     case Well
+    
+    // Terrain
+    case GroundGrass
+    
+    // Tree
+    case TreePineA
+    case TreePineB
+    case TreePineC
+    
+    // Flowers
+    case FlowerRed
+    case FlowerYellow
+    case FlowerPurple
 }
 
 class MeshLibrary: Library<MeshTypes, Mesh> {
@@ -27,6 +40,19 @@ class MeshLibrary: Library<MeshTypes, Mesh> {
         _library.updateValue(Mesh(modelName: "sphere"), forKey: .Sphere)
         _library.updateValue(Mesh(modelName: "chest"), forKey: .Chest)
         _library.updateValue(Mesh(modelName: "quad"), forKey: .Quad)
+        
+        // Terrain
+        _library.updateValue(Mesh(modelName: "ground_grass"), forKey: .GroundGrass)
+        
+        // Trees
+        _library.updateValue(Mesh(modelName: "tree_pineDefaultB"), forKey: .TreePineA)
+        _library.updateValue(Mesh(modelName: "tree_pineRoundC"), forKey: .TreePineB)
+        _library.updateValue(Mesh(modelName: "tree_pineTallA_detailed"), forKey: .TreePineC)
+        
+        // Flowers
+        _library.updateValue(Mesh(modelName: "flower_redA"), forKey: .FlowerRed)
+        _library.updateValue(Mesh(modelName: "flower_purpleA"), forKey: .FlowerPurple)
+        _library.updateValue(Mesh(modelName: "flower_yellowA"), forKey: .FlowerYellow)
     }
     
     override subscript(_ type: MeshTypes)->Mesh {
