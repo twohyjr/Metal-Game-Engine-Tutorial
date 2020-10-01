@@ -59,6 +59,10 @@
 		C6CBC8E524CE164600629E48 /* flower_yellowA.obj in Resources */ = {isa = PBXBuildFile; fileRef = C6CBC8DF24CE164600629E48 /* flower_yellowA.obj */; };
 		C6CBC8E624CE164600629E48 /* flower_purpleA.obj in Resources */ = {isa = PBXBuildFile; fileRef = C6CBC8E024CE164600629E48 /* flower_purpleA.obj */; };
 		C6CBC8E724CE164600629E48 /* flower_yellowA.mtl in Resources */ = {isa = PBXBuildFile; fileRef = C6CBC8E124CE164600629E48 /* flower_yellowA.mtl */; };
+		C6DA89B12524218E00F0FCDA /* Flowers.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6DA89B02524218E00F0FCDA /* Flowers.swift */; };
+		C6DA89B32524219500F0FCDA /* Trees.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6DA89B22524219500F0FCDA /* Trees.swift */; };
+		C6DA89B7252425E500F0FCDA /* tent_smallOpen.mtl in Resources */ = {isa = PBXBuildFile; fileRef = C6DA89B5252425E500F0FCDA /* tent_smallOpen.mtl */; };
+		C6DA89B8252425E500F0FCDA /* tent_smallOpen.obj in Resources */ = {isa = PBXBuildFile; fileRef = C6DA89B6252425E500F0FCDA /* tent_smallOpen.obj */; };
 		C6DC12822252F7D3002E5A09 /* cruiser.obj in Resources */ = {isa = PBXBuildFile; fileRef = C6DC127F2252F7D3002E5A09 /* cruiser.obj */; };
 		C6DC12832252F7D3002E5A09 /* cruiser.bmp in Resources */ = {isa = PBXBuildFile; fileRef = C6DC12802252F7D3002E5A09 /* cruiser.bmp */; };
 		C6DC12842252F7D4002E5A09 /* cruiser.mtl in Resources */ = {isa = PBXBuildFile; fileRef = C6DC12812252F7D3002E5A09 /* cruiser.mtl */; };
@@ -169,6 +173,10 @@
 		C6CBC8DF24CE164600629E48 /* flower_yellowA.obj */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = flower_yellowA.obj; sourceTree = "<group>"; };
 		C6CBC8E024CE164600629E48 /* flower_purpleA.obj */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = flower_purpleA.obj; sourceTree = "<group>"; };
 		C6CBC8E124CE164600629E48 /* flower_yellowA.mtl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = flower_yellowA.mtl; sourceTree = "<group>"; };
+		C6DA89B02524218E00F0FCDA /* Flowers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Flowers.swift; sourceTree = "<group>"; };
+		C6DA89B22524219500F0FCDA /* Trees.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Trees.swift; sourceTree = "<group>"; };
+		C6DA89B5252425E500F0FCDA /* tent_smallOpen.mtl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = tent_smallOpen.mtl; sourceTree = "<group>"; };
+		C6DA89B6252425E500F0FCDA /* tent_smallOpen.obj */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = tent_smallOpen.obj; sourceTree = "<group>"; };
 		C6DC127F2252F7D3002E5A09 /* cruiser.obj */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = cruiser.obj; sourceTree = "<group>"; };
 		C6DC12802252F7D3002E5A09 /* cruiser.bmp */ = {isa = PBXFileReference; lastKnownFileType = image.bmp; path = cruiser.bmp; sourceTree = "<group>"; };
 		C6DC12812252F7D3002E5A09 /* cruiser.mtl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = cruiser.mtl; sourceTree = "<group>"; };
@@ -352,6 +360,8 @@
 				EB7AA337212E56DA0076FC19 /* Cube.swift */,
 				C608C90921EB113500B58EC7 /* Quad.swift */,
 				C635AB452427E81600642FE6 /* Chest.swift */,
+				C6DA89B02524218E00F0FCDA /* Flowers.swift */,
+				C6DA89B22524219500F0FCDA /* Trees.swift */,
 			);
 			path = "game objects";
 			sourceTree = "<group>";
@@ -416,6 +426,7 @@
 		C60ED7CC22358D4B00B1B94B /* res */ = {
 			isa = PBXGroup;
 			children = (
+				C6DA89B4252425C200F0FCDA /* tent */,
 				C6CBC8CB24CE161D00629E48 /* trees */,
 				C6CBC8CA24CE161200629E48 /* flowers */,
 				C6CBC8C924CE160300629E48 /* terrain */,
@@ -482,6 +493,15 @@
 				C6CBC8D424CE163B00629E48 /* tree_pineTallA_detailed.obj */,
 			);
 			path = trees;
+			sourceTree = "<group>";
+		};
+		C6DA89B4252425C200F0FCDA /* tent */ = {
+			isa = PBXGroup;
+			children = (
+				C6DA89B5252425E500F0FCDA /* tent_smallOpen.mtl */,
+				C6DA89B6252425E500F0FCDA /* tent_smallOpen.obj */,
+			);
+			path = tent;
 			sourceTree = "<group>";
 		};
 		C6DC127E2252F7C6002E5A09 /* cruiser */ = {
@@ -705,7 +725,9 @@
 				C6CBC8CF24CE163400629E48 /* ground_grass.mtl in Resources */,
 				C6DC12822252F7D3002E5A09 /* cruiser.obj in Resources */,
 				C6CBC8E324CE164600629E48 /* flower_purpleA.mtl in Resources */,
+				C6DA89B8252425E500F0FCDA /* tent_smallOpen.obj in Resources */,
 				C6CBC8CE24CE163400629E48 /* ground_grass.obj in Resources */,
+				C6DA89B7252425E500F0FCDA /* tent_smallOpen.mtl in Resources */,
 				C6E3EF8824A5814000515CD3 /* metal_plate_nor.png in Resources */,
 				C6CBC8D724CE163C00629E48 /* tree_pineRoundC.mtl in Resources */,
 				C6CBC8E624CE164600629E48 /* flower_purpleA.obj in Resources */,
@@ -779,6 +801,7 @@
 				C60ED7D22235900C00B1B94B /* SamplerStateLibrary.swift in Sources */,
 				C6F0A39D229390B9001E5878 /* LightObject.swift in Sources */,
 				C608C91321EB131C00B58EC7 /* Entities.swift in Sources */,
+				C6DA89B32524219500F0FCDA /* Trees.swift in Sources */,
 				C608C90A21EB113500B58EC7 /* Quad.swift in Sources */,
 				1C66A279208430880014D1E2 /* MetalTypes.swift in Sources */,
 				C6F0A3A1229393C9001E5878 /* Sun.swift in Sources */,
@@ -789,6 +812,7 @@
 				EB6A608B20F2797F00454ED9 /* Camera.swift in Sources */,
 				C608C91521EB134800B58EC7 /* Library.swift in Sources */,
 				C608C91121EB12BC00B58EC7 /* Graphics.swift in Sources */,
+				C6DA89B12524218E00F0FCDA /* Flowers.swift in Sources */,
 				1CADF5AC20B4DB800000F54C /* Pointer.swift in Sources */,
 				EBB8610C20CF342C004D5AAD /* SandboxScene.swift in Sources */,
 				C608C91921EB152600B58EC7 /* ShaderLibrary.swift in Sources */,

@@ -24,6 +24,9 @@ enum MeshTypes {
     case FlowerRed
     case FlowerYellow
     case FlowerPurple
+    
+    // Tent
+    case Tent_Opened
 }
 
 class MeshLibrary: Library<MeshTypes, Mesh> {
@@ -53,6 +56,9 @@ class MeshLibrary: Library<MeshTypes, Mesh> {
         _library.updateValue(Mesh(modelName: "flower_redA"), forKey: .FlowerRed)
         _library.updateValue(Mesh(modelName: "flower_purpleA"), forKey: .FlowerPurple)
         _library.updateValue(Mesh(modelName: "flower_yellowA"), forKey: .FlowerYellow)
+        
+        // Tent
+        _library.updateValue(Mesh(modelName: "tent_smallOpen"), forKey: .Tent_Opened)
     }
     
     override subscript(_ type: MeshTypes)->Mesh {
@@ -184,7 +190,8 @@ class Mesh {
                                                                indexCount: submesh.indexCount,
                                                                indexType: submesh.indexType,
                                                                indexBuffer: submesh.indexBuffer,
-                                                               indexBufferOffset: submesh.indexBufferOffset)
+                                                               indexBufferOffset: submesh.indexBufferOffset,
+                                                               instanceCount: _instanceCount)
                 }
             } else {
                 renderCommandEncoder.drawPrimitives(type: .triangle,

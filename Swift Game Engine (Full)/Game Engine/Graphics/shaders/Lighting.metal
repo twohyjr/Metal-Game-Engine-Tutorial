@@ -25,13 +25,18 @@ public:
             // Ambient Lighting
             float3 ambientness = material.ambient * lightData.ambientIntensity;
             float3 ambientColor = clamp(ambientness * lightData.color * lightData.brightness, 0.0, 1.0);
-            totalAmbient += ambientColor;
             
             // Diffuse Lighting
             float3 diffuseness = material.diffuse * lightData.diffuseIntensity;
-            float nDotL = max(dot(unitNormal, unitToLightVector), 0.0); // N  dot  L
-            float3 diffuseColor = clamp(diffuseness * nDotL * lightData.color * lightData.brightness, 0.0, 1.0);
+            float nDotL = dot(unitNormal, unitToLightVector); // N  dot  L
+            float correctedNDotL =  max(nDotL, 0.3);
+            float3 diffuseColor = clamp(diffuseness * correctedNDotL * lightData.color * lightData.brightness, 0.0, 1.0);
             totalDiffuse += diffuseColor;
+            
+            // Only add ambient to the backs of objects
+            if(nDotL <= 0) {
+                totalAmbient += ambientColor;
+            }
             
             // Specular Lighting
             float3 specularness = material.specular * lightData.specularIntensity;

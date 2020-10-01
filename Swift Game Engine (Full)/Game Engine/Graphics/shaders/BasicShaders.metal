@@ -17,9 +17,9 @@ vertex RasterizerData basic_vertex_shader(const VertexIn vIn [[ stage_in ]],
     rd.worldPosition = worldPosition.xyz;
     rd.toCameraVector = sceneConstants.cameraPosition - worldPosition.xyz;
     
-    rd.surfaceNormal = (modelConstants.modelMatrix * float4(vIn.normal, 0.0)).xyz;
-    rd.surfaceTangent = (modelConstants.modelMatrix * float4(vIn.tangent, 0.0)).xyz;
-    rd.surfaceBitangent = (modelConstants.modelMatrix * float4(vIn.bitangent, 0.0)).xyz;
+    rd.surfaceNormal = normalize(modelConstants.modelMatrix * float4(vIn.normal, 0.0)).xyz;
+    rd.surfaceTangent = normalize(modelConstants.modelMatrix * float4(vIn.tangent, 0.0)).xyz;
+    rd.surfaceBitangent = normalize(modelConstants.modelMatrix * float4(vIn.bitangent, 0.0)).xyz;
     
     return rd;
 }
@@ -37,7 +37,7 @@ fragment half4 basic_fragment_shader(RasterizerData rd [[ stage_in ]],
     if(material.useBaseTexture) {
         color = baseColorMap.sample(sampler2d, texCoord);
     }
-
+    
     if(material.isLit) {
         float3 unitNormal = normalize(rd.surfaceNormal);
         if(material.useNormalMapTexture) {
