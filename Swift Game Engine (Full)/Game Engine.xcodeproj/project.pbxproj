@@ -40,11 +40,11 @@
 		C619552A244CF15D00BAC9AD /* Chest_Wood_Base_Color.png in Resources */ = {isa = PBXBuildFile; fileRef = C6195527244CF15D00BAC9AD /* Chest_Wood_Base_Color.png */; };
 		C619552B244CF15D00BAC9AD /* Chest_Metal_Base_Color.png in Resources */ = {isa = PBXBuildFile; fileRef = C6195528244CF15D00BAC9AD /* Chest_Metal_Base_Color.png */; };
 		C619552C244CF15E00BAC9AD /* chest.mtl in Resources */ = {isa = PBXBuildFile; fileRef = C6195529244CF15D00BAC9AD /* chest.mtl */; };
-		C62F939A25A130BB009813AE /* clouds.png in Resources */ = {isa = PBXBuildFile; fileRef = C62F939825A130BA009813AE /* clouds.png */; };
 		C62F939B25A130BB009813AE /* skysphere.obj in Resources */ = {isa = PBXBuildFile; fileRef = C62F939925A130BB009813AE /* skysphere.obj */; };
 		C62F93A025A13147009813AE /* SkySphere.swift in Sources */ = {isa = PBXBuildFile; fileRef = C62F939F25A13147009813AE /* SkySphere.swift */; };
 		C62F93A825A13297009813AE /* SkySphereShaders.metal in Sources */ = {isa = PBXBuildFile; fileRef = C62F93A725A13297009813AE /* SkySphereShaders.metal */; };
 		C635AB462427E81600642FE6 /* Chest.swift in Sources */ = {isa = PBXBuildFile; fileRef = C635AB452427E81600642FE6 /* Chest.swift */; };
+		C66D5F5725A177C000D52A32 /* clouds.png in Resources */ = {isa = PBXBuildFile; fileRef = C66D5F5625A177C000D52A32 /* clouds.png */; };
 		C68F50DE221CD09C0091E35F /* Math.swift in Sources */ = {isa = PBXBuildFile; fileRef = C68F50DD221CD09C0091E35F /* Math.swift */; };
 		C6A215342385B0AC003A003C /* Lighting.metal in Sources */ = {isa = PBXBuildFile; fileRef = C6A215332385B0AC003A003C /* Lighting.metal */; };
 		C6BD05A72440D10400314E81 /* chest.obj in Resources */ = {isa = PBXBuildFile; fileRef = C6BD05A62440D10400314E81 /* chest.obj */; };
@@ -158,11 +158,11 @@
 		C6195527244CF15D00BAC9AD /* Chest_Wood_Base_Color.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Chest_Wood_Base_Color.png; sourceTree = "<group>"; };
 		C6195528244CF15D00BAC9AD /* Chest_Metal_Base_Color.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Chest_Metal_Base_Color.png; sourceTree = "<group>"; };
 		C6195529244CF15D00BAC9AD /* chest.mtl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = chest.mtl; sourceTree = "<group>"; };
-		C62F939825A130BA009813AE /* clouds.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = clouds.png; sourceTree = "<group>"; };
 		C62F939925A130BB009813AE /* skysphere.obj */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = skysphere.obj; sourceTree = "<group>"; };
 		C62F939F25A13147009813AE /* SkySphere.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SkySphere.swift; sourceTree = "<group>"; };
 		C62F93A725A13297009813AE /* SkySphereShaders.metal */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.metal; path = SkySphereShaders.metal; sourceTree = "<group>"; };
 		C635AB452427E81600642FE6 /* Chest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Chest.swift; sourceTree = "<group>"; };
+		C66D5F5625A177C000D52A32 /* clouds.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = clouds.png; sourceTree = "<group>"; };
 		C68F50DD221CD09C0091E35F /* Math.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Math.swift; sourceTree = "<group>"; };
 		C6A215332385B0AC003A003C /* Lighting.metal */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.metal; path = Lighting.metal; sourceTree = "<group>"; };
 		C6BD05A62440D10400314E81 /* chest.obj */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = chest.obj; sourceTree = "<group>"; };
@@ -455,8 +455,8 @@
 		C62F939725A130AF009813AE /* skysphere */ = {
 			isa = PBXGroup;
 			children = (
-				C62F939825A130BA009813AE /* clouds.png */,
 				C62F939925A130BB009813AE /* skysphere.obj */,
+				C66D5F5625A177C000D52A32 /* clouds.png */,
 			);
 			path = skysphere;
 			sourceTree = "<group>";
@@ -731,7 +731,6 @@
 			files = (
 				C6CBC8E724CE164600629E48 /* flower_yellowA.mtl in Resources */,
 				C6CBC8E224CE164600629E48 /* flower_redA.mtl in Resources */,
-				C62F939A25A130BB009813AE /* clouds.png in Resources */,
 				C619552C244CF15E00BAC9AD /* chest.mtl in Resources */,
 				1C0208D0206D575700EFC375 /* Assets.xcassets in Resources */,
 				C6E3EF9324A5823200515CD3 /* well.mtl in Resources */,
@@ -757,6 +756,7 @@
 				C6E3EF8724A5814000515CD3 /* metal_plate_diff.png in Resources */,
 				C6E3EF8F24A5823200515CD3 /* well-normal.png in Resources */,
 				C60ED7CE22358D6100B1B94B /* PartyPirateParot.png in Resources */,
+				C66D5F5725A177C000D52A32 /* clouds.png in Resources */,
 				C6E3EF9024A5823200515CD3 /* well-diff.png in Resources */,
 				C6CBC8DA24CE163C00629E48 /* tree_pineTallA_detailed.obj in Resources */,
 				C6DC12832252F7D3002E5A09 /* cruiser.bmp in Resources */,

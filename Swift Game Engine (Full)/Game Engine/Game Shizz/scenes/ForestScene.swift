@@ -38,7 +38,7 @@ class ForestScene: Scene{
         addChild(tent)
         
         // Trees
-        let trees = Trees(treeACount: 4000, treeBCount: 4000, treeCCount: 4000)
+        let trees = Trees(treeACount: 1000, treeBCount: 1000, treeCCount: 1000)
         addChild(trees)
         
         // Flowers
