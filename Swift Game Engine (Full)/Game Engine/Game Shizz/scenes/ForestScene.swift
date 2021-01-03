@@ -23,6 +23,10 @@ class ForestScene: Scene{
         light.setLightBrightness(0.5)
         addLight(light)
         
+        // Sky Sphere
+        let skySphere = SkySphere(skySphereTextureType: .Clouds_Skysphere)
+        addChild(skySphere)
+        
         // Terrain
         let terrain = GameObject(name: "Terrain", meshType: .GroundGrass)
         terrain.setScale(200)

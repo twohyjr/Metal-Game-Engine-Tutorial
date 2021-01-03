@@ -7,6 +7,9 @@ enum TextureTypes{
     
     case MetalPlate_Diffuse
     case MetalPlate_Normal
+    
+    // Sky Sphere
+    case Clouds_Skysphere
 }
 
 class TextureLibrary: Library<TextureTypes, MTLTexture> {
@@ -19,6 +22,8 @@ class TextureLibrary: Library<TextureTypes, MTLTexture> {
         // Metal Plate
         library.updateValue(Texture("metal_plate_diff"), forKey: .MetalPlate_Diffuse)
         library.updateValue(Texture("metal_plate_nor"), forKey: .MetalPlate_Normal)
+        
+        library.updateValue(Texture("clouds", origin: .bottomLeft), forKey: .Clouds_Skysphere)
     }
     
     override subscript(_ type: TextureTypes) -> MTLTexture? {

@@ -11,6 +11,7 @@ enum MeshTypes {
     case Chest
     case Quad
     case Well
+    case SkySphere
     
     // Terrain
     case GroundGrass
@@ -43,6 +44,7 @@ class MeshLibrary: Library<MeshTypes, Mesh> {
         _library.updateValue(Mesh(modelName: "sphere"), forKey: .Sphere)
         _library.updateValue(Mesh(modelName: "chest"), forKey: .Chest)
         _library.updateValue(Mesh(modelName: "quad"), forKey: .Quad)
+        _library.updateValue(Mesh(modelName: "skysphere"), forKey: .SkySphere)
         
         // Terrain
         _library.updateValue(Mesh(modelName: "ground_grass"), forKey: .GroundGrass)

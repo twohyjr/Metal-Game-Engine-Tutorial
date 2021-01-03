@@ -31,6 +31,11 @@ class Scene: Node {
     
     override func update() {
         _sceneConstants.viewMatrix = _cameraManager.currentCamera.viewMatrix
+        _sceneConstants.skyViewMatrix = _sceneConstants.viewMatrix
+        _sceneConstants.skyViewMatrix[3][0] = 0  // remove x translation
+        _sceneConstants.skyViewMatrix[3][1] = 0  // remove y translation
+        _sceneConstants.skyViewMatrix[3][2] = 0  // remove z translation
+        
         _sceneConstants.projectionMatrix = _cameraManager.currentCamera.projectionMatrix
         _sceneConstants.totalGameTime = GameTime.TotalGameTime
         _sceneConstants.cameraPosition = _cameraManager.currentCamera.getPosition()

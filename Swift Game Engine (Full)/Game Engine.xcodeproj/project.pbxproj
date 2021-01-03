@@ -40,6 +40,10 @@
 		C619552A244CF15D00BAC9AD /* Chest_Wood_Base_Color.png in Resources */ = {isa = PBXBuildFile; fileRef = C6195527244CF15D00BAC9AD /* Chest_Wood_Base_Color.png */; };
 		C619552B244CF15D00BAC9AD /* Chest_Metal_Base_Color.png in Resources */ = {isa = PBXBuildFile; fileRef = C6195528244CF15D00BAC9AD /* Chest_Metal_Base_Color.png */; };
 		C619552C244CF15E00BAC9AD /* chest.mtl in Resources */ = {isa = PBXBuildFile; fileRef = C6195529244CF15D00BAC9AD /* chest.mtl */; };
+		C62F939A25A130BB009813AE /* clouds.png in Resources */ = {isa = PBXBuildFile; fileRef = C62F939825A130BA009813AE /* clouds.png */; };
+		C62F939B25A130BB009813AE /* skysphere.obj in Resources */ = {isa = PBXBuildFile; fileRef = C62F939925A130BB009813AE /* skysphere.obj */; };
+		C62F93A025A13147009813AE /* SkySphere.swift in Sources */ = {isa = PBXBuildFile; fileRef = C62F939F25A13147009813AE /* SkySphere.swift */; };
+		C62F93A825A13297009813AE /* SkySphereShaders.metal in Sources */ = {isa = PBXBuildFile; fileRef = C62F93A725A13297009813AE /* SkySphereShaders.metal */; };
 		C635AB462427E81600642FE6 /* Chest.swift in Sources */ = {isa = PBXBuildFile; fileRef = C635AB452427E81600642FE6 /* Chest.swift */; };
 		C68F50DE221CD09C0091E35F /* Math.swift in Sources */ = {isa = PBXBuildFile; fileRef = C68F50DD221CD09C0091E35F /* Math.swift */; };
 		C6A215342385B0AC003A003C /* Lighting.metal in Sources */ = {isa = PBXBuildFile; fileRef = C6A215332385B0AC003A003C /* Lighting.metal */; };
@@ -154,6 +158,10 @@
 		C6195527244CF15D00BAC9AD /* Chest_Wood_Base_Color.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Chest_Wood_Base_Color.png; sourceTree = "<group>"; };
 		C6195528244CF15D00BAC9AD /* Chest_Metal_Base_Color.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Chest_Metal_Base_Color.png; sourceTree = "<group>"; };
 		C6195529244CF15D00BAC9AD /* chest.mtl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = chest.mtl; sourceTree = "<group>"; };
+		C62F939825A130BA009813AE /* clouds.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = clouds.png; sourceTree = "<group>"; };
+		C62F939925A130BB009813AE /* skysphere.obj */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = skysphere.obj; sourceTree = "<group>"; };
+		C62F939F25A13147009813AE /* SkySphere.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SkySphere.swift; sourceTree = "<group>"; };
+		C62F93A725A13297009813AE /* SkySphereShaders.metal */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.metal; path = SkySphereShaders.metal; sourceTree = "<group>"; };
 		C635AB452427E81600642FE6 /* Chest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Chest.swift; sourceTree = "<group>"; };
 		C68F50DD221CD09C0091E35F /* Math.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Math.swift; sourceTree = "<group>"; };
 		C6A215332385B0AC003A003C /* Lighting.metal */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.metal; path = Lighting.metal; sourceTree = "<group>"; };
@@ -330,6 +338,7 @@
 				C608C91E21EB1E8200B58EC7 /* Shared.metal */,
 				C6A215332385B0AC003A003C /* Lighting.metal */,
 				1C0208FC206D579800EFC375 /* BasicShaders.metal */,
+				C62F93A725A13297009813AE /* SkySphereShaders.metal */,
 				C608C92221EBB23500B58EC7 /* InstancedShaders.metal */,
 			);
 			path = shaders;
@@ -353,6 +362,7 @@
 				1CADF5A920B4DB770000F54C /* GameObject.swift */,
 				C6F0A39C229390B9001E5878 /* LightObject.swift */,
 				EBB9061D2173BC5A003B8CD0 /* InstancedGameObject.swift */,
+				C62F939F25A13147009813AE /* SkySphere.swift */,
 				C6F0A3A0229393C9001E5878 /* Sun.swift */,
 				C6DC12852252FA92002E5A09 /* Cruiser.swift */,
 				EBB9061F2173C211003B8CD0 /* CubeCollection.swift */,
@@ -426,6 +436,7 @@
 		C60ED7CC22358D4B00B1B94B /* res */ = {
 			isa = PBXGroup;
 			children = (
+				C62F939725A130AF009813AE /* skysphere */,
 				C6DA89B4252425C200F0FCDA /* tent */,
 				C6CBC8CB24CE161D00629E48 /* trees */,
 				C6CBC8CA24CE161200629E48 /* flowers */,
@@ -439,6 +450,15 @@
 				C60ED7CD22358D6100B1B94B /* PartyPirateParot.png */,
 			);
 			path = res;
+			sourceTree = "<group>";
+		};
+		C62F939725A130AF009813AE /* skysphere */ = {
+			isa = PBXGroup;
+			children = (
+				C62F939825A130BA009813AE /* clouds.png */,
+				C62F939925A130BB009813AE /* skysphere.obj */,
+			);
+			path = skysphere;
 			sourceTree = "<group>";
 		};
 		C635AB422427E7D800642FE6 /* chest */ = {
@@ -711,6 +731,7 @@
 			files = (
 				C6CBC8E724CE164600629E48 /* flower_yellowA.mtl in Resources */,
 				C6CBC8E224CE164600629E48 /* flower_redA.mtl in Resources */,
+				C62F939A25A130BB009813AE /* clouds.png in Resources */,
 				C619552C244CF15E00BAC9AD /* chest.mtl in Resources */,
 				1C0208D0206D575700EFC375 /* Assets.xcassets in Resources */,
 				C6E3EF9324A5823200515CD3 /* well.mtl in Resources */,
@@ -718,6 +739,7 @@
 				C6E3EF9524A5833A00515CD3 /* well.obj in Resources */,
 				C6CBC8E524CE164600629E48 /* flower_yellowA.obj in Resources */,
 				C6BD05A72440D10400314E81 /* chest.obj in Resources */,
+				C62F939B25A130BB009813AE /* skysphere.obj in Resources */,
 				C6CBC8E424CE164600629E48 /* flower_redA.obj in Resources */,
 				C6CBC8D924CE163C00629E48 /* tree_pineRoundC.obj in Resources */,
 				C6E3EF6324A5710200515CD3 /* sphere.mtl in Resources */,
@@ -801,6 +823,7 @@
 				C60ED7D22235900C00B1B94B /* SamplerStateLibrary.swift in Sources */,
 				C6F0A39D229390B9001E5878 /* LightObject.swift in Sources */,
 				C608C91321EB131C00B58EC7 /* Entities.swift in Sources */,
+				C62F93A025A13147009813AE /* SkySphere.swift in Sources */,
 				C6DA89B32524219500F0FCDA /* Trees.swift in Sources */,
 				C608C90A21EB113500B58EC7 /* Quad.swift in Sources */,
 				1C66A279208430880014D1E2 /* MetalTypes.swift in Sources */,
@@ -813,6 +836,7 @@
 				C608C91521EB134800B58EC7 /* Library.swift in Sources */,
 				C608C91121EB12BC00B58EC7 /* Graphics.swift in Sources */,
 				C6DA89B12524218E00F0FCDA /* Flowers.swift in Sources */,
+				C62F93A825A13297009813AE /* SkySphereShaders.metal in Sources */,
 				1CADF5AC20B4DB800000F54C /* Pointer.swift in Sources */,
 				EBB8610C20CF342C004D5AAD /* SandboxScene.swift in Sources */,
 				C608C91921EB152600B58EC7 /* ShaderLibrary.swift in Sources */,

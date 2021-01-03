@@ -34,6 +34,7 @@ struct ModelConstants{
 struct SceneConstants{
     float totalGameTime;
     float4x4 viewMatrix;
+    float4x4 skyViewMatrix;
     float4x4 projectionMatrix;
     float3 cameraPosition;
 };
