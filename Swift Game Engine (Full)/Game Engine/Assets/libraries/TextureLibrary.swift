@@ -3,6 +3,9 @@ import MetalKit
 enum TextureTypes{
     case None
     
+    case BaseRenderTarget
+    case BaseDepthTarget
+    
     case PartyPirateParot
     case Cruiser
     
@@ -17,6 +20,9 @@ class TextureLibrary: Library<TextureTypes, MTLTexture> {
     private var _library: [TextureTypes : Texture] = [:]
     
     override func fillLibrary() {
+        _library.updateValue(Texture(), forKey: .BaseRenderTarget)
+        _library.updateValue(Texture(), forKey: .BaseDepthTarget)
+        
         _library.updateValue(Texture("PartyPirateParot", origin: .bottomLeft), forKey: .PartyPirateParot)
         _library.updateValue(Texture("cruiser", ext: "bmp", origin: .bottomLeft), forKey: .Cruiser)
         
@@ -38,6 +44,8 @@ class TextureLibrary: Library<TextureTypes, MTLTexture> {
 
 private class Texture {
     var texture: MTLTexture!
+    
+    init() { }
     
     init(_ textureName: String, ext: String = "png", origin: MTKTextureLoader.Origin = .topLeft){
         let textureLoader = TextureLoader(textureName: textureName, textureExtension: ext, origin: origin)

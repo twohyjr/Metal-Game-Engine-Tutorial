@@ -4,6 +4,7 @@ enum RenderPipelineStateTypes {
     case Basic
     case Instanced
     case SkySphere
+    case Render
 }
 
 class RenderPipelineStateLibrary: Library<RenderPipelineStateTypes, MTLRenderPipelineState> {
@@ -13,6 +14,7 @@ class RenderPipelineStateLibrary: Library<RenderPipelineStateTypes, MTLRenderPip
         _library.updateValue(Basic_RenderPipelineState(), forKey: .Basic)
         _library.updateValue(Instanced_RenderPipelineState(), forKey: .Instanced)
         _library.updateValue(SkySphere_RenderPipelineState(), forKey: .SkySphere)
+        _library.updateValue(Render_RenderPipelineState(), forKey: .Render)
     }
     
     override subscript(_ type: RenderPipelineStateTypes)->MTLRenderPipelineState {
@@ -80,3 +82,19 @@ class Instanced_RenderPipelineState: RenderPipelineState{
         super.init(renderPipelineDescriptor: renderPipelineDescriptor)
     }
 }
+
+class Render_RenderPipelineState: RenderPipelineState{
+    init(){
+        let renderPipelineDescriptor = MTLRenderPipelineDescriptor()
+        renderPipelineDescriptor.label = "Render Render Pipeline Descriptor"
+        
+        renderPipelineDescriptor.colorAttachments[0].pixelFormat = Preferences.MainPixelFormat
+        renderPipelineDescriptor.vertexDescriptor = Graphics.VertexDescriptors[.Basic]
+
+        renderPipelineDescriptor.vertexFunction = Graphics.Shaders[.Render_Vertex]
+        renderPipelineDescriptor.fragmentFunction = Graphics.Shaders[.Render_Fragment]
+        
+        super.init(renderPipelineDescriptor: renderPipelineDescriptor)
+    }
+}
+
