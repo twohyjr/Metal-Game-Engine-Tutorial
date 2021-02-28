@@ -1,6 +1,6 @@
 import MetalKit
 
-class Node {
+class Node: Entity {
     private var _name: String = "Node"
     private var _id: String!
     
@@ -15,7 +15,7 @@ class Node {
         return matrix_multiply(parentModelMatrix, _modelMatrix)
     }
     
-    var children: [Node] = []
+    var childrenIDs: [String] = []
     
     init(name: String){
         self._name = name
@@ -23,7 +23,8 @@ class Node {
     }
     
     func addChild(_ child: Node){
-        children.append(child)
+        childrenIDs.append(child.getID())
+        EntityManager.Shared.Add(child)
     }
     
     func updateModelMatrix() {
@@ -45,7 +46,8 @@ class Node {
     
     func update(){
         doUpdate()
-        for child in children{
+        for childID in childrenIDs{
+            let child = EntityManager.Shared.Get(childID)  as! Node
             child.parentModelMatrix = self.modelMatrix
             child.update()
         }
@@ -57,7 +59,8 @@ class Node {
             renderable.doRender(renderCommandEncoder)
         }
         
-        for child in children{
+        for childID in childrenIDs{
+            let child = EntityManager.Shared.Get(childID) as! Node
             child.render(renderCommandEncoder: renderCommandEncoder)
         }
         renderCommandEncoder.popDebugGroup()

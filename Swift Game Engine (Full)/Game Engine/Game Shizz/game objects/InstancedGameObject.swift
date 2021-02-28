@@ -4,7 +4,7 @@ class InstancedGameObject: Node {
     private var _material = Material()
     private var _mesh: Mesh!
     
-    internal var _nodes: [Node] = []    
+    internal var _nodeIDs: [String] = []
     private var _modelConstantBuffer: MTLBuffer!
     
     init(meshType: MeshTypes, instanceCount: Int) {
@@ -16,14 +16,17 @@ class InstancedGameObject: Node {
     }
     
     func updateNodes(_ updateNodeFunction: (Node, Int)->()) {
-        for (index, node) in _nodes.enumerated() {
+        for (index, nodeID) in _nodeIDs.enumerated() {
+            let node = EntityManager.Shared.Get(nodeID) as! Node
             updateNodeFunction(node, index)
         }
     }
     
     func generateInstances(_ instanceCount: Int){
         for _ in 0..<instanceCount {
-            _nodes.append(Node(name: "\(getName())_InstancedNode"))
+            let node = Node(name: "\(getName())_InstancedNode")
+            _nodeIDs.append(node.getID())
+            EntityManager.Shared.Add(node)
         }
     }
     
@@ -32,8 +35,9 @@ class InstancedGameObject: Node {
     }
     
     override func update() {
-        var pointer = _modelConstantBuffer.contents().bindMemory(to: ModelConstants.self, capacity: _nodes.count)
-        for node in _nodes {
+        var pointer = _modelConstantBuffer.contents().bindMemory(to: ModelConstants.self, capacity: _nodeIDs.count)
+        for nodeID in _nodeIDs {
+            let node = EntityManager.Shared.Get(nodeID) as! Node
             pointer.pointee.modelMatrix = matrix_multiply(self.modelMatrix, node.modelMatrix)
             pointer = pointer.advanced(by: 1)
         }

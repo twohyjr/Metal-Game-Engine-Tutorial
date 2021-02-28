@@ -44,6 +44,7 @@
 		C62F93A025A13147009813AE /* SkySphere.swift in Sources */ = {isa = PBXBuildFile; fileRef = C62F939F25A13147009813AE /* SkySphere.swift */; };
 		C62F93A825A13297009813AE /* SkySphereShaders.metal in Sources */ = {isa = PBXBuildFile; fileRef = C62F93A725A13297009813AE /* SkySphereShaders.metal */; };
 		C635AB462427E81600642FE6 /* Chest.swift in Sources */ = {isa = PBXBuildFile; fileRef = C635AB452427E81600642FE6 /* Chest.swift */; };
+		C65C65AC25EB5FBE00E56BDA /* EntityManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C65C65AB25EB5FBE00E56BDA /* EntityManager.swift */; };
 		C66D5F5725A177C000D52A32 /* clouds.png in Resources */ = {isa = PBXBuildFile; fileRef = C66D5F5625A177C000D52A32 /* clouds.png */; };
 		C68F50DE221CD09C0091E35F /* Math.swift in Sources */ = {isa = PBXBuildFile; fileRef = C68F50DD221CD09C0091E35F /* Math.swift */; };
 		C6A215342385B0AC003A003C /* Lighting.metal in Sources */ = {isa = PBXBuildFile; fileRef = C6A215332385B0AC003A003C /* Lighting.metal */; };
@@ -162,6 +163,7 @@
 		C62F939F25A13147009813AE /* SkySphere.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SkySphere.swift; sourceTree = "<group>"; };
 		C62F93A725A13297009813AE /* SkySphereShaders.metal */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.metal; path = SkySphereShaders.metal; sourceTree = "<group>"; };
 		C635AB452427E81600642FE6 /* Chest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Chest.swift; sourceTree = "<group>"; };
+		C65C65AB25EB5FBE00E56BDA /* EntityManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EntityManager.swift; sourceTree = "<group>"; };
 		C66D5F5625A177C000D52A32 /* clouds.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = clouds.png; sourceTree = "<group>"; };
 		C68F50DD221CD09C0091E35F /* Math.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Math.swift; sourceTree = "<group>"; };
 		C6A215332385B0AC003A003C /* Lighting.metal */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.metal; path = Lighting.metal; sourceTree = "<group>"; };
@@ -607,6 +609,7 @@
 				EBB8610E20CF3524004D5AAD /* SceneManager.swift */,
 				EB6A608E20F27C8F00454ED9 /* CameraManager.swift */,
 				C6F0A39E229391AF001E5878 /* LightManager.swift */,
+				C65C65AB25EB5FBE00E56BDA /* EntityManager.swift */,
 			);
 			path = Managers;
 			sourceTree = "<group>";
@@ -837,6 +840,7 @@
 				C608C91121EB12BC00B58EC7 /* Graphics.swift in Sources */,
 				C6DA89B12524218E00F0FCDA /* Flowers.swift in Sources */,
 				C62F93A825A13297009813AE /* SkySphereShaders.metal in Sources */,
+				C65C65AC25EB5FBE00E56BDA /* EntityManager.swift in Sources */,
 				1CADF5AC20B4DB800000F54C /* Pointer.swift in Sources */,
 				EBB8610C20CF342C004D5AAD /* SandboxScene.swift in Sources */,
 				C608C91921EB152600B58EC7 /* ShaderLibrary.swift in Sources */,

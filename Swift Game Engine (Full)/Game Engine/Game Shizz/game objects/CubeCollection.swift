@@ -28,7 +28,8 @@ class CubeCollection: InstancedGameObject {
                 let posX = Float(x * gap)
                 for z in stride(from: -halfBack, to: halfBack, by: 1.0) {
                     let posZ = Float(z * gap)
-                    let node = _nodes[index]
+                    let nodeID = _nodeIDs[index]
+                    let node = EntityManager.Shared.Get(nodeID) as! Node
                     node.setPosition(float3(posX, posY, posZ))
                     node.rotate(0, -GameTime.DeltaTime * 2, -GameTime.DeltaTime * 2)
                     node.setScale(0.3)
