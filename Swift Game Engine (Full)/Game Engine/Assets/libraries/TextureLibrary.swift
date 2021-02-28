@@ -2,6 +2,7 @@ import MetalKit
 
 enum TextureTypes{
     case None
+    
     case PartyPirateParot
     case Cruiser
     
@@ -13,25 +14,29 @@ enum TextureTypes{
 }
 
 class TextureLibrary: Library<TextureTypes, MTLTexture> {
-    private var library: [TextureTypes : Texture] = [:]
+    private var _library: [TextureTypes : Texture] = [:]
     
     override func fillLibrary() {
-        library.updateValue(Texture("PartyPirateParot", origin: .bottomLeft), forKey: .PartyPirateParot)
-        library.updateValue(Texture("cruiser", ext: "bmp", origin: .bottomLeft), forKey: .Cruiser)
+        _library.updateValue(Texture("PartyPirateParot", origin: .bottomLeft), forKey: .PartyPirateParot)
+        _library.updateValue(Texture("cruiser", ext: "bmp", origin: .bottomLeft), forKey: .Cruiser)
         
         // Metal Plate
-        library.updateValue(Texture("metal_plate_diff"), forKey: .MetalPlate_Diffuse)
-        library.updateValue(Texture("metal_plate_nor"), forKey: .MetalPlate_Normal)
+        _library.updateValue(Texture("metal_plate_diff"), forKey: .MetalPlate_Diffuse)
+        _library.updateValue(Texture("metal_plate_nor"), forKey: .MetalPlate_Normal)
         
-        library.updateValue(Texture("clouds", origin: .bottomLeft), forKey: .Clouds_Skysphere)
+        _library.updateValue(Texture("clouds", origin: .bottomLeft), forKey: .Clouds_Skysphere)
+    }
+    
+    func setTexture(textureType: TextureTypes, texture: MTLTexture) {
+        _library[textureType]!.setTexture(texture)
     }
     
     override subscript(_ type: TextureTypes) -> MTLTexture? {
-        return library[type]?.texture
+        return _library[type]?.texture
     }
 }
 
-class Texture {
+private class Texture {
     var texture: MTLTexture!
     
     init(_ textureName: String, ext: String = "png", origin: MTKTextureLoader.Origin = .topLeft){

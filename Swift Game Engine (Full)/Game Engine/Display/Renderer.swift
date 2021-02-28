@@ -2,13 +2,13 @@ import MetalKit
 
 class Renderer: NSObject {
     public static var ScreenSize = float2(0,0)
-    public static var AspectRatio: Float {
-        return ScreenSize.x / ScreenSize.y
-    }
+    public static var AspectRatio: Float { return ScreenSize.x / ScreenSize.y }
     
     init(_ mtkView: MTKView) {
         super.init()
         updateScreenSize(view: mtkView)
+        
+        SceneManager.SetScene(Preferences.StartingSceneType)
     }
     
 }
@@ -23,22 +23,26 @@ extension Renderer: MTKViewDelegate{
         updateScreenSize(view: view)
     }
     
+    func displayRenderPass(view: MTKView, commandBuffer: MTLCommandBuffer) {
+        guard let displayRenderPassDescriptor = view.currentRenderPassDescriptor else { return }
+        let displayRenderCommandEncoder = commandBuffer.makeRenderCommandEncoder(descriptor: displayRenderPassDescriptor)
+        displayRenderCommandEncoder?.label = "Display Render Command Encoder"
+        displayRenderCommandEncoder?.pushDebugGroup("Starting Display Render")
+        SceneManager.Render(renderCommandEncoder: displayRenderCommandEncoder!)
+        displayRenderCommandEncoder?.popDebugGroup()
+        displayRenderCommandEncoder?.endEncoding()
+    }
+    
     func draw(in view: MTKView) {
-        guard let renderPassDescriptor = view.currentRenderPassDescriptor else { return }
+        SceneManager.Update(deltaTime: 1.0 / Float(view.preferredFramesPerSecond))
         
-        let commandBuffer = Engine.CommandQueue.makeCommandBuffer()
-        commandBuffer?.label = "My Command Buffer"
+        let baseCommandBuffer = Engine.CommandQueue.makeCommandBuffer()
+        baseCommandBuffer?.label = "Base Command Buffer"
         
-        let renderCommandEncoder = commandBuffer?.makeRenderCommandEncoder(descriptor: renderPassDescriptor)
-        renderCommandEncoder?.label = "First Render Command Encoder"
+        displayRenderPass(view: view, commandBuffer: baseCommandBuffer!)
         
-        renderCommandEncoder?.pushDebugGroup("Starting Render")
-        SceneManager.TickScene(renderCommandEncoder: renderCommandEncoder!, deltaTime: 1 / Float(view.preferredFramesPerSecond))
-        renderCommandEncoder?.popDebugGroup()
-        
-        renderCommandEncoder?.endEncoding()
-        commandBuffer?.present(view.currentDrawable!)
-        commandBuffer?.commit()
+        baseCommandBuffer?.present(view.currentDrawable!)
+        baseCommandBuffer?.commit()
     }
     
 }

@@ -1,5 +1,5 @@
 
-class Entities {
+class Assets {
     private static var _meshLibrary: MeshLibrary!
     public static var Meshes: MeshLibrary { return _meshLibrary }
     

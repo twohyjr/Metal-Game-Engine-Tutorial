@@ -29,7 +29,7 @@
 		C608C90A21EB113500B58EC7 /* Quad.swift in Sources */ = {isa = PBXBuildFile; fileRef = C608C90921EB113500B58EC7 /* Quad.swift */; };
 		C608C90C21EB11E000B58EC7 /* GameTime.swift in Sources */ = {isa = PBXBuildFile; fileRef = C608C90B21EB11E000B58EC7 /* GameTime.swift */; };
 		C608C91121EB12BC00B58EC7 /* Graphics.swift in Sources */ = {isa = PBXBuildFile; fileRef = C608C91021EB12BC00B58EC7 /* Graphics.swift */; };
-		C608C91321EB131C00B58EC7 /* Entities.swift in Sources */ = {isa = PBXBuildFile; fileRef = C608C91221EB131C00B58EC7 /* Entities.swift */; };
+		C608C91321EB131C00B58EC7 /* Assets.swift in Sources */ = {isa = PBXBuildFile; fileRef = C608C91221EB131C00B58EC7 /* Assets.swift */; };
 		C608C91521EB134800B58EC7 /* Library.swift in Sources */ = {isa = PBXBuildFile; fileRef = C608C91421EB134800B58EC7 /* Library.swift */; };
 		C608C91921EB152600B58EC7 /* ShaderLibrary.swift in Sources */ = {isa = PBXBuildFile; fileRef = C608C91821EB152600B58EC7 /* ShaderLibrary.swift */; };
 		C608C91F21EB1E8200B58EC7 /* Shared.metal in Sources */ = {isa = PBXBuildFile; fileRef = C608C91E21EB1E8200B58EC7 /* Shared.metal */; };
@@ -147,7 +147,7 @@
 		C608C90921EB113500B58EC7 /* Quad.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Quad.swift; path = "Game Engine/Game Shizz/game objects/Quad.swift"; sourceTree = SOURCE_ROOT; };
 		C608C90B21EB11E000B58EC7 /* GameTime.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameTime.swift; sourceTree = "<group>"; };
 		C608C91021EB12BC00B58EC7 /* Graphics.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Graphics.swift; sourceTree = "<group>"; };
-		C608C91221EB131C00B58EC7 /* Entities.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Entities.swift; sourceTree = "<group>"; };
+		C608C91221EB131C00B58EC7 /* Assets.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Assets.swift; sourceTree = "<group>"; };
 		C608C91421EB134800B58EC7 /* Library.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Library.swift; sourceTree = "<group>"; };
 		C608C91821EB152600B58EC7 /* ShaderLibrary.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShaderLibrary.swift; sourceTree = "<group>"; };
 		C608C91E21EB1E8200B58EC7 /* Shared.metal */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.metal; path = Shared.metal; sourceTree = "<group>"; };
@@ -267,7 +267,7 @@
 			isa = PBXGroup;
 			children = (
 				1CA84B232092A66C00465F6A /* Core */,
-				C608C90E21EB12A300B58EC7 /* Entities */,
+				C608C90E21EB12A300B58EC7 /* Assets */,
 				C608C90F21EB12AC00B58EC7 /* Graphics */,
 				EBB8610D20CF3511004D5AAD /* Managers */,
 				1CADF5A720B4DB430000F54C /* Game Shizz */,
@@ -393,13 +393,13 @@
 			path = types;
 			sourceTree = "<group>";
 		};
-		C608C90E21EB12A300B58EC7 /* Entities */ = {
+		C608C90E21EB12A300B58EC7 /* Assets */ = {
 			isa = PBXGroup;
 			children = (
-				C608C91221EB131C00B58EC7 /* Entities.swift */,
+				C608C91221EB131C00B58EC7 /* Assets.swift */,
 				C608C91621EB139800B58EC7 /* libraries */,
 			);
-			path = Entities;
+			path = Assets;
 			sourceTree = "<group>";
 		};
 		C608C90F21EB12AC00B58EC7 /* Graphics */ = {
@@ -822,7 +822,7 @@
 				1C6E769520ACFC75007F1DA5 /* Node.swift in Sources */,
 				C60ED7D22235900C00B1B94B /* SamplerStateLibrary.swift in Sources */,
 				C6F0A39D229390B9001E5878 /* LightObject.swift in Sources */,
-				C608C91321EB131C00B58EC7 /* Entities.swift in Sources */,
+				C608C91321EB131C00B58EC7 /* Assets.swift in Sources */,
 				C62F93A025A13147009813AE /* SkySphere.swift in Sources */,
 				C6DA89B32524219500F0FCDA /* Trees.swift in Sources */,
 				C608C90A21EB113500B58EC7 /* Quad.swift in Sources */,
