@@ -6,14 +6,14 @@ enum SamplerStateTypes {
 }
 
 class SamplerStateLibrary: Library<SamplerStateTypes, MTLSamplerState> {
-    private var library: [SamplerStateTypes : SamplerState] = [:]
+    private var _library: [SamplerStateTypes : SamplerState] = [:]
     
     override func fillLibrary() {
-        library.updateValue(Linear_SamplerState(), forKey: .Linear)
+        _library.updateValue(Linear_SamplerState(), forKey: .Linear)
     }
     
     override subscript(_ type: SamplerStateTypes) -> MTLSamplerState {
-        return (library[type]?.samplerState!)!
+        return (_library[type]?.samplerState!)!
     }
 }
 

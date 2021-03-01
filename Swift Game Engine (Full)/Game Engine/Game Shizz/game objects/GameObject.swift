@@ -13,7 +13,7 @@ class GameObject: Node {
 
     init(name: String, meshType: MeshTypes) {
         super.init(name: name)
-        _mesh = Entities.Meshes[meshType]
+        _mesh = Assets.Meshes[meshType]
     }
     
     override func update(){

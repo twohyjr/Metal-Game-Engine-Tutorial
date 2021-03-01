@@ -8,9 +8,9 @@ class GameView: MTKView {
         
         self.device = MTLCreateSystemDefaultDevice()
         
-        self.renderer = Renderer(self)
-
         Engine.Ignite(device: device!)
+
+        self.renderer = Renderer(self)
         
         self.clearColor = Preferences.ClearColor
         
