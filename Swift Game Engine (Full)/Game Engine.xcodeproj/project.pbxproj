@@ -1011,6 +1011,7 @@
 				DEVELOPMENT_TEAM = 9QQ2JZFGTQ;
 				INFOPLIST_FILE = "$(SRCROOT)/Game Engine/Other FIles/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 11.3;
 				PRODUCT_BUNDLE_IDENTIFIER = "net.ricktwohy.Game-Engine";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
@@ -1028,6 +1029,7 @@
 				DEVELOPMENT_TEAM = 9QQ2JZFGTQ;
 				INFOPLIST_FILE = "$(SRCROOT)/Game Engine/Other FIles/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 11.3;
 				PRODUCT_BUNDLE_IDENTIFIER = "net.ricktwohy.Game-Engine";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;

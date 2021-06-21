@@ -3,6 +3,10 @@ import MetalKit
 enum TextureTypes{
     case None
     
+    case BaseColorRender_0
+    case BaseColorRender_1
+    case BaseDepthRender
+    
     case PartyPirateParot
     case Cruiser
     

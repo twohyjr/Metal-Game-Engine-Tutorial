@@ -4,6 +4,11 @@
 #include "Shared.metal"
 using namespace metal;
 
+struct FragOutput {
+    half4 color0 [[ color(0) ]];
+    half4 color1 [[ color(1) ]];
+};
+
 vertex RasterizerData basic_vertex_shader(const VertexIn vIn [[ stage_in ]],
                                           constant SceneConstants &sceneConstants [[ buffer(1) ]],
                                           constant ModelConstants &modelConstants [[ buffer(2) ]]){
@@ -24,7 +29,7 @@ vertex RasterizerData basic_vertex_shader(const VertexIn vIn [[ stage_in ]],
     return rd;
 }
 
-fragment half4 basic_fragment_shader(RasterizerData rd [[ stage_in ]],
+fragment FragOutput basic_fragment_shader(RasterizerData rd [[ stage_in ]],
                                      constant Material &material [[ buffer(1) ]],
                                      constant int &lightCount [[ buffer(2) ]],
                                      constant LightData *lightDatas [[ buffer(3) ]],
@@ -38,8 +43,9 @@ fragment half4 basic_fragment_shader(RasterizerData rd [[ stage_in ]],
         color = baseColorMap.sample(sampler2d, texCoord);
     }
     
+    float3 unitNormal;
     if(material.isLit) {
-        float3 unitNormal = normalize(rd.surfaceNormal);
+        unitNormal = normalize(rd.surfaceNormal);
         if(material.useNormalMapTexture) {
             float3 sampleNormal = normalMap.sample(sampler2d, texCoord).rgb * 2 - 1;
             float3x3 TBN = { rd.surfaceTangent, rd.surfaceBitangent, rd.surfaceNormal };
@@ -57,6 +63,10 @@ fragment half4 basic_fragment_shader(RasterizerData rd [[ stage_in ]],
         color *= float4(phongIntensity, 1.0);
     }
     
-    return half4(color.r, color.g, color.b, color.a);
+    FragOutput out;
+    out.color0 = half4(color.r, color.g, color.b, color.a);
+    out.color1 = half4(unitNormal.x, unitNormal.y, unitNormal.z, 1.0);
+    
+    return out;
 }
 
