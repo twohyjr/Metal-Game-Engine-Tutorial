@@ -65,7 +65,7 @@ class Renderer: NSObject {
 extension Renderer: MTKViewDelegate{
     
     public func updateScreenSize(view: MTKView){
-        Renderer.ScreenSize = float2(Float(view.bounds.width), Float(view.bounds.height))
+        Renderer.ScreenSize = float2(Float(view.drawableSize.width), Float(view.drawableSize.height))
     }
     
     func mtkView(_ view: MTKView, drawableSizeWillChange size: CGSize) {
