@@ -72,26 +72,37 @@ extension Renderer: MTKViewDelegate{
         updateScreenSize(view: view)
     }
     
+    func baseRenderPass(commandBuffer: MTLCommandBuffer) {
+        let renderCommandEncoder = commandBuffer.makeRenderCommandEncoder(descriptor: _baseRenderPassDescriptor)
+        renderCommandEncoder?.label = "Base Render Command Encoder"
+        renderCommandEncoder?.pushDebugGroup("Starting Base Render")
+        SceneManager.Render(renderCommandEncoder: renderCommandEncoder!)
+        renderCommandEncoder?.popDebugGroup()
+        renderCommandEncoder?.endEncoding()
+    }
+    
+    func finalRenderPass(view: MTKView, commandBuffer: MTLCommandBuffer) {
+        let renderCommandEncoder = commandBuffer.makeRenderCommandEncoder(descriptor: view.currentRenderPassDescriptor!)
+        renderCommandEncoder?.label = "Final Render Command Encoder"
+        renderCommandEncoder?.pushDebugGroup("Starting Final Render")
+        
+        renderCommandEncoder?.setRenderPipelineState(Graphics.RenderPipelineStates[.Final])
+        renderCommandEncoder?.setFragmentTexture(Assets.Textures[.BaseColorRender_0], index: 0)
+        Assets.Meshes[.Quad].drawPrimitives(renderCommandEncoder!)
+        
+        renderCommandEncoder?.popDebugGroup()
+        renderCommandEncoder?.endEncoding()
+    }
+    
     func draw(in view: MTKView) {
         SceneManager.Update(deltaTime: 1 / Float(view.preferredFramesPerSecond))
         
         let commandBuffer = Engine.CommandQueue.makeCommandBuffer()
         commandBuffer?.label = "Base Command Buffer"
 
-        // Do a render pass to a texture
-        let sceneRenderCommandEncoder = commandBuffer?.makeRenderCommandEncoder(descriptor: _baseRenderPassDescriptor)
-        sceneRenderCommandEncoder?.label = "Scene Render Command Encoder"
-        sceneRenderCommandEncoder?.pushDebugGroup("Starting Scene Render")
-        SceneManager.Render(renderCommandEncoder: sceneRenderCommandEncoder!)
-        sceneRenderCommandEncoder?.popDebugGroup()
-        sceneRenderCommandEncoder?.endEncoding()
-        
-        // Copy the texture to the views drawable
-        let blitEncoder = commandBuffer?.makeBlitCommandEncoder()
-        blitEncoder?.label = "View Display Copy Encoder"
-        blitEncoder?.copy(from: Assets.Textures[.BaseColorRender_0]!,
-                          to: view.currentDrawable!.texture)
-        blitEncoder?.endEncoding()
+        baseRenderPass(commandBuffer: commandBuffer!)
+
+        finalRenderPass(view: view, commandBuffer: commandBuffer!)
 
         commandBuffer?.present(view.currentDrawable!)
         commandBuffer?.commit()

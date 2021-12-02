@@ -44,6 +44,7 @@
 		C62F93A025A13147009813AE /* SkySphere.swift in Sources */ = {isa = PBXBuildFile; fileRef = C62F939F25A13147009813AE /* SkySphere.swift */; };
 		C62F93A825A13297009813AE /* SkySphereShaders.metal in Sources */ = {isa = PBXBuildFile; fileRef = C62F93A725A13297009813AE /* SkySphereShaders.metal */; };
 		C635AB462427E81600642FE6 /* Chest.swift in Sources */ = {isa = PBXBuildFile; fileRef = C635AB452427E81600642FE6 /* Chest.swift */; };
+		C6375C9627586EE4003EB7BF /* FinalShaders.metal in Sources */ = {isa = PBXBuildFile; fileRef = C6375C9527586EE4003EB7BF /* FinalShaders.metal */; };
 		C66D5F5725A177C000D52A32 /* clouds.png in Resources */ = {isa = PBXBuildFile; fileRef = C66D5F5625A177C000D52A32 /* clouds.png */; };
 		C68F50DE221CD09C0091E35F /* Math.swift in Sources */ = {isa = PBXBuildFile; fileRef = C68F50DD221CD09C0091E35F /* Math.swift */; };
 		C6A215342385B0AC003A003C /* Lighting.metal in Sources */ = {isa = PBXBuildFile; fileRef = C6A215332385B0AC003A003C /* Lighting.metal */; };
@@ -162,6 +163,7 @@
 		C62F939F25A13147009813AE /* SkySphere.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SkySphere.swift; sourceTree = "<group>"; };
 		C62F93A725A13297009813AE /* SkySphereShaders.metal */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.metal; path = SkySphereShaders.metal; sourceTree = "<group>"; };
 		C635AB452427E81600642FE6 /* Chest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Chest.swift; sourceTree = "<group>"; };
+		C6375C9527586EE4003EB7BF /* FinalShaders.metal */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.metal; path = FinalShaders.metal; sourceTree = "<group>"; };
 		C66D5F5625A177C000D52A32 /* clouds.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = clouds.png; sourceTree = "<group>"; };
 		C68F50DD221CD09C0091E35F /* Math.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Math.swift; sourceTree = "<group>"; };
 		C6A215332385B0AC003A003C /* Lighting.metal */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.metal; path = Lighting.metal; sourceTree = "<group>"; };
@@ -340,6 +342,7 @@
 				1C0208FC206D579800EFC375 /* BasicShaders.metal */,
 				C62F93A725A13297009813AE /* SkySphereShaders.metal */,
 				C608C92221EBB23500B58EC7 /* InstancedShaders.metal */,
+				C6375C9527586EE4003EB7BF /* FinalShaders.metal */,
 			);
 			path = shaders;
 			sourceTree = "<group>";
@@ -798,6 +801,7 @@
 				C608C91F21EB1E8200B58EC7 /* Shared.metal in Sources */,
 				EBD9AE33214D7EF40080DE26 /* ColorUtil.swift in Sources */,
 				EBB8610A20CF3309004D5AAD /* Scene.swift in Sources */,
+				C6375C9627586EE4003EB7BF /* FinalShaders.metal in Sources */,
 				C6A215342385B0AC003A003C /* Lighting.metal in Sources */,
 				1CA84B372092AE7300465F6A /* VertexDescriptorLibrary.swift in Sources */,
 				C6DC12862252FA92002E5A09 /* Cruiser.swift in Sources */,

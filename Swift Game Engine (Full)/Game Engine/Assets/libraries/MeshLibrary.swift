@@ -295,10 +295,14 @@ class Submesh {
         renderCommandEncoder.setFragmentSamplerState(Graphics.SamplerStates[.Linear], index: 0)
 
         let baseColorTex = customBaseColorTextureType == .None ? _baseColorTexture : Assets.Textures[customBaseColorTextureType]
-        renderCommandEncoder.setFragmentTexture(baseColorTex, index: 0)
+        if(baseColorTex != nil) {
+            renderCommandEncoder.setFragmentTexture(baseColorTex, index: 0)
+        }
         
         let normalMapTex = customNormalMapTextureType == .None ? _normalMapTexture : Assets.Textures[customNormalMapTextureType]
-        renderCommandEncoder.setFragmentTexture(normalMapTex, index: 1)
+        if(normalMapTex != nil) {
+            renderCommandEncoder.setFragmentTexture(normalMapTex, index: 1)            
+        }
     }
     
     func applyMaterials(renderCommandEncoder: MTLRenderCommandEncoder,
