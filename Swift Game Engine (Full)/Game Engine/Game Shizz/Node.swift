@@ -5,7 +5,7 @@ class Node {
     private var _id: String!
     
     private var _position: float3 = float3()
-    private var _scale: float3 = float3(1,1,1)
+    private var _scale: float3 = .one
     private var _rotation: float3 = float3()
     
     var parentModelMatrix = matrix_identity_float4x4
@@ -80,10 +80,24 @@ extension Node {
     func setPositionX(_ xPosition: Float) { setPosition(xPosition, getPositionY(), getPositionZ()) }
     func setPositionY(_ yPosition: Float) { setPosition(getPositionX(), yPosition, getPositionZ()) }
     func setPositionZ(_ zPosition: Float) { setPosition(getPositionX(), getPositionY(), zPosition) }
-    func move(_ x: Float, _ y: Float, _ z: Float){ setPosition(getPositionX() + x, getPositionY() + y, getPositionZ() + z) }
-    func moveX(_ delta: Float){ move(delta, 0, 0) }
-    func moveY(_ delta: Float){ move(0, delta, 0) }
-    func moveZ(_ delta: Float){ move(0, 0, delta) }
+    func move(_ x: Float, _ y: Float, _ z: Float){
+        setPosition(getPositionX() + x, getPositionY() + y, getPositionZ() + z)
+    }
+    func moveLoc(_ x: Float, _ y: Float, _ z: Float){
+        var initDir = float3(x, y, z)
+        var rotationTransform = simd_mul(
+            simd_quatf(angle: _rotation.x, axis: X_AXIS),
+            simd_quatf(angle: _rotation.y, axis: Y_AXIS))
+        rotationTransform = simd_mul(
+            rotationTransform,
+            simd_quatf(angle: _rotation.z, axis: Z_AXIS))
+        
+        initDir = simd_act(rotationTransform.inverse, initDir)
+        setPosition(_position + initDir)
+    }
+    func moveX(_ delta: Float){ moveLoc(delta, 0, 0) }
+    func moveY(_ delta: Float){ moveLoc(0, delta, 0) }
+    func moveZ(_ delta: Float){ moveLoc(0, 0, delta) }
     func getPosition()->float3 { return self._position }
     func getPositionX()->Float { return self._position.x }
     func getPositionY()->Float { return self._position.y }
